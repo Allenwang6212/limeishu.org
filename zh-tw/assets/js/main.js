@@ -1,1 +1,83 @@
-(function(a){skel.breakpoints({xlarge:"(max-width: 1680px)",large:"(max-width: 1280px)",medium:"(max-width: 980px)",small:"(max-width: 736px)",xsmall:"(max-width: 480px)"});a(function(){var f=a(window),d=a("body");d.addClass("is-loading");f.on("load",function(){window.setTimeout(function(){d.removeClass("is-loading")},0)});if(skel.vars.mobile){d.addClass("is-touch")}a("form").placeholder();skel.on("+medium -medium",function(){a.prioritize(".important\\28 medium\\29",skel.breakpoint("medium").active)});a(".scrolly").scrolly({speed:2000});a("#nav > ul").dropotron({alignment:"right",hideDelay:350});a('<div id="titleBar"><a href="#navPanel" class="toggle"></a><span class="title">'+a("#logo").html()+"</span></div>").appendTo(d);a('<div id="navPanel"><nav>'+a("#nav").navList()+"</nav></div>").appendTo(d).panel({delay:500,hideOnClick:true,hideOnSwipe:true,resetScroll:true,resetForms:true,side:"left",target:d,visibleClass:"navPanel-visible"});if(skel.vars.os=="wp"&&skel.vars.osVersion<10){a("#titleBar, #navPanel, #page-wrapper").css("transition","none")}if(skel.vars.browser=="ie"||skel.vars.mobile){a.fn._parallax=function(){return a(this)}}else{a.fn._parallax=function(){a(this).each(function(){var h=a(this),g,i;g=function(){h.css("background-position","center 0px");f.on("scroll._parallax",function(){var j=parseInt(f.scrollTop())-parseInt(h.position().top);h.css("background-position","center "+(j*-0.15)+"px")})};i=function(){h.css("background-position","");f.off("scroll._parallax")};skel.on("change",function(){if(skel.breakpoint("medium").active){(i)()}else{(g)()}})});return a(this)};f.on("load resize",function(){f.trigger("scroll")})}var e=a(".spotlight");e._parallax().each(function(){var h=a(this),g,i;g=function(){h.css("background-image",'url("'+h.find(".image.main > img").attr("src")+'")');if(skel.canUse("transition")){var k,j,l;if(h.hasClass("top")){l="top";k="-20%";j=0}else{if(h.hasClass("bottom")){l="bottom-only";k=0;j="20%"}else{l="middle";k=0;j=0}}h.scrollex({mode:l,top:k,bottom:j,initialize:function(m){h.addClass("inactive")},terminate:function(m){h.removeClass("inactive")},enter:function(m){h.removeClass("inactive")}})}};i=function(){h.css("background-image","");if(skel.canUse("transition")){h.unscrollex()}};skel.on("change",function(){if(skel.breakpoint("medium").active){(i)()}else{(g)()}})});var b=a(".wrapper");b.each(function(){var h=a(this),g,i;g=function(){if(skel.canUse("transition")){h.scrollex({top:250,bottom:0,initialize:function(j){h.addClass("inactive")},terminate:function(j){h.removeClass("inactive")},enter:function(j){h.removeClass("inactive")}})}};i=function(){if(skel.canUse("transition")){h.unscrollex()}};skel.on("change",function(){if(skel.breakpoint("medium").active){(i)()}else{(g)()}})});var c=a("#banner");c._parallax()})})(jQuery);
+/*
+	Verti by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+(function($) {
+
+	skel.breakpoints({
+		xlarge: '(max-width: 1680px)',
+		large: '(max-width: 1280px)',
+		medium: '(max-width: 980px)',
+		small: '(max-width: 736px)'
+	});
+
+	$(function() {
+
+		var	$window = $(window),
+			$body = $('body');
+
+		// Disable animations/transitions until the page has loaded.
+			$body.addClass('is-loading');
+
+			$window.on('load', function() {
+				$body.removeClass('is-loading');
+			});
+
+		// Fix: Placeholder polyfill.
+			$('form').placeholder();
+
+		// Prioritize "important" elements on medium.
+			skel.on('+medium -medium', function() {
+				$.prioritize(
+					'.important\\28 medium\\29',
+					skel.breakpoint('medium').active
+				);
+			});
+
+		// Dropdowns.
+			$('#nav > ul').dropotron({
+				mode: 'fade',
+				noOpenerFade: true,
+				speed: 300
+			});
+
+		// Off-Canvas Navigation.
+
+			// Navigation Toggle.
+				$(
+					'<div id="navToggle">' +
+						'<a href="#navPanel" class="toggle"></a>' +
+					'</div>'
+				)
+					.appendTo($body);
+
+			// Navigation Panel.
+				$(
+					'<div id="navPanel">' +
+						'<nav>' +
+							$('#nav').navList() +
+						'</nav>' +
+					'</div>'
+				)
+					.appendTo($body)
+					.panel({
+						delay: 500,
+						hideOnClick: true,
+						hideOnSwipe: true,
+						resetScroll: true,
+						resetForms: true,
+						side: 'left',
+						target: $body,
+						visibleClass: 'navPanel-visible'
+					});
+
+			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
+				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
+					$('#navToggle, #navPanel, #page-wrapper')
+						.css('transition', 'none');
+
+	});
+
+})(jQuery);

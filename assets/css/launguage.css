@@ -2759,10 +2759,10 @@
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(216, 171, 76, 0.3), rgba(88, 76, 48, 0.5)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(216, 171, 76, 0.3), rgba(88, 76, 48, 0.5)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(216, 171, 76, 0.3), rgba(88, 76, 48, 0.5)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(216, 171, 76, 0.3), rgba(88, 76, 48, 0.5)), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top, rgba(216, 171, 76, 0.1), rgba(88, 76, 48, 0.5)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, rgba(216, 171, 76, 0.1), rgba(88, 76, 48, 0.5)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(216, 171, 76, 0.1), rgba(88, 76, 48, 0.5)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(216, 171, 76, 0.1), rgba(88, 76, 48, 0.5)), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3335,13 +3335,13 @@
 		/* Banner */
 
 			#banner .content {
-				padding: 3em 1.5625em 5.25em 1.5625em;
+				padding: 3em 0 5.25em 0;
 			}
 
 		/* Footer */
 
 			#footer {
-				padding: 3em 1.25em;
+				padding: 3em 0em;
 			}
 
 				#footer .copyright {
