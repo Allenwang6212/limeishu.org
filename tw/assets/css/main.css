@@ -2132,6 +2132,7 @@
 			max-width: 20em;
 			width: 75%;
 		}
+			
 
 	footer.major {
 		margin: 4em 0 0 0;
@@ -3272,6 +3273,7 @@
 			position: absolute;
 			right: 1em;
 			top: 0;
+            
 		}
 
 			#header nav ul {
@@ -3338,7 +3340,6 @@
 
 	#banner {
 		background-attachment: fixed;
-        background-image: url(images/BG.png);
         background-position: left;
 		background-color: #272833;
 		background-position: center center;
@@ -3348,8 +3349,7 @@
 		position: relative;
 		text-align: center;
 		z-index: 21;
-	}
-
+    }
 		#banner:before {
 			content: '';
 			display: inline-block;
@@ -3359,10 +3359,6 @@
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(124, 114, 93, 0.5), rgba(54, 50, 41, 0.5)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(124, 114, 93, 0.5), rgba(54, 50, 41, 0.5)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(124, 114, 93, 0.5), rgba(54, 50, 41, 0.5)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(124, 114, 93, 0.5), rgba(54, 50, 41, 0.5)), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3375,13 +3371,14 @@
 		#banner .content {
 			display: inline-block;
 			padding: 3em 5em;
-            top: 30%;
+            top: 25%;
             left: 0;
 			position: absolute;
 			text-align: left;
 			vertical-align: middle;
 			z-index: 1;
             background-color: rgba(39, 40, 51, 0.75)
+            
 		}
 
 			#banner .content header {

@@ -2775,8 +2775,8 @@
 		#banner .content {
 			display: inline-block;
 			margin-right: 1%;
-			max-width: 95%;
-			padding: 6em;
+			max-width: 100%;
+			padding: 17% 0;
 			position: relative;
 			text-align: right;
 			vertical-align: middle;
