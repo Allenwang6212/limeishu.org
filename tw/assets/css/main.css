@@ -3089,8 +3089,8 @@
 	}
 
 		.wrapper.style2 {
-            padding: 3em;
-			background: #4ba330;
+            padding: 6em;
+			background: rgb(68, 115, 29);
 		}
         .wrapper.style2 .container iframe {
 			width: 100%;
@@ -3985,15 +3985,6 @@
 						padding-top: 0;
 					}
 
-		/* Button */
-
-			input[type="submit"],
-			input[type="reset"],
-			input[type="button"],
-			.button {
-				padding: 0;
-			}
-
 		/* Spotlight */
 
 			.spotlight .image.main {
@@ -4009,12 +4000,19 @@
 			.wrapper {
 				padding: 3em 1.25em 1em 1.25em;
 			}
+                .wrapper.style2 {
+                    padding: 2em;
+                }
 
 		/* Banner */
 
 			#banner .content {
-				padding: 3em 1.5625em 5.25em 1.5625em;
+				padding: 3em 0em 3em 0em;
 			}
+        /* Page */
+        .page {
+            padding: 0em;
+        }
 
 		/* Footer */
 
@@ -4052,6 +4050,7 @@
     color: #fff;
     text-align: center;
     display: inline-block;
+    width: 33%;
 	height: 100%;
 	margin: 3em;
 	top: 3em;
@@ -4079,7 +4078,7 @@
     text-align: center;
     display: inline-block;
 	height: 80%;
-	margin: 3em;
+	margin: 1em;
 	top: 3em;
 	border-radius: 5em;
 	margin-left: auto;
@@ -4133,7 +4132,7 @@
     }
     
     .block2 {
-	    width: 100%;
+	    width: 23%;
     }
     .block3 {
 	    width: 100%;
