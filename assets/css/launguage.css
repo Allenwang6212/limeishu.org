@@ -2867,7 +2867,7 @@
 				}
 
 				#footer .copyright li a {
-                    color: white;
+                    color: inherit;
 					border-bottom: none !important;
 				}
 
