@@ -79,6 +79,7 @@ header.bg {
     .bg {
         max-height: 5em;
         z-index: 0;
+        background-position: center center;
     }
     
     .content {
