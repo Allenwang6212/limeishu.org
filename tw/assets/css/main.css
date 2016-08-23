@@ -3581,6 +3581,12 @@
     width: 4em;
 }
 
+/* iframe touch disable */
+
+iframe {
+    pointer-events: none;
+}
+
 .wrapper.page2 .goto-next:before {
             background-image: url("images/arrow2.svg");
 }
