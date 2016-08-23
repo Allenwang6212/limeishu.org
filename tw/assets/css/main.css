@@ -3751,9 +3751,6 @@
 			}
         /* iframe touch disable */
 
-        iframe {
-            pointer-events: none;
-        }
 
 	}
 
@@ -4157,5 +4154,8 @@
     }
     .goto-next {
         display: none;
+    }
+    iframe {
+        pointer-events: none;
     }
 }
