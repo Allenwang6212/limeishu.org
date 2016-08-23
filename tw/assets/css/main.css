@@ -3584,6 +3584,16 @@
 .wrapper.page2 .goto-next:before {
             background-image: url("images/arrow2.svg");
 }
+#maps a.button:before {
+        -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        border-style: solid;
+        color: #111;
+        border-color: #111;
+        border: 1px;
+}
 /* Traffics Icon */
 #mrt > p ,#rail > p ,#bus > p,#car > p {
     text-align: left;
@@ -4128,6 +4138,9 @@
     }
     .block3 {
 	    width: 33%;
+    }
+    #maps a {
+        display: none;
     }
 }
 
