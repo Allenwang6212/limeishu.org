@@ -2,22 +2,38 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>開源 x 文史</title>
+    <title>開源 X 文史</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
     <header id="header">
-        <div id="logo"><h1>開源 x 文史</h1></div>
-        <nav>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+        <nav id="nav">
+            <ul class="topnav" id="myTopnav">
+                <li><a href="" class="active">開源 X 文史</a></li>
+                <li><a href="">何為開源</a></li>
+                <li><a href="">如何開源</a></li>
+                <li><a href="">開源貢獻</a></li>
+                <li><a href="">開源專案</a></li>
+                <li><a href="">貢獻名單</a></li>
+                <li class="left"><a href="">回紀念館首頁</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                </li>
+                <script type="text/javascript">
+                    function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
             </ul>
         </nav>
     </header>
+    <section class="page1">
+        <h1></h1>
+    </section>
 </body>
 </html>
