@@ -1,7 +1,7 @@
-李梅樹紀念館網站 (Alpha v4.1)
+《李梅樹紀念館網站 (Alpha v4.1) 》
 The Li Mei-shu Memorial Gallery website Alpha v4.1 
 
-by:
+#by:
     
     ZLCSC (https://www.zlcsc.club.tw | @ZLCSC-club)
     
@@ -12,7 +12,7 @@ by:
     黃志仁 (https://github.com/splitline | @splitline)
     
 
-Credits:
+#Credits:
 
 	   Main page:
         
@@ -35,7 +35,7 @@ Credits:
             
             ...and so on.
 
-Support
+#Support
 
     Old version website : http://limeishu.org/
 
