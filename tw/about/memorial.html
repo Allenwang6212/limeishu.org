@@ -74,13 +74,13 @@
             <section class="wrapper style4">
             <div class="content about">
                 <div class="block">
-                    <a href="#" id="i0">簡介</a>
+                    <a href="introduction0" id="i0">簡介</a>
                 </div>
                 <div class="block">
                     <a href="#" id="i1">參觀需知</a>
                 </div>
                 <div id="hint" align="center"> test ~! ! ! !</div>          
-                <div id="introduction_0" style="display: none;">
+                <div id="introduction1">
                     <li>簡介</li>
                     <ul>
                         <p>本館初設於1990年，原名為「劉清港醫師李梅樹教授昆仲紀念館」；1995年4月遷入現址：台北市三峽區中華路43巷10號,並正式定名為「李梅樹紀念館」。</p>
@@ -89,7 +89,7 @@
 <p>本館除了展出李梅樹先生不同時期的畫作，另一方面，李梅樹生前的書信文件，畫具和畫稿等，也於館內的文物陳列室一一展出。期盼透過本館的展覽，不僅使參觀者得以體會藝術家創作生涯的心路歷程，更能進一步明瞭，李梅樹的一生正是台灣美術走向本土化的縮影。</p>
                     </ul>
                 </div>
-                <div id="introduction_1" style="display: none;">
+                <div id="introduction_1">
                     <li>參觀需知</li>
                     <ul>
                         <p>本館採收費參觀制，清潔費每位100元。</p>
@@ -160,45 +160,5 @@ $("#i1").click(function () {
     $("#introduction_2").hide("slow");
     $("#introduction_3").hide("slow");
   });
-
-
-
-$('.all-news').slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  // variableWidth:true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
 </script>
 
