@@ -39,7 +39,15 @@ header.bg {
 	background-color: #fff;
 	padding: 5em;
 	color: #000;
+    text-align: center;
+    display: block;
 }
+    .content #introduction_0 {
+        text-align: left;
+    }
+    .content #introduction_1 {
+        text-align: left;
+    }
 .wrapper.style4 a.button {
 	border-style: solid;
     color: #111;
@@ -60,6 +68,46 @@ header.bg {
     background-color: #fff;
     z-index: 3;
     }
+.icon {
+    color: #000;
+    text-align: center;
+    display: inline-block;
+	height: 100%;
+	margin: 0;
+	top: 1em;
+	border-radius: 1em;
+	margin-left: auto;
+	margin-right: auto;
+    vertical-align: top;
+}
+.icon > a {
+		border-color: #44731d;
+		border-bottom: none;
+		text-decoration: none;
+	}
+.icon img {
+    height: 4em;
+    width: 4em;
+}
+.icon > a:hover {
+        -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		border-bottom-style: dotted;
+        border-style: solid;
+        border-color: #44731d;
+        width: 10px;
+}
+.icon > a:before {
+        -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		border-bottom-style: dotted;
+        border-style: solid;
+        border-color: #44731d !important;
+}
 @media screen and (max-width: 980px){
    
     .bg {
