@@ -38,7 +38,9 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
-
+    * {
+        font-family: 'Roboto';
+    }
 /* Box Model */
 
 	*, *:before, *:after {
