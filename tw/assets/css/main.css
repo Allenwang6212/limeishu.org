@@ -3581,6 +3581,12 @@
     width: 4em;
 }
 
+#info,
+#news
+{
+    height: 100vh;
+}
+
 .wrapper.page2 .goto-next:before {
             background-image: url("images/arrow2.svg");
 }
