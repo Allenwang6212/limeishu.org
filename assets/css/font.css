@@ -22,3 +22,9 @@
   font-weight: 300;
   src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(../fonts/7m8l7TlFO-S3VkhHuR0at7rIa-7acMAeDBVuclsi6Gc.woff) format('woff');
 }
+@font-face {
+  font-family: 'Noto';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Noto Sans CJK TC'), local('NotoSansCJKtc-Light'), url(../fonts/NotoSansCJKtc-Light.otf) format('otf');
+}
