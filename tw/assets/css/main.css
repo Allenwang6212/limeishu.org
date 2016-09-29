@@ -3588,7 +3588,7 @@
 }
 
 .wrapper.page2 .goto-next:before {
-            background-image: url("images/arrow2.svg");
+    background-image: url("images/arrow2.svg");
 }
 /* Traffics Icon */
 #mrt > p ,#rail > p ,#bus > p,#car > p {
@@ -4166,5 +4166,43 @@
     }
     iframe {
         pointer-events: none;
+    }
+}
+
+
+@media screen and (min-width: 1366px) {
+    .info {
+	    height: 100vh;
+        width: 100%;
+        margin: 0;
+        position: relative;
+        display: block;
+    }
+    .info .spotlight.style2.bottom.frim {
+        top: 0m;
+        height: 50vh;
+        width: 33.33vw;
+        display: block;
+        position: relative;
+        float: left;
+        margin: 0;
+        z-index: 0;
+        text-align: center;
+        background-position: center center;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .info .frim .content {
+	    border: 0;
+        height: 100%;
+        width: 33.33vw;
+        padding: 6em 3em 1em 3em;
+        text-align: center;
+        background-color: rgba(255, 78, 0, 0.7);
+        position: absolute;
+        opacity: 0;
+    }
+    .info .frim .content:hover {
+        opacity: 1;
     }
 }
