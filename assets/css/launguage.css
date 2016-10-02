@@ -2752,7 +2752,7 @@
     }
 }
 @-moz-keyframes pic {
-    25% {
+    from {
         background-image: url(images/BG1.jpg)
     }
     50% {
@@ -2761,7 +2761,7 @@
     75% {
         background-image: url(images/BG3.jpg)
     }
-    100% {
+    to {
         background-image: url(images/BG4.jpg)
     }
 }
