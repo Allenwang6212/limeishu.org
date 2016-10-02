@@ -5,7 +5,6 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: inherit;
 		vertical-align: baseline;
 	}
 
@@ -39,7 +38,7 @@
 		-webkit-text-size-adjust: none;
 	}
     * {
-        font-family: "Roboto", 'Helvetica', sans-serif;
+        font-family: "Noto", 'Helvetica', sans-serif;
     }
 /* Box Model */
 
@@ -1561,7 +1560,7 @@
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: "Roboto", 'Helvetica', sans-serif;
+		font-family: "Noto", 'Helvetica', sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75em;
