@@ -13,7 +13,7 @@
 
 			<!-- Header -->
 			<header id="header">
-                <h1 id="logo"><a href="">支持我們</a></h1>
+                <h1 id="logo"><a href="">紀念館</a></h1>
                 <nav id="nav">
                     <ul>
                         <li><a href="../">中文版首頁</a></li>
@@ -65,24 +65,36 @@
 
 			<!-- Main -->
             <div class="breadcrumbs">
-                首頁 > 關於我們 > 支持我們
+                首頁 > 關於我們 > 紀念館
             </div>
                 <header class="bg">
-                <h2>支持我們</h2>
+                <h2>關於紀念館</h2>
                 <p>清溪浣衣 1981</p>
                 </header>
             <section class="wrapper style4">
-            <div class="content about">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sit quidem perferendis sequi distinctio placeat aspernatur quibusdam, obcaecati accusamus, aliquid qui. Minima id laboriosam fugit qui asperiores iste deleniti dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quisquam aliquid esse odio earum harum autem totam fuga nam saepe. Quod numquam possimus dignissimos architecto minus. In esse expedita molestiae!<br><br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eveniet, voluptatem harum a totam nostrum, quae quasi repudiandae debitis, nesciunt voluptate ipsam natus numquam quaerat cupiditate quidem adipisci rem iste.<br><br>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam cupiditate sed sequi quo molestiae placeat repellendus labore, blanditiis ipsam incidunt in natus, neque esse magnam quam saepe expedita velit ducimus.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, ipsa a at nihil temporibus illum ipsam quibusdam placeat expedita rerum, eius quod impedit cumque consequuntur, modi maiores. Ducimus, at, unde.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eius suscipit neque, dolorem porro iusto eum dignissimos tenetur, nisi facere iste dolores fugiat assumenda deleniti ad commodi nobis aperiam repellendus.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos ullam neque repudiandae earum quo quis autem, error provident odio atque adipisci commodi, impedit saepe ipsa inventore soluta velit amet.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, deserunt reiciendis dicta beatae amet, explicabo dolor necessitatibus omnis repudiandae odit possimus maiores, optio eum fuga illum. Provident, dolores, vero! Facere.</li>
-                </ul>
-            <a class="button">基金會章程</a>
+            <div class="content">
+                <div class="icon">
+                    <a href="#introduction0" id="i0"><img src="../../images/Icon/home/info/info.png"></a>
+                    <br>
+                    <h4>icon1</h4>
+                </div>
+                <div class="icon">
+                    <a href="#introduction1" id="i1"><img src="../../images/Icon/home/info/info.png"></a>
+                    <br>
+                    <h4>icon2</h4>
+                </div>
+                <div id="hint" align="center">點擊按鈕以獲得說明</div>
+                <div id="introduction_0">
+                    <li>icon1</li>
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <div id="introduction_1">
+                    <li>icon2</li>
+                    <ul>
+                    </ul>
+                </div>
             </div>
             </section>
 			<!-- Footer -->
@@ -105,8 +117,6 @@
             </ul>
 
         </footer>
-
-		</div>
         <!-- CSS -->
             <link rel="stylesheet" href="../assets/css/main.css">
             <link rel="stylesheet" href="assets/css/main.css">
@@ -122,3 +132,21 @@
 
 	</body>
 </html>
+<script type="text/javascript">
+$( document ).ready( function() {
+    $("#introduction_0").hide();
+    $("#introduction_1").hide();
+});
+
+$("#i0").click(function () {
+    $("#hint").hide("slow");
+    $("#introduction_0").show("slow");
+    $("#introduction_1").hide("slow");
+  });
+$("#i1").click(function () {
+    $("#hint").hide("slow");
+    $("#introduction_0").hide("slow");
+    $("#introduction_1").show("slow");
+  });
+</script>
+
