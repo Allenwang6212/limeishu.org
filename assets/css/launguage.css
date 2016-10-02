@@ -2737,49 +2737,11 @@
 			opacity: 0.25;
 		}
 /* Banner */
-@keyframes pic {
-    25% {
-        background-image: url(images/BG1.jpg)
-    }
-    50% {
-        background-image: url(images/BG2.jpg)
-    }
-    75% {
-        background-image: url(images/BG3.jpg)
-    }
-    100% {
-        background-image: url(images/BG4.jpg)
-    }
-}
-@-moz-keyframes pic {
-    from {
-        background-image: url(images/BG1.jpg)
-    }
-    50% {
-        background-image: url(images/BG2.jpg)
-    }
-    75% {
-        background-image: url(images/BG3.jpg)
-    }
-    to {
-        background-image: url(images/BG4.jpg)
-    }
-}
-@-webkit-keyframes pic {
-    25% {
-        background-image: url(images/BG1.jpg)
-    }
-    50% {
-        background-image: url(images/BG2.jpg)
-    }
-    75% {
-        background-image: url(images/BG3.jpg)
-    }
-    100% {
-        background-image: url(images/BG4.jpg)
-    }
-}
-@-ms-keyframes pic {
+@keyframes pic,
+@-moz-keyframes pic,
+@-webkit-keyframes pic,
+@-ms-keyframes pic
+{
     25% {
         background-image: url(images/BG1.jpg)
     }
