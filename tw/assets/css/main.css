@@ -4181,7 +4181,7 @@
     .info .spotlight.style2.bottom.frim {
         top: 0m;
         height: 50vh;
-        width: 33.33vw;
+        width: 33vw;
         display: block;
         position: relative;
         float: left;
@@ -4195,7 +4195,7 @@
     .info .frim .content {
 	    border: 0;
         height: 100%;
-        width: 33.33vw;
+        width: 33vw;
         padding: 6em 3em 1em 3em;
         text-align: center;
         background-color: rgba(255, 124, 66, 0.85);
