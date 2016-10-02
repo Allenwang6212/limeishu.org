@@ -8,7 +8,7 @@
 		vertical-align: baseline;
 	}
     * {
-        font-family: "Noto", 'Helvetica', sans-serif;
+        font-family: 'Noto Sans TC', sans-serif;
     }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -1559,7 +1559,7 @@
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: "Noto", 'Helvetica', sans-serif;
+		font-family: 'Noto Sans TC', sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75em;
