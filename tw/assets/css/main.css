@@ -3499,12 +3499,17 @@
     display: inline-block;
     width: 33%;
 	height: 100%;
-	margin: 2.5em;
+	margin: 2em;
 	top: 1em;
 	margin-left: auto;
 	margin-right: auto;
     vertical-align: top;
 }
+    .block img {
+        height: 12em;
+        width: auto;
+        margin: auto;
+    }
 
 .page2 {
     color: #000;
