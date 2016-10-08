@@ -95,6 +95,12 @@
                         <h3>三峽老街地磚刨除事件聲明</h3>
                         <p><a href="#" class="button">連結</a></p>
                     </div>
+                    <div class="block news">
+                        <a href="#"><img src="images/msm.jpg"></a>
+                        <br>
+                        <h3>2017梅樹月</h3>
+                        <p><a href="../msm/" class="button">連結</a></p>
+                    </div>
                 </div>
             </div>
             <a href="#info" class="goto-next scrolly"></a>
