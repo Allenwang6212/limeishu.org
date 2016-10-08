@@ -363,9 +363,9 @@
 <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
 <link rel="stylesheet" href="assets/css/reset.css" />
+<link rel="stylesheet" href="assets/css/main.css" />
 <link rel="stylesheet" href="assets/css/smart.css" />
 <link rel="stylesheet" href="assets/css/size.css" />
-<link rel="stylesheet" href="assets/css/main.css" />
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>
 <script src="assets/js/jquery.dropotron.min.js"></script>
