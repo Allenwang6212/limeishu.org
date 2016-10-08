@@ -34,7 +34,7 @@
                                 舊有網站請至<a href="http://limeishu.org">這裡</a>
                             </p>
                             <hr>
-						    <a href="tw/index.html" class="button">中文</a>
+						    <a href="tw/" class="button">中文</a>
                             <a href="en-us/index.html" class="button">English</a>
                             <a href="jp/index.html" class="button">日本語</a>
 						</header>
