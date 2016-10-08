@@ -73,6 +73,7 @@
                 </div>
                 <a href="#news" class="goto-next scrolly"></a>
             </section>
+            <link rel="stylesheet" href="assets/css/block.css" />
             <section id="news" class="wrapper page style2">
             <div class="content" >
                 <h2>最新消息</h2>
@@ -338,6 +339,7 @@
             </div>
             
         </section>
+        <link rel="stylesheet" href="assets/css/footer.css" />
         <footer id="footer">
             <ul class="icons">
                 <li><a href="tel:0226732333" class="icon alt fa-phone" title="電話聯絡紀念館"><span class="label">Phone</span></a></li>
@@ -360,6 +362,9 @@
 <link rel="stylesheet" href="assets/css/bgstretcher.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+<link rel="stylesheet" href="assets/css/reset.css" />
+<link rel="stylesheet" href="assets/css/smart.css" />
+<link rel="stylesheet" href="assets/css/size.css" />
 <link rel="stylesheet" href="assets/css/main.css" />
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>
