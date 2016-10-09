@@ -549,9 +549,8 @@
     .block {
     	width: 100%;
     }
-    #info .wrapper.page2 {
-        height: 100%;
-        position: relative;
+    #info {
+        height: auto;
     }
 
     .block2 {
