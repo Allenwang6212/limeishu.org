@@ -544,6 +544,14 @@
     }
 }
 
+@media screen and (max-width: 1366px) {
+    .block.news img {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+}
+
 @media screen and (max-width: 980px){
 
     .block {
@@ -552,11 +560,6 @@
     #info {
         height: auto;
         width: auto;
-    }
-    .block.news img {
-        height: 100%;
-        width: 100%;
-        position: relative;
     }
 
     .block2 {
