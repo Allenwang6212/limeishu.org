@@ -13,7 +13,7 @@
 
 /* Large */
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1366px) {
 
 		/* Basic */
 
@@ -544,6 +544,7 @@
     }
 }
 
+
 @media screen and (max-width: 980px){
 
     .block {
@@ -551,6 +552,7 @@
     }
     #info {
         height: auto;
+        width: auto;
     }
 
     .block2 {
@@ -577,7 +579,7 @@
 }
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1366px) {
     .info {
 	    height: 100vh;
         width: 100%;
