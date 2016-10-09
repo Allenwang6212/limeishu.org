@@ -134,5 +134,8 @@ header.bg {
         padding: 0 2em;
         background-color: #fff;
     }
+    .wrapper.style4 .icon {
+        padding: auto;
+    }
     
 }
