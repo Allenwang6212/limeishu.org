@@ -553,6 +553,10 @@
         height: auto;
         width: auto;
     }
+    .block img {
+        height: auto;
+        width: auto;
+    }
 
     .block2 {
 	    width: 20%;
