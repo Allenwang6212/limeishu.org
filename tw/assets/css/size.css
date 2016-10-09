@@ -551,6 +551,7 @@
     }
     .info .wrapper.page2 {
         height: 100%;
+        position: relative;
     }
 
     .block2 {
