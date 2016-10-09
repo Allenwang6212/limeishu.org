@@ -154,12 +154,8 @@
                             <header>
                                 <h2>認識李梅樹</h2>
                                 <p>一位用生命照亮本土藝術的台灣畫家</p>
+                                <a href="introduction/limei-shu.html" class="button">了解更多</a
                             </header>
-                        </div>
-                        <div class="8u 12u$(medium)">
-                            <ul class="actions">
-                                <li><a href="introduction/limei-shu.html" class="button">了解更多</a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
