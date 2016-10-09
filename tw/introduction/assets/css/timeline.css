@@ -10,11 +10,21 @@
 .timeline {
     list-style: none;
 }
+h3 {
+    margin: 0;
+}
 .timeline > li {
     margin-bottom: 6em;
+    margin: 2em;
 }
 p {
     margin: auto;
+}
+.style1 {
+    background-color: rgba(111, 193, 115, 0.1);
+}
+.style2 {
+    background-color: rgba(255, 255, 255, 1);
 }
 
 /* for Desktop */
@@ -29,13 +39,7 @@ p {
         float: left;
         margin-top: 0;
     }
-    .timeline-content.style1 {
-        width: 70%;
-        float: left;
-        border-left: 2px rgba(111, 193, 115, 0.75) solid;
-        padding-left: 3em;
-    }
-    .timeline-content.style2 {
+    .timeline-content {
         width: 70%;
         float: left;
         border-left: 2px rgba(111, 193, 115, 0.75) solid;
