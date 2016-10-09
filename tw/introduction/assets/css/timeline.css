@@ -20,6 +20,9 @@ h3 {
 p {
     margin: auto;
 }
+.timeline-content p {
+    font-size: 0.9em;
+}
 .style1 {
     background-color: rgba(111, 193, 115, 0.1);
 }
