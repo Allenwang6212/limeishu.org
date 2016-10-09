@@ -43,8 +43,8 @@ p {
   }
   .timeline-content:before {
     content: '';
-    width: 1em;
-    height: 1em;
+    width: 1.015em;
+    height: 1.015em;
     background: #6fc173;
     position: absolute;
     left: 6em;
