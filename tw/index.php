@@ -79,11 +79,11 @@
                 <h2>最新消息</h2>
                 <div class="all-news">
                     <div class="block news">
-                        <a href="#"><img src="images/team.jpg"></a>
+                        <a href="#"><img src="images/sos.jpg"></a>
                         <br>
-                        <h3>三峽老街地磚刨除事件聲明</h3>
-                        <p><br><br>
-                        <a href="#" class="button">連結待公布</a>
+                        <h3>【老街川流．常民的腳印】</h3>
+                        <p>三峽老街常民故事特展<br><br>
+                        <a href="https://www.facebook.com/StoryofSanxiaOldStreet2016/" class="button">連結待公布</a>
                         </p>
                     </div>
                     <div class="block news">
