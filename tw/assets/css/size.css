@@ -556,6 +556,7 @@
     .block.news img {
         height: auto;
         width: auto;
+        position: relative;
     }
 
     .block2 {
