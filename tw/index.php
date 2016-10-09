@@ -93,8 +93,10 @@
                     <div class="block news">
                         <a href="#"><img src="images/team.jpg"></a>
                         <br>
-                        <h3>LocalGuides Meetup 三峽在地嚮導深度旅遊</h3>
-                        <p><a href="https://www.facebook.com/events/1637690463228486/" class="button">連結</a></p>
+                        <h3>LocalGuides Meetup</h3>
+                        <p> 三峽在地嚮導深度旅遊<br>
+                        <a href="https://www.facebook.com/events/1637690463228486/" class="button">連結</a>
+                        </p>
                     </div>
                     <div class="block news">
                         <a href="#"><img src="images/msm.jpg"></a>
