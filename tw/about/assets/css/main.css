@@ -73,7 +73,8 @@ header.bg {
     height: auto;
     min-height: 100%;
     }
-.icon {
+.wrapper.style4 .icon {
+    padding: 2em;
     color: #000;
     text-align: center;
     display: inline-block;
