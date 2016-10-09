@@ -550,6 +550,10 @@
         width: 100%;
         position: relative;
     }
+    #info {
+        height: auto;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 980px){
