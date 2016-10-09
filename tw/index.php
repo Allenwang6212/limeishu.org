@@ -20,6 +20,7 @@
                                 <li><a href="culture/news.htm">最新消息</a></li>
                                 <li><a href="culture/scenery.html">周邊景點</a></li>
                                 <li><a href="culture/shop.html">在地商家</a></li>
+                                <li><a href="culture/tempelate.html">三峽祖師廟</a></li>
                             </ul>
                         </li>
                         <li>
