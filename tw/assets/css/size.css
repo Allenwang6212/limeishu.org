@@ -553,9 +553,9 @@
         height: auto;
         width: auto;
     }
-    .block img {
+    .block.news img {
         height: auto;
-        width: auto;
+        width: 100%;
     }
 
     .block2 {
