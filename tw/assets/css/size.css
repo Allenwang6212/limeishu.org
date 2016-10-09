@@ -549,7 +549,7 @@
     .block {
     	width: 100%;
     }
-    .info .wrapper.page2 {
+    #info .wrapper.page2 {
         height: 100%;
         position: relative;
     }
