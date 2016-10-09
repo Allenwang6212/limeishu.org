@@ -110,7 +110,6 @@
                     </div>
                 </div>
             </div>
-            <a href="#info" class="goto-next scrolly"></a>
         </section>
         <section id="info" class="wrapper page2">
             <div class="content">
