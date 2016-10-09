@@ -549,8 +549,8 @@
     .block {
     	width: 100%;
     }
-    .wrapper.page2 {
-        height: auto;
+    .info .wrapper.page2 {
+        height: 100%;
     }
 
     .block2 {
