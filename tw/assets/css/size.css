@@ -544,17 +544,6 @@
     }
 }
 
-@media screen and (max-width: 1440px) {
-    .block.news img {
-        height: 100%;
-        width: 100%;
-        position: relative;
-    }
-    #info {
-        height: auto;
-        width: auto;
-    }
-}
 
 @media screen and (max-width: 980px){
 
