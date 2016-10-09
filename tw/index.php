@@ -83,7 +83,7 @@
                         <br>
                         <h3>【老街川流．常民的腳印】</h3>
                         <p>三峽老街常民故事特展<br><br>
-                        <a href="https://www.facebook.com/StoryofSanxiaOldStreet2016/" class="button">連結待公布</a>
+                        <a href="https://www.facebook.com/StoryofSanxiaOldStreet2016/" class="button">連結</a>
                         </p>
                     </div>
                     <div class="block news">
