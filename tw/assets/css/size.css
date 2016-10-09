@@ -544,7 +544,7 @@
     }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1440px) {
     .block.news img {
         height: 100%;
         width: 100%;
