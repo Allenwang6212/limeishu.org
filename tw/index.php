@@ -77,7 +77,7 @@
             <section id="news" class="wrapper page style2">
             <div class="content" >
                 <h2>最新消息</h2>
-                <div class="all-news">    
+                <div class="all-news">
                     <div class="block news">
                         <a href="#"><img src="images/team.jpg"></a>
                         <br>
@@ -93,8 +93,8 @@
                     <div class="block news">
                         <a href="#"><img src="images/team.jpg"></a>
                         <br>
-                        <h3>三峽老街地磚刨除事件聲明</h3>
-                        <p><a href="#" class="button">連結</a></p>
+                        <h3>LocalGuides Meetup 三峽在地嚮導深度旅遊</h3>
+                        <p><a href="https://www.facebook.com/events/1637690463228486/" class="button">連結</a></p>
                     </div>
                     <div class="block news">
                         <a href="#"><img src="images/msm.jpg"></a>
@@ -189,7 +189,7 @@
                         </div>
                     </div>
                 </div>
-            </div>   
+            </div>
         </section>
         <section id="five" class="spotlight style2 bottom frim">
             <span class="image fit main bottom"><img src="images/oam.jpg" alt="" /></span>
@@ -299,7 +299,7 @@
                                 </p>
                             </div>
                                 <h4 id="hint">(點擊選取圖示以獲得該交通路線之詳細交通說明)</h4>
-                            
+
                         </div>
                         <div id="maps" class="6u 12u$(medium)">
                                     <h2>聯絡資訊</h2>
@@ -332,7 +332,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
         <link rel="stylesheet" href="assets/css/footer.css" />
         <footer id="footer">
