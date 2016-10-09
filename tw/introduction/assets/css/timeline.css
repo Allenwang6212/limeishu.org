@@ -1,8 +1,20 @@
+/*Fix Old*/
+.wrapper {
+    height: auto;
+}
+.content {
+    text-align: left;
+}
+
+
 .timeline {
   list-style: none;
 }
 .timeline > li {
-  margin-bottom: 60px;
+  margin-bottom: 6em;
+}
+p {
+    margin: auto;
 }
 
 /* for Desktop */
@@ -13,24 +25,30 @@
     position: relative;
   }
   .timeline-date {
-    width: 110px;
+    width: 6em;
     float: left;
-    margin-top: 20px;
+    margin-top: 1em;
   }
-  .timeline-content {
-    width: 75%;
+  .timeline-content.style1 {
+    width: 70%;
     float: left;
-    border-left: 3px #e5e5d1 solid;
-    padding-left: 30px;
+    border-left: 2px rgba(111, 193, 115, 0.75) solid;
+    padding-left: 3em;
+  }
+  .timeline-content.style2 {
+    width: 70%;
+    float: left;
+    border-left: 2px rgba(111, 193, 115, 0.75) solid;
+    padding-left: 3em;
   }
   .timeline-content:before {
     content: '';
-    width: 12px;
-    height: 12px;
+    width: 1em;
+    height: 1em;
     background: #6fc173;
     position: absolute;
-    left: 106px;
-    top: 24px;
+    left: 6em;
+    top: 1em;
     border-radius: 100%;
   }
 }
