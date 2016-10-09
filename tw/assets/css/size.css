@@ -548,6 +548,8 @@
 
     .block {
     	width: 100%;
+    }
+    .wrapper.page2 {
         height: auto;
     }
 
