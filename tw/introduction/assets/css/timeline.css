@@ -59,3 +59,17 @@ p {
         border-radius: 100%;
     }
 }
+@media ( max-width : 640px ) {
+    .wrapper.style4 {
+        padding: 0;
+    }
+    .wrapper.style4 ul {
+        padding: 0;
+    }
+    .timeline-content {
+        padding: 0;
+    }
+    .timeline li {
+        margin: 0;
+    }
+}
