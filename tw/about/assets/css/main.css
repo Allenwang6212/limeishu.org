@@ -141,6 +141,6 @@ header.bg {
 }
 @media screen and (max-width: 980px){
     .wrapper.style4 .icon {
-        padding: 2em;
+        padding: 0em;
     }
 }
