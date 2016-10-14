@@ -54,12 +54,24 @@
                 <li><a href="https://github.com/ZLCSC" class="icon alt fa-github" title="取得紀念館網站原始碼"><span class="label">GitHub</span></a></li>
             </ul>
             <ul class="copyright">
-                <li>&copy; 2016. 李梅樹紀念館 Li Mei-shu Memorial Gallery.</li><li> Design: LIT Team</li>
-				<li>本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">創用 CC BY-NC-ND 4.0 國際授權條款</a>授權.</li>
-				<li>建議使用<a href="https://www.mozilla.org">Firefox瀏覽器</a></li>
-            </ul>
+						<li>&copy; 2016. 李梅樹紀念館 Li Mei-shu Memorial Gallery.</li><li> Design: LIT Team</li>
+					</ul>
+					<ul class="copyright">
+						<li>本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">創用 CC BY-NC-ND 4.0 國際授權條款</a>授權.</li>
+						<li>建議使用<a href="https://www.mozilla.org">Firefox瀏覽器</a></li>
+					</ul>
         </footer>
 	</body>
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85167069-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </html>
 <link rel="stylesheet" href="assets/css/reset.css" />
 <link rel="stylesheet" href="assets/css/launguage.css" />
