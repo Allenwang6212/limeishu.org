@@ -23,7 +23,7 @@
     text-align: center;
     display: inline-block;
     width: 33%;
-    height: auto;
+    height: 50%;
     margin: 2em;
     top: 1em;
     margin-left: auto;
@@ -32,7 +32,7 @@
 }
     .block img {
         height: 12em;
-        width: auto;
+        width: 33%;
         margin: auto;
     }
 
