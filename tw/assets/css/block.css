@@ -33,7 +33,7 @@
     .block img {
         height: 12em;
         width: auto;
-        margin: auto;
+        margin: 0;
     }
 
 .page2 {
