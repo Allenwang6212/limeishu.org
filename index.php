@@ -55,9 +55,6 @@
             </ul>
             <ul class="copyright">
                 <li>&copy; 2016. 李梅樹紀念館 Li Mei-shu Memorial Gallery.</li><li> Design: LIT Team</li>
-            </ul>
-				<ul class="copyright">
-                <li>&copy; 2016. 李梅樹紀念館 Li Mei-shu Memorial Gallery.</li><li> Design: LIT Team</li>
 				<li>本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">創用 CC BY-NC-ND 4.0 國際授權條款</a>授權.</li>
 				<li>建議使用<a href="https://www.mozilla.org">Firefox瀏覽器</a></li>
             </ul>
