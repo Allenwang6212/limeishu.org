@@ -17,22 +17,9 @@
     width:100%;
     padding: 0 0.5em;
 }
-
 .block {
-    color: #fff;
     text-align: center;
-    display: inline-block;
-    width: 33%;
-    height: 100%;
-    margin: 1em;
-    top: 1em;
-    vertical-align: top;
 }
-    .block img {
-        height: 12em;
-        width: auto;
-        margin: 0;
-    }
 
 .page2 {
     color: #000;
@@ -123,3 +110,4 @@
 #mrt > p ,#rail > p ,#bus > p,#car > p {
     text-align: left;
 }
+
