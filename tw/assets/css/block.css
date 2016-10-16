@@ -26,12 +26,10 @@
     height: 100%;
     margin: 1em;
     top: 1em;
-    margin-left: auto;
-    margin-right: auto;
     vertical-align: top;
 }
     .block img {
-        height: 9em;
+        height: 12em;
         width: auto;
         margin: 0;
     }
