@@ -251,6 +251,16 @@
                     <div class="row">
                         <div class="6u 12u$(medium)">
                            <h2>詳細交通方式</h2>
+                           <style type="text/css">
+                            .block2 a {
+                                border-style: solid;
+                                color: #111;
+                                border-color: #111;
+                                border: 1px;
+                                transition: none;
+                                box-shadow: inset 0 0 0 1px #111;
+                            }
+                        </style>
                             <div class="block2">
                                 <a href="#rails" id="traffic1"><img src="images/Icon/home/train/train.png"></a>
                                 <br>
