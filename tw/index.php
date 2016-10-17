@@ -250,7 +250,7 @@
                 <div class="container">
                     <div class="row">
                         <style type="text/css">
-                            .trafic-info a {
+                            .trafic-info a.button {
                                 box-shadow: inset 0 0 0 1px #111;
                                 color: #000;
                             }
@@ -324,7 +324,7 @@
                                 <a href="https://www.google.com.tw/maps/place/%E6%9D%8E%E6%A2%85%E6%A8%B9%E7%B4%80%E5%BF%B5%E9%A4%A8/@24.9305631,121.3706709,17z/data=!3m1!4b1!4m5!3m4!1s0x34681bec4aab9289:0x19406de61e70b2d4!8m2!3d24.9305583!4d121.3728596" class="button">打開地圖</a>
                         </div>
                         <style type="text/css">
-                            #maps a {
+                            #maps a.button {
                                 border-style: solid;
                                 color: #111;
                                 border-color: #111;
@@ -332,7 +332,7 @@
                                 transition: none;
                                 box-shadow: inset 0 0 0 1px #111;
                             }
-                            #maps a:hover {
+                            #maps a.button:hover {
                                 border-style: solid;
                                 color: #44731d;
                                 border-color: #44731d;
