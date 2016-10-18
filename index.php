@@ -11,14 +11,14 @@ include(a3-lazy-load/a3-lazy-load.php);
         <link rel="preload" href="assets/css/size.css" as="style" onload="this.rel='stylesheet'"/>
         <link rel="preload" href="assets/css/reset.css" as="style" onload="this.rel='stylesheet'"/>
 		<title>李梅樹紀念館 - The Li Mei-shu Memorial Gallery</title>
-		<noscript><link rel="stylesheet" href="assets/css/reset.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/reset.css" />
 		<meta charset="utf-8" />
 		<link rel="alternate" hreflang="x" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="Cache-Control" content="no-cache" />
-        <noscript><link rel="stylesheet" href="assets/css/font.css" /></noscript>
+        <link rel="stylesheet" href="assets/css/font.css" />
         <body>
-               <noscript><link rel="stylesheet" href="assets/css/launguage.css" /></noscript>
+               <link rel="stylesheet" href="assets/css/launguage.css" />
                 <!-- 首頁 -->
 				<section id="banner">
 					<div class="content">
