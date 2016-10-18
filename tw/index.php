@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
 <?php
-include(../index.php);
+include(a3-lazy-load/a3-lazy-load.php);
 ?>
+<!DOCTYPE HTML>
 <html>
     <head>
         <title>李梅樹紀念館</title>
