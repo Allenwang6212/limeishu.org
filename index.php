@@ -18,6 +18,7 @@ include(a3-lazy-load/a3-lazy-load.php);
         <meta name="Cache-Control" content="no-cache" />
         <noscript><link rel="stylesheet" href="assets/css/font.css" /></noscript>
         <body>
+               <noscript><link rel="stylesheet" href="assets/css/launguage.css" /></noscript>
                 <!-- 首頁 -->
 				<section id="banner">
 					<div class="content">
@@ -93,5 +94,4 @@ include(a3-lazy-load/a3-lazy-load.php);
                'assets/css/images/BG4.jpg'
              );
 </script>
-    <noscript><link rel="stylesheet" href="assets/css/launguage.css" /></noscript>
     <noscript><link rel="stylesheet" href="assets/css/size.css" /></noscript>
