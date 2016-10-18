@@ -68,6 +68,7 @@ include(a3-lazy-load/a3-lazy-load.php);
             </ul>
         </footer>
 	</body>
+	<noscript><link rel="stylesheet" href="assets/css/size.css" /></noscript>
 </html>
 <script>
       function loadCSS(href){
@@ -94,4 +95,3 @@ include(a3-lazy-load/a3-lazy-load.php);
                'assets/css/images/BG4.jpg'
              );
 </script>
-    <noscript><link rel="stylesheet" href="assets/css/size.css" /></noscript>
