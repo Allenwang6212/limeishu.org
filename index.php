@@ -10,16 +10,6 @@
 		<link rel="alternate" hreflang="x" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="Cache-Control" content="no-cache" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.preload.min.js"></script>
-        <script type="application/javascript">
-            $.preload( '/img/space.gif',
-                '../assets/css/images/BG1.jpg',
-                '../assets/css/images/BG2.jpg',
-                '../assets/css/images/BG3.jpg',
-                '../assets/css/images/BG4.jpg'
-            );
-        </script>
         <body>
                 <!-- 首頁 -->
 				<section id="banner">
@@ -70,6 +60,16 @@
             </ul>
         </footer>
 	</body>
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.preload.min.js"></script>
+        <script type="application/javascript">
+            $.preload( '/img/space.gif',
+                '../assets/css/images/BG1.jpg',
+                '../assets/css/images/BG2.jpg',
+                '../assets/css/images/BG3.jpg',
+                '../assets/css/images/BG4.jpg'
+            );
+        </script>
       <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
