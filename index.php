@@ -18,8 +18,9 @@ include(a3-lazy-load/a3-lazy-load.php);
         <meta name="Cache-Control" content="no-cache" />
         <link rel="stylesheet" href="assets/css/font.css" />
         <body>
-               <link rel="stylesheet" href="assets/css/launguage.css" />
+                <link rel="stylesheet" href="assets/css/launguage.css" />
                 <!-- 首頁 -->
+                <link rel="stylesheet" href="assets/css/banner.css">
 				<section id="banner">
 					<div class="content">
 						<header>
@@ -53,6 +54,7 @@ include(a3-lazy-load/a3-lazy-load.php);
 						
 					</div>
                 </section>
+            <link rel="stylesheet" href="assets/css/footer.css">
         <footer id="footer">
             <ul class="icons">
                 <li><a href="tel:0226732333" class="icon alt fa-phone" title="電話聯絡紀念館"><span class="label">Phone</span></a></li>
