@@ -18,9 +18,23 @@ include(a3-lazy-load/a3-lazy-load.php);
         <meta name="Cache-Control" content="no-cache" />
         <link rel="stylesheet" href="assets/css/font.css" />
         <body>
-                <link rel="stylesheet" href="assets/css/launguage.css" />
-                <!-- 首頁 -->
-                <link rel="stylesheet" href="assets/css/banner.css">
+            <link rel="stylesheet" href="assets/css/launguage.css" />
+            <link rel="stylesheet" href="assets/css/banner.css">
+            <style>
+                #banner {
+		            background-attachment: fixed;
+                    background-color: #2c2721;
+                    background-image: url(images/BG4.jpg);
+                    background-position: center center;
+                    background-size: cover;
+                    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+                    text-align: center;
+                    padding: 1em;
+                    animation: 20s pic ease-in-out infinite;
+                    -webkit-animation: 20s pic ease-in-out infinite;
+                    -ms-animation: 20s pic ease-in-out infinite;
+	           }
+            </style>
 				<section id="banner">
 					<div class="content">
 						<header>
