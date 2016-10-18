@@ -9,7 +9,17 @@
 		<meta charset="utf-8" />
 		<link rel="alternate" hreflang="x" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="Cache-Control" content="no-cache" />       
+        <meta name="Cache-Control" content="no-cache" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.preload.min.js"></script>
+        <script type="application/javascript">
+            $.preload( '/img/space.gif',
+                '../assets/css/images/BG1.jpg',
+                '../assets/css/images/BG2.jpg',
+                '../assets/css/images/BG3.jpg',
+                '../assets/css/images/BG4.jpg'
+            );
+        </script>
         <body>
                 <!-- 首頁 -->
 				<section id="banner">
