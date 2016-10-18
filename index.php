@@ -81,10 +81,10 @@ include(a3-lazy-load/a3-lazy-load.php);
     (function(a){a.preload=function(){var d=Object.prototype.toString.call(arguments[0])==="[object Array]"?arguments[0]:arguments;
     var c=[];var b=d.length;for(;b--;){c.push(a("<img />").attr("src",d[b]));}};})(jQuery);
     $.preload(
-               '../assets/css/images/BG1.jpg',
-               '../assets/css/images/BG2.jpg',
-               '../assets/css/images/BG3.jpg',
-               '../assets/css/images/BG4.jpg'
+               'assets/css/images/BG1.jpg',
+               'assets/css/images/BG2.jpg',
+               'assets/css/images/BG3.jpg',
+               'assets/css/images/BG4.jpg'
              );
 </script>
 <link rel="stylesheet" href="assets/css/launguage.css" />
