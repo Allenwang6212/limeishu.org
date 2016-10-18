@@ -5,11 +5,12 @@
 <html>
 	<head>
 		<title>李梅樹紀念館 - The Li Mei-shu Memorial Gallery</title>
-		
+		<link rel="stylesheet" href="assets/css/reset.css" />
 		<meta charset="utf-8" />
 		<link rel="alternate" hreflang="x" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="Cache-Control" content="no-cache" />
+        <link rel="stylesheet" href="assets/css/font.css" />
         <body>
                 <!-- 首頁 -->
 				<section id="banner">
@@ -81,7 +82,5 @@
 
 </script>
 </html>
-<link rel="stylesheet" href="assets/css/reset.css" />
 <link rel="stylesheet" href="assets/css/launguage.css" />
 <link rel="stylesheet" href="assets/css/size.css" />
-<link rel="stylesheet" href="assets/css/font.css" />
