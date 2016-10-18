@@ -76,7 +76,7 @@ include(a3-lazy-load/a3-lazy-load.php);
       }
       loadCss('launguage.css');
 </script>
-<script type="text/javascript" src="tw/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="tw/assets/js/jquery.min.js" async></script>
 <script type="application/javascript">
     (function(a){a.preload=function(){var d=Object.prototype.toString.call(arguments[0])==="[object Array]"?arguments[0]:arguments;
     var c=[];var b=d.length;for(;b--;){c.push(a("<img />").attr("src",d[b]));}};})(jQuery);
