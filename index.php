@@ -5,10 +5,8 @@ include(a3-lazy-load/a3-lazy-load.php);
 <html>
 	<head>
 	    <link rel="preload" href="assets/css/launguage.css" as="style" onload="this.rel='stylesheet'"/>
-        <link rel="preload" href="assets/css/size.css" as="style" onload="this.rel='stylesheet'"/>
         <link rel="preload" href="assets/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'"/>
         <link rel="preload" href="assets/css/font.css" as="style" onload="this.rel='stylesheet'"/>
-        <link rel="preload" href="assets/css/size.css" as="style" onload="this.rel='stylesheet'"/>
         <link rel="preload" href="assets/css/reset.css" as="style" onload="this.rel='stylesheet'"/>
 		<title>李梅樹紀念館 - The Li Mei-shu Memorial Gallery</title>
 		<link rel="stylesheet" href="assets/css/reset.css" />
@@ -19,7 +17,6 @@ include(a3-lazy-load/a3-lazy-load.php);
         <link rel="stylesheet" href="assets/css/font.css" />
         <body>
             <link rel="stylesheet" href="assets/css/launguage.css" />
-            <link rel="stylesheet" href="assets/css/banner.css">
             <style>
                 #banner {
 		            background-attachment: fixed;
@@ -80,7 +77,6 @@ include(a3-lazy-load/a3-lazy-load.php);
 						
 					</div>
                 </section>
-            <link rel="stylesheet" href="assets/css/footer.css">
         <footer id="footer">
             <ul class="icons">
                 <li><a href="tel:0226732333" class="icon alt fa-phone" title="電話聯絡紀念館"><span class="label">Phone</span></a></li>
@@ -109,7 +105,6 @@ include(a3-lazy-load/a3-lazy-load.php);
             else window.addEventListener('load', loadDeferredStyles);
         </script>
 	</body>
-	<link rel="stylesheet" href="assets/css/size.css" />
 </html>
 <script type="text/javascript" src="tw/assets/js/jquery.min.js" async></script>
 <script type="application/javascript">
