@@ -62,15 +62,29 @@ include(a3-lazy-load/a3-lazy-load.php);
         </footer>
 	</body>
 </html>
+<script>
+      function loadCSS(href){
+        var ss = window.document.createElement('link'),
+            ref = window.document.getElementsByTagName('head')[0];
+        ss.rel = 'stylesheet';
+        ss.href = href;
+        ss.media = 'only x';
+        ref.parentNode.insertBefore(ss, ref);
+        setTimeout( function(){
+          ss.media = 'all';
+        },0);
+      }
+      loadCss('launguage.css');
+</script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.preload.min.js"></script>
-    <script type="application/javascript">
+<script type="text/javascript" src="assets/js/jquery.preload.min.js"></script>
+<script type="application/javascript">
             $.preload( '/img/space.gif',
                 '../assets/css/images/BG1.jpg',
                 '../assets/css/images/BG2.jpg',
                 '../assets/css/images/BG3.jpg',
                 '../assets/css/images/BG4.jpg'
             );
-    </script>
+</script>
 <link rel="stylesheet" href="assets/css/launguage.css" />
 <link rel="stylesheet" href="assets/css/size.css" />
