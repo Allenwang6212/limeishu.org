@@ -36,6 +36,18 @@ include(a3-lazy-load/a3-lazy-load.php);
 	           }
             </style>
 				<section id="banner">
+				<style>
+                    #banner .content {
+                        display: inline-block;
+                        margin-right: 1%;
+                        max-width: 100%;
+                        padding: 12% 0;
+                        position: relative;
+                        text-align: right;
+                        vertical-align: middle;
+                        z-index: 1;
+                    }
+                </style>
 					<div class="content">
 						<header>
 							<h2>李梅樹紀念館</h2>
