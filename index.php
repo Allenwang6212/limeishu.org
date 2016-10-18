@@ -61,7 +61,8 @@ include(a3-lazy-load/a3-lazy-load.php);
             </ul>
         </footer>
 	</body>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+</html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.preload.min.js"></script>
     <script type="application/javascript">
             $.preload( '/img/space.gif',
@@ -71,6 +72,5 @@ include(a3-lazy-load/a3-lazy-load.php);
                 '../assets/css/images/BG4.jpg'
             );
     </script>
-</html>
 <link rel="stylesheet" href="assets/css/launguage.css" />
 <link rel="stylesheet" href="assets/css/size.css" />
