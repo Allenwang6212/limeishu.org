@@ -68,22 +68,8 @@ include(a3-lazy-load/a3-lazy-load.php);
             </ul>
         </footer>
 	</body>
-	<noscript><link rel="stylesheet" href="assets/css/size.css" /></noscript>
+	<link rel="stylesheet" href="assets/css/size.css" />
 </html>
-<script>
-      function loadCSS(href){
-        var ss = window.document.createElement('link'),
-            ref = window.document.getElementsByTagName('head')[0];
-        ss.rel = 'stylesheet';
-        ss.href = href;
-        ss.media = 'only x';
-        ref.parentNode.insertBefore(ss, ref);
-        setTimeout( function(){
-          ss.media = 'all';
-        },0);
-      }
-      loadCss('launguage.css');
-</script>
 <script type="text/javascript" src="tw/assets/js/jquery.min.js" async></script>
 <script type="application/javascript">
     (function(a){a.preload=function(){var d=Object.prototype.toString.call(arguments[0])==="[object Array]"?arguments[0]:arguments;
