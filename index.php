@@ -76,15 +76,16 @@ include(a3-lazy-load/a3-lazy-load.php);
       }
       loadCss('launguage.css');
 </script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.preload.min.js"></script>
+<script type="text/javascript" src="tw/assets/js/jquery.min.js"></script>
 <script type="application/javascript">
-            $.preload( '/img/space.gif',
-                '../assets/css/images/BG1.jpg',
-                '../assets/css/images/BG2.jpg',
-                '../assets/css/images/BG3.jpg',
-                '../assets/css/images/BG4.jpg'
-            );
+    (function(a){a.preload=function(){var d=Object.prototype.toString.call(arguments[0])==="[object Array]"?arguments[0]:arguments;
+    var c=[];var b=d.length;for(;b--;){c.push(a("<img />").attr("src",d[b]));}};})(jQuery);
+    $.preload( '/img/space.gif',
+               '../assets/css/images/BG1.jpg',
+               '../assets/css/images/BG2.jpg',
+               '../assets/css/images/BG3.jpg',
+               '../assets/css/images/BG4.jpg'
+             );
 </script>
 <link rel="stylesheet" href="assets/css/launguage.css" />
 <link rel="stylesheet" href="assets/css/size.css" />
