@@ -4,8 +4,14 @@ include(a3-lazy-load/a3-lazy-load.php);
 ?>
 <html>
 	<head>
+	    <link rel="preload" href="assets/css/launguage.css" as="style" onload="this.rel='stylesheet'"/>
+        <link rel="preload" href="assets/css/size.css" as="style" onload="this.rel='stylesheet'"/>
+        <link rel="preload" href="assets/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'"/>
+        <link rel="preload" href="assets/css/font.css" as="style" onload="this.rel='stylesheet'"/>
+        <link rel="preload" href="assets/css/size.css" as="style" onload="this.rel='stylesheet'"/>
+        <link rel="preload" href="assets/css/reset.css" as="style" onload="this.rel='stylesheet'"/>
 		<title>李梅樹紀念館 - The Li Mei-shu Memorial Gallery</title>
-		<link rel="stylesheet" href="assets/css/reset.css" />
+		<noscript><link rel="stylesheet" href="assets/css/reset.css" /></noscript>
 		<meta charset="utf-8" />
 		<link rel="alternate" hreflang="x" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
