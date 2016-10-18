@@ -95,6 +95,19 @@ include(a3-lazy-load/a3-lazy-load.php);
 				<li>建議使用<a href="https://www.mozilla.org">Firefox瀏覽器</a></li>
             </ul>
         </footer>
+        <script>
+            var loadDeferredStyles = function() {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+            };
+            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+                webkitRequestAnimationFrame || msRequestAnimationFrame;
+            if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+            else window.addEventListener('load', loadDeferredStyles);
+        </script>
 	</body>
 	<link rel="stylesheet" href="assets/css/size.css" />
 </html>
