@@ -16,7 +16,7 @@ include(a3-lazy-load/a3-lazy-load.php);
 		<link rel="alternate" hreflang="x" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="Cache-Control" content="no-cache" />
-        <link rel="stylesheet" href="assets/css/font.css" />
+        <noscript><link rel="stylesheet" href="assets/css/font.css" /></noscript>
         <body>
                 <!-- 首頁 -->
 				<section id="banner">
@@ -93,5 +93,5 @@ include(a3-lazy-load/a3-lazy-load.php);
                'assets/css/images/BG4.jpg'
              );
 </script>
-<link rel="stylesheet" href="assets/css/launguage.css" />
-<link rel="stylesheet" href="assets/css/size.css" />
+    <noscript><link rel="stylesheet" href="assets/css/launguage.css" /></noscript>
+    <noscript><link rel="stylesheet" href="assets/css/size.css" /></noscript>
