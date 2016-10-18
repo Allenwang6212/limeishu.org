@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <?php
-include(./../a3-lazy-load/a3-lazy-load.php);
+include(../index.php);
 ?>
 <html>
     <head>
