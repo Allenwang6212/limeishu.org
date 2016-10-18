@@ -2,6 +2,9 @@
 <!--
 
 -->
+<?php
+include(a3-lazy-load/a3-lazy-load.php);
+?>
 <html>
 	<head>
 		<title>李梅樹紀念館 - The Li Mei-shu Memorial Gallery</title>
