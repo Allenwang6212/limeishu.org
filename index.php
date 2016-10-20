@@ -28,7 +28,7 @@
 
         var b = document.createElement('link');
         b.rel = 'stylesheet';
-        b.href = '/assets/css/launguage.css';
+        b.href = '/assets/css/size.css';
 
         var c = document.createElement('link');
         b.rel = 'stylesheet';
@@ -36,7 +36,7 @@
 
         var d = document.createElement('link');
         b.rel = 'stylesheet';
-        b.href = '/assets/css/size.css';
+        b.href = '/assets/css/launguage.css';
 
         var z = document.getElementsByTagName('head')[0];
         z.parentNode.insertBefore(a,z);
@@ -106,3 +106,4 @@
 				        </footer>
 	</body>
 </html>
+<link rel="stylesheet" href="assets/css/size.css">
