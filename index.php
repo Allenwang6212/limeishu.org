@@ -21,28 +21,22 @@
         </script>
         <script type="application/javascript" src="assets/js/loadcss.js" async></script>
 <script>
-    var cb = function() {
-        var a = document.createElement('link');
-        a.rel = 'stylesheet';
-        a.href = '/assets/css/reset.css';
+    function loadCss(filename) {
+    var l = document.createElement('link');
+    l.rel = 'stylesheet';
+    l.href = filename
+    var h = document.getElementsByTagName('head')[0];
+    h.parentNode.insertBefore(l, h);
+}
 
-        var c = document.createElement('link');
-        b.rel = 'stylesheet';
-        b.href = '/assets/css/font.css';
+function cb() {
+    loadCss('/assets/css/reset.css');
+    loadCss('/assets/css/launguage.css');
+    loadCss('/assets/css/font.css');
+    loadCss('/assets/css/size.css');
+}
 
-        var d = document.createElement('link');
-        b.rel = 'stylesheet';
-        b.href = '/assets/css/launguage.css';
-
-        var z = document.getElementsByTagName('head')[0];
-        z.parentNode.insertBefore(a,z);
-        z.parentNode.insertBefore(c,z);
-        z.parentNode.insertBefore(d,z);
-    };
-        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-        webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(cb);
-    else window.addEventListener('load', cb);
+window.addEventListener('load', cb);
 </script>
         <body>
                 <!-- 首頁 -->
