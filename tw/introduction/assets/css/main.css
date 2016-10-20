@@ -142,7 +142,7 @@ header.bg {
     
 }
 @media screen and (max-width: 480px){
-    .bg {
-        height: 3em;
+    header.bg {
+        height: 1em;
     }
 }
