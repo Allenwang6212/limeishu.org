@@ -101,5 +101,4 @@
 				        </footer>
 	</body>
 </html>
-<link rel="stylesheet" href="assets/css/launguage.css">
 <link rel="stylesheet" href="assets/css/size.css">
