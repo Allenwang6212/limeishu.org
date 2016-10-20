@@ -20,15 +20,11 @@
             );
         </script>
         <script type="application/javascript" src="assets/js/loadcss.js" async></script>
-<script>
+<script async>
     var cb = function() {
         var a = document.createElement('link');
         a.rel = 'stylesheet';
         a.href = '/assets/css/reset.css';
-
-        var b = document.createElement('link');
-        b.rel = 'stylesheet';
-        b.href = '/assets/css/size.css';
 
         var c = document.createElement('link');
         b.rel = 'stylesheet';
@@ -40,7 +36,6 @@
 
         var z = document.getElementsByTagName('head')[0];
         z.parentNode.insertBefore(a,z);
-        z.parentNode.insertBefore(b,z);
         z.parentNode.insertBefore(c,z);
         z.parentNode.insertBefore(d,z);
     };
