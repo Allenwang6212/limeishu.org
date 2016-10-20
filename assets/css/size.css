@@ -1,3 +1,7 @@
+#banner .content .image.mobile {
+    display: none;
+}
+
 /* XLarge */
 
 	@media screen and (max-width: 1280px) {
@@ -40,8 +44,14 @@
 					}
 
 					#banner .content .image {
-						margin: 0;
+						display: none;
 					}
+
+                    #banner .content .image.mobile {
+                        margin: auto;
+                        display: block;
+                    }
+
 
 		/* Footer */
 
