@@ -142,7 +142,17 @@ header.bg {
     
 }
 @media screen and (max-width: 480px){
-    header.bg {
-        height: 1em;
+    header {
+        padding: 1em;
+    }
+    .bg {
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .bg,
+    .bg:after
+    {
+        height: 100%;
     }
 }
