@@ -20,7 +20,7 @@
             );
         </script>
         <script type="application/javascript" src="assets/js/loadcss.js" async></script>
-<script async>
+<script>
     function loadCss(filename) {
     var l = document.createElement('link');
     l.rel = 'stylesheet';
