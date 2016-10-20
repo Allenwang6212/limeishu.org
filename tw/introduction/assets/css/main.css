@@ -108,6 +108,15 @@ header.bg {
         border-style: solid;
         border-color: #44731d !important;
 }
+
+.content.introduction {
+    text-align: left;
+}
+
+.content.introduction h1 {
+    font-size: 3em;
+}
+
 @media screen and (max-width: 980px){
    
     .bg {
