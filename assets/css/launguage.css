@@ -610,9 +610,9 @@
 		position: relative;
 		text-align: center;
         padding: 1em;
-        animation: 20s pic ease-in-out infinite;
-        -webkit-animation: 20s pic ease-in-out infinite;
-        -ms-animation: 20s pic ease-in-out infinite;
+        animation: 15s pic ease-in-out infinite;
+        -webkit-animation: 15s pic ease-in-out infinite;
+        -ms-animation: 15s pic ease-in-out infinite;
 	}
 
 
