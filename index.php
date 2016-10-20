@@ -77,9 +77,32 @@
 	</body>
 </html>
 <script type="application/javascript" src="assets/js/loadcss.js" async></script>
-<script type="application/javascript" id="loadcss">
-    loadCSS( "../assets/css/reset.css", document.getElementById("loadcss") );
-    loadCSS( "../assets/css/launguage.css", document.getElementById("loadcss") );
-    loadCSS( "../assets/css/size.css", document.getElementById("loadcss") );
-    loadCSS( "../assets/css/font.css", document.getElementById("loadcss") );
+<script>
+    var cb = function() {
+        var a = document.createElement('link');
+        a.rel = 'stylesheet';
+        a.href = '/assets/css/reset.css';
+
+        var b = document.createElement('link');
+        b.rel = 'stylesheet';
+        b.href = '/assets/css/launguage.css';
+
+        var c = document.createElement('link');
+        b.rel = 'stylesheet';
+        b.href = '/assets/css/font.css';
+
+        var d = document.createElement('link');
+        b.rel = 'stylesheet';
+        b.href = '/assets/css/size.css';
+
+        var z = document.getElementsByTagName('head')[0];
+        z.parentNode.insertBefore(a,z);
+        z.parentNode.insertBefore(b,z);
+        z.parentNode.insertBefore(c,z);
+        z.parentNode.insertBefore(d,z);
+    };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
 </script>
