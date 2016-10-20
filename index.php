@@ -24,6 +24,10 @@
                 <!-- 首頁 -->
 				<section id="banner">
 					<div class="content">
+					    <header>
+						    <span class="image mobile">
+						    <img src="assets/css/images/hend.jpg"></span>
+						</header>
 						<header>
 							<h2>李梅樹紀念館</h2>
                             <p>The Li Mei-shu Memorial Gallery</p>
