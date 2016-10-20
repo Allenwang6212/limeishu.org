@@ -19,7 +19,7 @@
                 '../assets/css/images/BG4.jpg'
             );
         </script>
-        <script type="application/javascript" src="assets/js/loadcss.js" async></script>
+        <script type="application/javascript" src="assets/js/loadcss.js"></script>
 <script>
     var cb = function() {
         var a = document.createElement('link');
