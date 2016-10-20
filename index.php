@@ -33,9 +33,25 @@
                             <p>The Li Mei-shu Memorial Gallery</p>
                             <p>用藝術，說土地的故事</p>
                             <hr>
-						    <a href="introduction.htm" class="button">中文</a>
-                            <a href="anglais/anglais.htm" class="button">English</a>
-                            <a href="nihongo/nihongo.htm" class="button">日本語</a>
+                             <style>
+                                .warning {
+                                    text-align: center;
+                                    display: block;
+                                    border: .001em;
+	                                border-radius: .5em;
+                                    border-color: #fff;
+                                    border-style: solid;
+                                    padding: .5em;
+                                }
+                            </style>
+                            <p class="warning">
+                                本網站正在整新開發中，期待帶給您更好的服務<br>
+                                舊有網站請至<a href="http://limeishu.org">這裡</a>
+                            </p>
+                            <hr>
+						    <a href="tw/" class="button">中文</a>
+                            <a href="en-us/index.html" class="button">English</a>
+                            <a href="jp/index.html" class="button">日本語</a>
 						</header>
 						<header>
 						    <span class="image">
