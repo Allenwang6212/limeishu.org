@@ -10,7 +10,6 @@
 		<link rel="alternate" hreflang="x" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="Cache-Control" content="no-cache" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" async></script>
         <body>
                 <!-- 首頁 -->
 				<section id="banner">
@@ -68,14 +67,15 @@
 				        </footer>
 	</body>
 </html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" async></script>
 <script type="text/javascript" src="assets/js/jquery.preload.min.js" async></script>
-        <script type="application/javascript">
-            $.preload( 'assets/css/images/BG1.jpg',
-                      'assets/css/images/BG2.jpg',
-                      'assets/css/images/BG3.jpg',
-                      'assets/css/images/BG4.jpg'
-            );
-        </script>
+<script type="application/javascript">
+$.preload( '/assets/css/images/BG1.jpg',
+        '/assets/css/images/BG2.jpg',
+        '/assets/css/images/BG3.jpg',
+        '/assets/css/images/BG4.jpg'
+);
+</script>
 <link rel="stylesheet" href="assets/css/reset.css" />
 <link rel="stylesheet" href="assets/css/launguage.css" />
 <link rel="stylesheet" href="assets/css/size.css" />
