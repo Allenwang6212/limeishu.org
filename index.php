@@ -76,10 +76,10 @@
 				        </footer>
 	</body>
 </html>
-<script type="application/javascript">
-
+<script type="application/javascript" src="assets/js/loadcss.js"></script>
+<script type="application/javascript" id="loadcss">
+    loadCSS( "../assets/css/reset.css", document.getElementById("loadcss") );
+    loadCSS( "../assets/css/launguage.css", document.getElementById("loadcss") );
+    loadCSS( "../assets/css/size.css", document.getElementById("loadcss") );
+    loadCSS( "../assets/css/font.css", document.getElementById("loadcss") );
 </script>
-<link rel="stylesheet" href="assets/css/reset.css" />
-<link rel="stylesheet" href="assets/css/launguage.css" />
-<link rel="stylesheet" href="assets/css/size.css" />
-<link rel="stylesheet" href="assets/css/font.css" />
