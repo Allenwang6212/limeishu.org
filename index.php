@@ -76,7 +76,7 @@
 				        </footer>
 	</body>
 </html>
-<script type="application/javascript" src="assets/js/loadcss.js"></script>
+<script type="application/javascript" src="assets/js/loadcss.js" async></script>
 <script type="application/javascript" id="loadcss">
     loadCSS( "../assets/css/reset.css", document.getElementById("loadcss") );
     loadCSS( "../assets/css/launguage.css", document.getElementById("loadcss") );
