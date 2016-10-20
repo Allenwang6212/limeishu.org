@@ -49,6 +49,10 @@ header.bg {
     .content #introduction_1 {
         text-align: left;
     }
+.wrapper {
+    height: 100%;
+}
+
 .wrapper.style4 a.button {
 	border-style: solid;
     color: #111;
