@@ -1,9 +1,10 @@
 .bg {
-    background-image: url(images/BG.jpg);
+    background-image: url(images/BG.png);
     background-attachment: fixed;
     background-color: #272833;
-    background-position: bottom;
+    background-position: bottom left;
     background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
     min-height: 15em;
     position: relative;
@@ -25,7 +26,7 @@
 }
 header.bg {
 	text-align: left;
-    padding: 2em;
+    padding: 2em 4em;
     z-index: 2;
 }
 .breadcrumbs {
@@ -48,9 +49,6 @@ header.bg {
     .content #introduction_1 {
         text-align: left;
     }
-    .content #introduction_2 {
-        text-align: left;
-    }
 .wrapper.style4 a.button {
 	border-style: solid;
     color: #111;
@@ -70,11 +68,8 @@ header.bg {
 .wrapper.style4 {
     background-color: #fff;
     z-index: 3;
-    height: auto;
-    min-height: 100%;
     }
-.wrapper.style4 .icon {
-    padding: 2em;
+.icon {
     color: #000;
     text-align: center;
     display: inline-block;
@@ -114,6 +109,15 @@ header.bg {
         border-style: solid;
         border-color: #44731d !important;
 }
+
+.content.introduction {
+    text-align: left;
+}
+
+.content.introduction h1 {
+    font-size: 3em;
+}
+
 @media screen and (max-width: 980px){
    
     .bg {
@@ -134,13 +138,5 @@ header.bg {
         padding: 0 2em;
         background-color: #fff;
     }
-    .wrapper.style4 .icon {
-        padding: 0.5em;
-    }
     
-}
-@media screen and (max-width: 980px){
-    .wrapper.style4 .icon {
-        padding: 0em;
-    }
 }
