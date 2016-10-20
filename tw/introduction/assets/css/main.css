@@ -143,6 +143,7 @@ header.bg {
 }
 @media screen and (max-width: 480px){
     .bg {
-        max-height: 3em;
+        height: 3em;
+        background-size: cover;
     }
 }
