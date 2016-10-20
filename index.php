@@ -9,8 +9,8 @@
 		<meta charset="utf-8" />
 		<link rel="alternate" hreflang="x" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.preload.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" async></script>
+        <script type="text/javascript" src="assets/js/jquery.preload.min.js" async></script>
         <script type="application/javascript">
             $.preload( '/img/space.gif',
                 '../assets/css/images/BG1.jpg',
