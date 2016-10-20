@@ -76,7 +76,9 @@
 				        </footer>
 	</body>
 </html>
-<script> </script>
+<script type="application/javascript">
+
+</script>
 <link rel="stylesheet" href="assets/css/reset.css" />
 <link rel="stylesheet" href="assets/css/launguage.css" />
 <link rel="stylesheet" href="assets/css/size.css" />
