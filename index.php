@@ -19,6 +19,36 @@
                 '../assets/css/images/BG4.jpg'
             );
         </script>
+        <script type="application/javascript" src="assets/js/loadcss.js" async></script>
+<script>
+    var cb = function() {
+        var a = document.createElement('link');
+        a.rel = 'stylesheet';
+        a.href = '/assets/css/reset.css';
+
+        var b = document.createElement('link');
+        b.rel = 'stylesheet';
+        b.href = '/assets/css/launguage.css';
+
+        var c = document.createElement('link');
+        b.rel = 'stylesheet';
+        b.href = '/assets/css/font.css';
+
+        var d = document.createElement('link');
+        b.rel = 'stylesheet';
+        b.href = '/assets/css/size.css';
+
+        var z = document.getElementsByTagName('head')[0];
+        z.parentNode.insertBefore(a,z);
+        z.parentNode.insertBefore(b,z);
+        z.parentNode.insertBefore(c,z);
+        z.parentNode.insertBefore(d,z);
+    };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+</script>
         <body>
                 <!-- 首頁 -->
 				<section id="banner">
@@ -76,33 +106,3 @@
 				        </footer>
 	</body>
 </html>
-<script type="application/javascript" src="assets/js/loadcss.js" async></script>
-<script>
-    var cb = function() {
-        var a = document.createElement('link');
-        a.rel = 'stylesheet';
-        a.href = '/assets/css/reset.css';
-
-        var b = document.createElement('link');
-        b.rel = 'stylesheet';
-        b.href = '/assets/css/launguage.css';
-
-        var c = document.createElement('link');
-        b.rel = 'stylesheet';
-        b.href = '/assets/css/font.css';
-
-        var d = document.createElement('link');
-        b.rel = 'stylesheet';
-        b.href = '/assets/css/size.css';
-
-        var z = document.getElementsByTagName('head')[0];
-        z.parentNode.insertBefore(a,z);
-        z.parentNode.insertBefore(b,z);
-        z.parentNode.insertBefore(c,z);
-        z.parentNode.insertBefore(d,z);
-    };
-        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-        webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(cb);
-    else window.addEventListener('load', cb);
-</script>
