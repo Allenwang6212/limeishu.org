@@ -43,6 +43,7 @@
                             <a href="en-us/index.html" class="button">English</a>
                             <a href="jp/index.html" class="button">日本語</a>
 						</header>
+
 						<header>
 						    <span class="image">
 						    <img src="assets/css/images/hend.jpg"></span>
