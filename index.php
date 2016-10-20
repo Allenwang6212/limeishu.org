@@ -41,7 +41,7 @@
 	                                border-radius: .5em;
                                     border-color: #fff;
                                     border-style: solid;
-                                    padding: .5em;
+                                    padding: 1.5em;
                                 }
                             </style>
                             <p class="warning">
