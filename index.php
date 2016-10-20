@@ -95,4 +95,3 @@ window.addEventListener('load', cb);
 				        </footer>
 	</body>
 </html>
-<link rel="stylesheet" href="assets/css/size.css">
