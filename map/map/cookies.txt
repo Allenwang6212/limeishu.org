@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.aporee.org	TRUE	/	FALSE	1999999999	aporee_session	3cgj5ct071ht6ucnt68bik2si6
+

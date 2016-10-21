@@ -1,0 +1,66 @@
+/**
+ ** derived from:
+ ** @link                http://www.lwis.net/
+ ** @copyright   2006-2008 Live Web Institute
+ **/
+@charset "UTF-8";
+
+ul.dropdown li {
+ padding: 0px 0;
+ line-height: normal;
+}
+
+/* link styles in menu */
+ul.dropdown a:link,
+ul.dropdown a:visited { color: #A0A0A0; text-decoration: none; }
+
+/* width, background color, transparency of dropdown area */
+ul.dropdown ul {
+ width: 170px;
+ background-color: #303030;
+ color: #a0a0a0;
+ text-transform: none;
+ filter: alpha(opacity=90);
+ -moz-opacity: .9;
+ KhtmlOpacity: .9;
+ opacity: .9;
+}
+
+/* background color of all dropdown items */
+ul.dropdown ul li {
+ background-color: transparent;
+ filter: none;
+}
+
+/* mouse over color for all li, overriden for a below */
+ul.dropdown ul li.hover,
+ul.dropdown ul li:hover {
+ background-color: #404040;
+}
+
+/* all level li items which is a link but not class dir */
+ul.dropdown li a {
+ display: block; /* newline... */
+ padding: 0px 14px 6px;
+}
+
+ul.dropdown li {
+ padding: 0;
+}
+
+/* all level items with class dir */
+ul.dropdown li.dir {
+ padding: 0px 20px 6px 14px;
+ /* background-color: #A00000; */
+}
+
+ul.dropdown ul a {
+ padding: 4px 5px 4px 14px;
+ width: 151px; /* Especially for IE, 170 - 5 - 14 */
+}
+
+/* mouse over color when item is a link */
+ul.dropdown ul a:hover {
+ background-color: #A00000;
+}
+
