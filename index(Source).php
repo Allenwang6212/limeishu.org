@@ -19,12 +19,30 @@
                 '../assets/css/images/BG4.jpg'
             );
         </script>
+        <script type="application/javascript" src="assets/js/loadcss.js" async></script>
+<script>
+    function loadCss(filename) {
+    var l = document.createElement('link');
+    l.rel = 'stylesheet';
+    l.href = filename
+    var h = document.getElementsByTagName('head')[0];
+    h.parentNode.insertBefore(l, h);
+}
+
+function cb() {
+    loadCss('/assets/css/reset.css');
+    loadCss('/assets/css/launguage.css');
+    loadCss('/assets/css/font.css');
+    loadCss('/assets/css/size.css');
+}
+
+window.addEventListener('load', cb);
 </script>
         <body>
                 <!-- 首頁 -->
 				<section id="banner">
 					<div class="content">
-					    <header>
+				        <header>
 						    <span class="image mobile">
 						    <img src="assets/css/images/hend.jpg"></span>
 						</header>
@@ -41,7 +59,7 @@
 	                                border-radius: .5em;
                                     border-color: #fff;
                                     border-style: solid;
-                                    padding: 1.5em;
+                                    padding: .5em;
                                 }
                             </style>
                             <p class="warning">
@@ -53,13 +71,14 @@
                             <a href="en-us/index.html" class="button">English</a>
                             <a href="jp/index.html" class="button">日本語</a>
 						</header>
+
 						<header>
 						    <span class="image">
 						    <img src="assets/css/images/hend.jpg"></span>
 						</header>
 
 					</div>
-          </section>
+                </section>
 								<footer id="footer">
 				            <ul class="icons">
 				                <li><a href="tel:0226732333" class="icon alt fa-phone" title="電話聯絡紀念館"><span class="label">Phone</span></a></li>
@@ -76,7 +95,3 @@
 				        </footer>
 	</body>
 </html>
-<link rel="stylesheet" href="assets/css/reset.css" />
-<link rel="stylesheet" href="assets/css/launguage.css" />
-<link rel="stylesheet" href="assets/css/size.css" />
-<link rel="stylesheet" href="assets/css/font.css" />

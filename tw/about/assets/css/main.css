@@ -1,10 +1,9 @@
 .bg {
-    background-image: url(images/BG.png);
+    background-image: url(images/BG.jpg);
     background-attachment: fixed;
     background-color: #272833;
-    background-position: bottom left;
+    background-position: bottom;
     background-size: cover;
-    background-repeat: no-repeat;
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
     min-height: 15em;
     position: relative;
@@ -12,10 +11,10 @@
     z-index: 1;
 }
 .bg:after {
-    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url("images/overlay.png");;
-    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url("images/overlay.png");;
-    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url("images/overlay.png");;
-    background-image: linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url("images/overlay.png");;
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.35)), url("images/overlay.png");;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.35)), url("images/overlay.png");;
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.35)), url("images/overlay.png");;
+    background-image: linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.35)), url("images/overlay.png");;
     content: '';
     display: block;
     height: 100%;
@@ -26,7 +25,7 @@
 }
 header.bg {
 	text-align: left;
-    padding: 2em 4em;
+    padding: 2em;
     z-index: 2;
 }
 .breadcrumbs {
@@ -49,6 +48,9 @@ header.bg {
     .content #introduction_1 {
         text-align: left;
     }
+    .content #introduction_2 {
+        text-align: left;
+    }
 .wrapper.style4 a.button {
 	border-style: solid;
     color: #111;
@@ -68,8 +70,11 @@ header.bg {
 .wrapper.style4 {
     background-color: #fff;
     z-index: 3;
+    height: auto;
+    min-height: 100%;
     }
-.icon {
+.wrapper.style4 .icon {
+    padding: 2em;
     color: #000;
     text-align: center;
     display: inline-block;
@@ -110,22 +115,12 @@ header.bg {
         border-style: solid;
         border-color: #44731d !important;
 }
-
-.content.introduction {
-    text-align: left;
-}
-
-.content.introduction h1 {
-    font-size: 3em;
-}
-
 @media screen and (max-width: 980px){
 
     .bg {
-        max-height: 6em;
-        background-position: top left;
-        background-size: contain;
+        max-height: 5em;
         z-index: 0;
+        background-position: center center;
     }
 
     .content {
@@ -140,20 +135,13 @@ header.bg {
         padding: 0 2em;
         background-color: #fff;
     }
+    .wrapper.style4 .icon {
+        padding: 0.5em;
+    }
 
 }
-@media screen and (max-width: 480px){
-    header {
-        padding: 1em;
-    }
-    .bg {
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-    .bg,
-    .bg:after
-    {
-        height: 100%;
+@media screen and (max-width: 980px){
+    .wrapper.style4 .icon {
+        padding: 0em;
     }
 }
