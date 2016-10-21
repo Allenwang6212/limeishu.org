@@ -48,7 +48,7 @@ include(a3-lazy-load/a3-lazy-load.php);
                             </ul>
                         </li>
                         <li>
-                            <a href="openSource/OpenSource.html">開源 x 文史</a>
+                            <a href="../open">開源 x 文史</a>
                         </li>
                         <li>
                             <a href="../..">語言選擇</a>
