@@ -31,7 +31,7 @@ Strings = {
 	searchUserResult: 'latest sounds by',
 	searchUserNoResult: 'no sounds for',
 	searchLocationInput: 'search sounds and places in radio aporee',
-	searchLocationResult: 'found:',	
+	searchLocationResult: 'found:',
 	searchLocationNoResult: 'no places found',
 	/*** tools ***/
 	tools: 'tools',
@@ -88,7 +88,7 @@ Strings = {
 	uploadEmail: 'your email address:',
 	uploadLicence: 'licence (<a target="_blank" href="http://creativecommons.org/licenses/">info...</a>):',
 	uploadFile: 'choose file (mp3 or wav):',
-	uploadUrl: 'or: download sound from URL:', 
+	uploadUrl: 'or: download sound from URL:',
 	uploadSend: 'send',
 	uploadCancel: 'cancel',
 	uploadValidateError: 'error! please check:\n\n',
