@@ -2,9 +2,7 @@
 <html>
 <head>
 <title>桃源聲音地圖</title>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-<meta name="keywords" content="sound, map, soundmap, sound map, field recording, art, sound art, net art, locative media, mobile, sense of place, cartography, map, mapping, soundwalk, sound walk, acoustic ecology, soundscape, listening">
+<meta charset="UTF-8" />
 <meta name="description" content="radio aporee ::: maps is a global soundmap dedicated to field recording, phonography and the art of listening." />
 <base href="http://aporee.org/maps/work/" />
 <link href="css/page.css" media="screen" rel="stylesheet" type="text/css" />
@@ -85,7 +83,7 @@ var Aporee = {
 			// console.log("player created");
 			var self = this;
 			jwplayer(id).setup({
-				'flashplayer':	'/mediaplayer/xx/player.swf',
+				'flashplayer':	'http://aporee.org/mediaplayer/xx/player.swf',
 				'width':	400,
 				'height':	24,
 				'backcolor':	'000000',
@@ -130,7 +128,7 @@ var Aporee = {
 			};
 			// console.log(data);
 			// EJS.config({ cache: false });
-			new EJS({ url: 'templ/soundInfo.ejs' }).update('info', data)
+			new EJS({ url: 'http://aporee.org/maps/work/templ/soundInfo.ejs' }).update('info', data)
 			Aporee.Map.panTo(locid);	// jump to loc
 		},
 		/*** get playlist for a 2D array of locids: idx, sndid, locid, title, file, duration, artists, uid, recdate
@@ -164,7 +162,7 @@ var Aporee = {
 		showPlaylist: function() {
 			if(this.playlist && this.playlist.length > 0) {
 				// EJS.config({ cache: false });
-				new EJS({ url: 'templ/playlist.ejs' }).update('text', { playlist: this.playlist });
+				new EJS({ url: 'http://aporee.org/maps/work/templ/playlist.ejs' }).update('text', { playlist: this.playlist });
 			} else {
 				document.getElementById('text').innerHTML = 'no items in playlist.';
 			}
@@ -244,28 +242,28 @@ var Aporee = {
 			// defaultPoint: new google.maps.LatLng(0,0),
 			defaultZoom: 3,
 			inputMarkerImg: new google.maps.MarkerImage(
-				'images/input.gif',
+				'http://aporee.org/maps/work/images/input.gif',
 				new google.maps.Size(30,30),	// img size
 				new google.maps.Point(0,0), 	//
 				new google.maps.Point(15,15)	// anchor mitte
 			),
 			mapsMarkerImg: new google.maps.MarkerImage(
-				'images/default.png',
+				'http://aporee.org/maps/work/images/default.png',
 				new google.maps.Size(30,30),
 				new google.maps.Point(0,0),
 				new google.maps.Point(15,15)
 			),
 			mapsActiveMarkerImg: new google.maps.MarkerImage(
-				'images/hot.gif',
+				'http://aporee.org/maps/work/images/hot.gif',
 				new google.maps.Size(30,30),
 				new google.maps.Point(0,0),
 				new google.maps.Point(15,15)
 			),
 			clusterStyles: [
-				{ url: 'images/cluster50.png', width: 50, height: 50, anchor: [25, 0], textColor: '#A0A0A0', textSize: 10 },
-				{ url: 'images/cluster60.png', width: 60, height: 60, anchor: [30, 0], textColor: '#A0A0A0', textSize: 10 },
-				{ url: 'images/cluster70.png', width: 70, height: 70, anchor: [35, 0], textColor: '#A0A0A0', textSize: 10 },
-				{ url: 'images/cluster80.png', width: 80, height: 80, anchor: [40, 0], textColor: '#A0A0A0', textSize: 10 }
+				{ url: 'http://aporee.org/maps/work/images/cluster50.png', width: 50, height: 50, anchor: [25, 0], textColor: '#A0A0A0', textSize: 10 },
+				{ url: 'http://aporee.org/maps/work/images/cluster60.png', width: 60, height: 60, anchor: [30, 0], textColor: '#A0A0A0', textSize: 10 },
+				{ url: 'http://aporee.org/maps/work/images/cluster70.png', width: 70, height: 70, anchor: [35, 0], textColor: '#A0A0A0', textSize: 10 },
+				{ url: 'http://aporee.org/maps/work/images/cluster80.png', width: 80, height: 80, anchor: [40, 0], textColor: '#A0A0A0', textSize: 10 }
 			],
 			clusterGridSize: 70,
 			clusterMaxZoom: 17,
@@ -330,7 +328,7 @@ var Aporee = {
 				self.inputMarker.setPosition(e.latLng);
 				var lat = e.latLng.lat();
 				var lng = e.latLng.lng();
-				var html = new EJS({ url: 'templ/inputInfoWindow.ejs' }).render({ lat: lat, lng: lng });
+				var html = new EJS({ url: 'http://aporee.org/maps/work/templ/inputInfoWindow.ejs' }).render({ lat: lat, lng: lng });
 				self.infoWindow.setContent(html);
 				self.infoWindow.open(self.map, self.inputMarker);
 				// Aporee.showUploadForm(lat, lng);
@@ -501,7 +499,7 @@ var Aporee = {
 			try {
 				x_change(data, function(result) {
 					// EJS.config({ cache: false });
-					var html = new EJS({ url: 'templ/infoWindow.ejs' }).render({ locid: locid, sounds: result.ret });
+					var html = new EJS({ url: 'http://aporee.org/maps/work/templ/infoWindow.ejs' }).render({ locid: locid, sounds: result.ret });
 					self.infoWindow.locid = locid;	// remember locid, see openDetail
 					self.infoWindow.setContent(html);
 					self.infoWindow.open(self.map, marker);
@@ -547,7 +545,7 @@ var Aporee = {
 		},
 		/*** simple google places search ***/
 		searchGoogle: function() {
-			var t = new EJS({ url: 'templ/searchGoogle.ejs'}).update('text');
+			var t = new EJS({ url: 'http://aporee.org/maps/work/templ/searchGoogle.ejs'}).update('text');
 			var el = document.getElementById("searchGoogle");
 			if(el && el.value != "") {
 				if(!this.geocoder) {
@@ -597,7 +595,7 @@ var Aporee = {
 					var myData = { label: str, locations: locations, play: Strings.playList };
 					// update div text
 					// EJS.config({ cache: false });
-					new EJS({ url: 'templ/newLocations.ejs' }).update('text', myData);
+					new EJS({ url: 'http://aporee.org/maps/work/templ/newLocations.ejs' }).update('text', myData);
 				} else {
 					document.getElementById('text').innerHTML = '';
 				}
@@ -634,7 +632,7 @@ var Aporee = {
 	/*** text search ***/
 	searchLocation: function() {
 		var self = this;
-		var t = new EJS({ url: 'templ/searchLocation.ejs'}).update('text');
+		var t = new EJS({ url: 'http://aporee.org/maps/work/templ/searchLocation.ejs'}).update('text');
 		var el = document.getElementById("searchLocation");
 		if(el && el.value != "") { 	// form empty
 			var data = {};
@@ -674,7 +672,7 @@ var Aporee = {
 						play: Strings.playList
 					};
 					// update div text
-					new EJS({url: 'templ/searchUser.ejs'}).update('text', myData)
+					new EJS({url: 'http://aporee.org/maps/work/templ/searchUser.ejs'}).update('text', myData)
 				});
 			} catch (e) {
 				alert(e.message);
@@ -700,7 +698,7 @@ var Aporee = {
 		try {
 			x_change(data, function(result) {
 				// EJS.config({ cache: false });
-				new EJS({url: 'templ/statistics.ejs'}).update('text', result.ret)
+				new EJS({url: 'http://aporee.org/maps/work/templ/statistics.ejs'}).update('text', result.ret)
 			});
 		} catch (e) {
 			alert(e.message);
@@ -777,14 +775,14 @@ var Aporee = {
 		window.open(url, "export", "width=" + width + ", height=" + height + ", left=100, top=200, resizable=yes");
 		// window.open(url, "export");
 		// EJS.config({ cache: false });
-		new EJS({url: 'templ/exportSelectedMap.ejs'}).update('text', { url: url, w: width, h: height });
+		new EJS({url: 'http://aporee.org/maps/work/templ/exportSelectedMap.ejs'}).update('text', { url: url, w: width, h: height });
 		// document.getElementById('text').innerHTML = '';
 	},
 	/*** creates a link to the current map bounds ***/
 	linkCurrentMap: function() {
 		var address = 'radio aporee';
 		// EJS.config({ cache: false });
-		var t = new EJS({ url: 'templ/linkCurrentMap.ejs'}).update('text');
+		var t = new EJS({ url: 'http://aporee.org/maps/work/templ/linkCurrentMap.ejs'}).update('text');
 		var center = this.Map.map.getCenter();
 		var clat = center.lat().toFixed(6);
 		var clng = center.lng().toFixed(6);
@@ -807,7 +805,7 @@ var Aporee = {
 	linkExportLocation: function(locid) {
 		if(! locid) return;
 		// EJS.config({cache: false});
-		var t = new EJS({ url: 'templ/linkExportLocation.ejs'}).update('text');
+		var t = new EJS({ url: 'http://aporee.org/maps/work/templ/linkExportLocation.ejs'}).update('text');
 		var w = 400;
 		var h = 300;
 		var idx = this.Map.markersIndexArray.indexOf(locid);
@@ -871,7 +869,7 @@ var Aporee = {
 		this.Map.infoWindow.close();
 
 		// EJS.config({ cache: false });
-		var t = new EJS({ url: 'templ/newUploadForm.ejs'}).update('uploadcontent');
+		var t = new EJS({ url: 'http://aporee.org/maps/work/templ/newUploadForm.ejs'}).update('uploadcontent');
 		// remember session?
 		var email = '';
 		var licence = '';
@@ -904,7 +902,7 @@ var Aporee = {
 		var lat = marker.getPosition().lat();
 		var lng = marker.getPosition().lng();
 		// EJS.config({ cache: false });
-		var t = new EJS({ url: 'templ/toUploadForm.ejs'}).update('uploadcontent');
+		var t = new EJS({ url: 'http://aporee.org/maps/work/templ/toUploadForm.ejs'}).update('uploadcontent');
 		// session
 		var email = '';
 		var licence = '';
@@ -1015,7 +1013,7 @@ var Aporee = {
 					self.locationsList = locations;
 					var data = { locations: locations, play: Strings.playList };
 					// EJS.config({ cache: false });
-					new EJS({ url: 'templ/Favourites.ejs' }).update('text', data);
+					new EJS({ url: 'http://aporee.org/maps/work/templ/Favourites.ejs' }).update('text', data);
 				} else {
 					document.getElementById('text').innerHTML = '';
 				}
@@ -1039,7 +1037,7 @@ var Aporee = {
 		this.Player.create('player');				// load player
 		this.getNewLocations('d');				// show 24h news
 		// EJS.config({ cache: false });
-		new EJS({url: 'templ/menu.ejs'}).update('menu', {});	// make dropdown menu
+		new EJS({url: 'http://aporee.org/maps/work/templ/menu.ejs'}).update('menu', {});	// make dropdown menu
 	}
 };
 </script>
