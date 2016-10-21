@@ -29,7 +29,7 @@ include(a3-lazy-load/a3-lazy-load.php);
                             <ul>
                                 <li><a href="about/memorial.html">紀念館</a></li>
                                 <li><a href="about/joinUs.html">與我們合作</a></li>
-                                <li><a href="about/volunteers.html">志工團隊</a></li>
+                                <li><a href="about/volunteers.html">工作團隊</a></li>
                                 <li><a href="about/donation.html">支持我們</a></li>
                             </ul>
                         </li>
