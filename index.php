@@ -38,7 +38,7 @@
                                     text-align: center;
                                     display: block;
                                     border: .001em;
-	                                border-radius: .5em;
+	                                border-radius: 1.5em;
                                     border-color: #fff;
                                     border-style: solid;
                                     padding: 1.5em;
