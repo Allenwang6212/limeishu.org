@@ -1,6 +1,3 @@
-<?php
-include(a3-lazy-load/a3-lazy-load.php);
-?>
 <!DOCTYPE HTML>
 <html>
     <head>
