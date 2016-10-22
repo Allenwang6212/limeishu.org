@@ -8,6 +8,8 @@
 
 .timeline {
     list-style: none;
+    padding: 1em;
+    margin: 0;
 }
 h3 {
     margin: 0;
