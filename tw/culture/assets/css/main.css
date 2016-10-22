@@ -1,3 +1,9 @@
+a:hover,
+a:active
+{
+    color: #c9363a !important;
+}
+
 .bg {
     background-image: url(images/BG.jpg);
     background-attachment: fixed;
@@ -31,7 +37,7 @@ header.bg {
 .breadcrumbs {
 	padding-left: 2em;
 	min-height: 1em;
-	background-color: #4ba330;
+	background-color: #a33030;
     text-align: left;
     position: relative;
 }
