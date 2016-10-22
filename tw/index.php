@@ -86,19 +86,19 @@
                         </p>
                     </div>
                     <div class="block news">
-                        <a href="#"><img src="images/msm.jpg"></a>
-                        <br>
-                        <h3>2017梅樹月</h3>
-                        <p>敬請期待<br><br>
-                        <a href="../msm/" class="button">連結</a>
-                        </p>
-                    </div>
-                    <div class="block news">
                         <a href="#"><img src="images/glg1.jpg"></a>
                         <br>
                         <h3>LocalGuides Meetup</h3>
                         <p>三峽在地嚮導深度旅遊<br><br>
                         <a href="https://www.facebook.com/events/1637690463228486/" class="button">連結</a>
+                        </p>
+                    </div>
+                    <div class="block news">
+                        <a href="#"><img src="images/msm.jpg"></a>
+                        <br>
+                        <h3>2017梅樹月</h3>
+                        <p>敬請期待<br><br>
+                        <a href="../msm/" class="button">連結</a>
                         </p>
                     </div>
                     <div class="block news">
