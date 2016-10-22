@@ -4,6 +4,10 @@ a:active
     color: #c9363a !important;
 }
 
+li.active > a {
+    color: #c9363a !important;
+}
+
 .bg {
     background-image: url(images/BG.jpg);
     background-attachment: fixed;
