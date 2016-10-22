@@ -15,7 +15,7 @@
                         <li>
                             <a href="#">文化活動</a>
                             <ul>
-                                <li><a href="culture/news.htm">最新消息</a></li>
+                                <li><a href="culture/news.html">最新消息</a></li>
                                 <li><a href="culture/scenery.html">周邊景點</a></li>
                                 <li><a href="culture/shop.html">在地商家</a></li>
                                 <li><a href="culture/tempelate.html">三峽祖師廟</a></li>
@@ -102,10 +102,8 @@
                         </p>
                     </div>
                     <div class="block news">
-                        <a href="#"><img src="images/msm.jpg"></a>
-                        <br>
-                        <h3>2017梅樹月</h3>
-                        <p><a href="../msm/" class="button">連結</a></p>
+                        <h3>更多訊息</h3>
+                        <p><a href="culture/news.html" class="button">連結</a></p>
                     </div>
                 </div>
             </div>
