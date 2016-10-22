@@ -12,9 +12,20 @@
     display: inline-block;
 }
 
-@media screen (max-width: 1170px) {
-    #text {
+@media screen and (max-width: 480px) {
+    .cd-timeline-content img {
+        margin: auto;
+        height: 6em;
+        position: relative;
+    }
+
+    .cd-timeline-content {
         text-align: center;
+    }
+
+    .cd-timeline-content h2 {
+        font-size: .8em;
+        margin: 0;
     }
 }
 
