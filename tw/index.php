@@ -105,10 +105,8 @@ include(a3-lazy-load/a3-lazy-load.php);
                         </p>
                     </div>
                     <div class="block news">
-                        <a href="#"><img src="images/msm.jpg"></a>
-                        <br>
-                        <h3>2017梅樹月</h3>
-                        <p><a href="../msm/" class="button">連結</a></p>
+                        <h3>更多訊息</h3>
+                        <p><a href="culture/news.html" class="button">連結</a></p>
                     </div>
                 </div>
             </div>
