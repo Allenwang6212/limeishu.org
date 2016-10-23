@@ -467,7 +467,19 @@ position: relative;
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
+    .android-wear-band {
+        height: auto;
+        position: relative;
+    }
+    .android-wera-band-text h2 {
+        font-size: 1em;
+    }
+    .android-wear-band-text p {
+        font-size: .8em;
+    }
     .android-wear-section {
+        background: none;
+        position: relative;
         height: auto;
     }
 
