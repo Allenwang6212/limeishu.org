@@ -467,6 +467,10 @@ position: relative;
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
+    .android-wear-section {
+        height: auto;
+    }
+
   .android-navigation-container {
     display: none;
   }
