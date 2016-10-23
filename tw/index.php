@@ -9,7 +9,8 @@
     <body>
         <div id="page-wrapper">
             <header id="header">
-                <h1 id="logo"><a href="#">李梅樹紀念館</a></h1>
+                <h1 id="logo">李梅樹紀念館</h1>
+                <img id="logo" src="../images/Icon/Logo/Logo.png" alt="">
                 <nav id="nav">
                     <ul>
                         <li>

@@ -170,9 +170,18 @@
 		display: none;
 	}
 
+@media screen and (min-width: 736px) {
+    h1#logo {
+        display: none;
+    }
+}
+
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
+        h1#logo {
+            display: block;
+        }
 
 			html, body {
 				overflow-x: hidden;
