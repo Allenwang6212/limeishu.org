@@ -1,3 +1,6 @@
+#titleBar .toggle:before {
+    background: #5a9827;
+}
 .bg {
     background-image: url(images/BG.jpg);
     background-attachment: fixed;

@@ -8,6 +8,10 @@ li.active > a {
     color: #c9363a !important;
 }
 
+#titleBar .toggle:before {
+    background: #c9363a;
+}
+
 .bg {
     background-image: url(images/BG.jpg);
     background-attachment: fixed;
