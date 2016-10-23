@@ -1,5 +1,5 @@
-#《李梅樹紀念館網站 (Alpha v4.1) 》
-The Li Mei-shu Memorial Gallery website Alpha v4.1 
+#《李梅樹紀念館網站 (Alpha v5.2) 》
+The Li Mei-shu Memorial Gallery website Alpha v5.2 
 
 #by:
     
