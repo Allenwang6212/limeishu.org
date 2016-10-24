@@ -15,6 +15,29 @@
         width: 100%;
         height: 100%;
     }
+    #reload {
+        position: fixed;
+        width: 5em;
+        height: 5em;
+        border-radius: 5em;
+        background-color: #9600d9;
+        top: 80%;
+        left: 80%;
+        line-height: 5em;
+        color: #fff;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1.5em;
+        color: #fff;
+        text-align: center;
+        margin: auto;
+        font-family: sans-serif;
+    }
 </style>
 <script type="text/javascript">
     function iframes() {
@@ -24,5 +47,7 @@
 </script>
 <body onload="iframes()">
     <iframe src="http://aporee.org/maps/work/export/?swlat=24.892042&swlng=121.033630&nelat=25.194379&nelng=121.537628&z=11&m=satellite" frameborder="0" scrolling="no"></iframe>
+    <div id="reload" onclick="iframes()">回原點</div>
+    <footer id="footer">&copy; 2016. 李梅樹紀念館 Li Mei-shu Memorial Gallery. | Design: LIT Team</footer>
 </body>
 </html>
