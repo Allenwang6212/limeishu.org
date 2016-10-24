@@ -55,7 +55,6 @@
     }
 </script>
 <script type="text/javascript">
-    function client() {
         var childwindow = null;
         childwindow = window.open(sUrl, "", other_style);
         $(window).click(function(){
@@ -101,7 +100,6 @@
                 return false;
             }
         }
-    }
 </script>
 <body onload="iframes()" oncontextmenu="self.event.returnValue=false">
     <iframe onload="client()" src="http://aporee.org/maps/work/export/?swlat=24.892042&swlng=121.033630&nelat=25.194379&nelng=121.537628&z=11&m=satellite" frameborder="0" scrolling="no"></iframe>
