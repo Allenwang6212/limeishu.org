@@ -54,9 +54,58 @@
         window.frames[0].location = url;
     }
 </script>
-<body onload="iframes()">
+<script type="text/javascript">
+    function client() {
+        var childwindow = null;
+        childwindow = window.open(sUrl, "", other_style);
+        $(window).click(function(){
+
+            if(childwindow!=null){
+                if(!childwindow.closed){
+                    if(childwindow.blur){
+                        childwindow.focus();
+                    }
+                }
+            }
+        });
+        $(window).unload( function UnLoad() { opener.location.reload(); });
+        //遮罩滑鼠右鍵、Ctrl+N、Shift+F10、F11、F5刷新、倒退鍵
+        function document.oncontextmenu() {
+            event.returnValue = false;
+        }
+        function window.onhelp() {
+            return false;
+        }
+        function document.onkeydown() {
+            if ((window.event.altKey) && ((window.event.keyCode == 37) || (window.event.keyCode == 39))) {
+                event.returnValue = false;
+            }
+            if ((event.keyCode == 8) || (event.keyCode == 116) || (event.ctrlKey && event.keyCode == 82)) {             event.keyCode = 0;
+                event.returnValue = false;
+            }
+            if (event.keyCode == 122) {
+                event.keyCode = 0;
+                event.returnValue = false;
+            }
+            if (event.ctrlKey && event.keyCode == 78) {
+                event.returnValue = false;
+            }
+            if (event.shiftKey && event.keyCode == 121) {
+                event.returnValue = false; //遮罩shift+F10
+            }
+            if (window.event.srcElement.tagName == "A" && window.event.shiftKey) {
+                window.event.returnValue = false;
+            }
+            if ((window.event.altKey) && (window.event.keyCode == 115)) {
+                window.showModelessDialog("about:blank", "", "dialogWidth:1px;dialogheight:1px");
+                return false;
+            }
+        }
+    }
+</script>
+<body onload="iframes()" oncontextmenu="self.event.returnValue=false">
     <iframe src="http://aporee.org/maps/work/export/?swlat=24.892042&swlng=121.033630&nelat=25.194379&nelng=121.537628&z=11&m=satellite" frameborder="0" scrolling="no"></iframe>
     <div id="reload" onclick="iframes()">回原點</div>
-    <footer id="footer"><a href="https://limeishu.org.tw/">&copy; 2016. 李梅樹紀念館 Li Mei-shu Memorial Gallery.</a> | Design: <a href="https://limeishu.org.tw/open/">LIT Team</a></footer>
+    <footer onload="client()" id="footer"><a href="https://limeishu.org.tw/">&copy; 2016. 李梅樹紀念館 Li Mei-shu Memorial Gallery.</a> | Design: <a href="https://limeishu.org.tw/open/">LIT Team</a></footer>
 </body>
 </html>
