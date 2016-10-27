@@ -37,13 +37,6 @@ serv_io.sockets.on('connection', function(socket) {
     socket.emit('message', {'message': 'hello world'});
 });
 
-serv_io.sockets.on('connection', function(socket) {
-  // 傳送時間訊息給瀏覽器
-  setInterval(function() {
-    socket.emit('date', {'date': new Date()});
-  }, 1000);
-});
-
 var serv_io = io.listen(server);
 serv_io.set('log level', 1); // 關閉 debug 訊息
 
