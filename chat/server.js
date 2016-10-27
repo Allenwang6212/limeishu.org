@@ -50,3 +50,34 @@ serv_io.sockets.on('connection', function(socket) {
     process.stdout.write(data.letter);
   });
 });
+
+
+var uuid = require('node-uuid');
+var mongodb = require('mongodb');
+
+var mongodbServer = new mongodb.Server('localhost', 27017, { auto_reconnect: true, poolSize: 10 });
+var db = new mongodb.Db('mydb', mongodbServer);
+
+/* open db */
+db.open(function() {
+    /* Select 'contact' collection */
+    db.collection('contact', function(err, collection) {
+
+        /* Generate UUID(16 Bytes) and convert to BinaryData object for mongodb */
+        var uuidBinary = new Buffer(uuid.v1({}, []));
+        var id = mongodb.BSONPure.Binary(uuidBinary, mongodb.BSONPure.Binary.SUBTYPE_UUID);
+
+        /* Insert a data with uuid */
+        collection.insert({
+            _id: id,
+            name: 'Fred Chien',
+            email: 'cfsghost@gmail.com'
+        }, function(err, data) {
+            if (data) {
+                console.log('Successfully Insert');
+            } else {
+                console.log('Failed to Insert');
+            }
+        });
+    });
+});
