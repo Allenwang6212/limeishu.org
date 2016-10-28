@@ -1,3 +1,10 @@
+header > img {
+    height: 3.5em;
+    padding: .5em;
+    position: relative;
+    left: 2em;
+}
+
 /* Box Model */
 
 	*, *:before, *:after {

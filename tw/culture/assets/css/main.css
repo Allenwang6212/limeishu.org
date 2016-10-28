@@ -1,3 +1,20 @@
+h1#logo {
+    display: block;
+}
+a:hover,
+a:active
+{
+    color: #c9363a !important;
+}
+
+li.active > a {
+    color: #c9363a !important;
+}
+
+#titleBar .toggle:before {
+    background: #c9363a;
+}
+
 .bg {
     background-image: url(images/BG.jpg);
     background-attachment: fixed;
@@ -31,23 +48,19 @@ header.bg {
 .breadcrumbs {
 	padding-left: 2em;
 	min-height: 1em;
-	background-color: #4ba330;
+	background-color: #a33030;
     text-align: left;
     position: relative;
 }
 .content {
 	background-color: #fff;
-	padding: 5em;
+	padding: 0;
+    margin: 0;
 	color: #000;
     text-align: center;
     display: block;
 }
-    .content #introduction_0 {
-        text-align: left;
-    }
-    .content #introduction_1 {
-        text-align: left;
-    }
+
 .wrapper.style4 a.button {
 	border-style: solid;
     color: #111;

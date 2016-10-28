@@ -20,7 +20,7 @@
                         <li>
                             <a href="#">文化活動</a>
                             <ul>
-                                <li><a href="../culture/news.html">最新消息</a></li>
+                                <li><a href="../culture/news.html#page-wrapper">最新消息</a></li>
                                 <li><a href="../culture/scenery.html">周邊景點</a></li>
                                 <li><a href="../culture/shop.html">在地商家</a></li>
                             </ul>
@@ -67,53 +67,119 @@
             <div class="breadcrumbs">
                 首頁 > 關於我們 > 最新消息
             </div>
-                <header class="bg">
+            <header class="bg">
                 <h2>最新消息</h2>
                 <p>清溪浣衣 1981</p>
-                </header>
+            </header>
             <style>
-                iframe {
+                .wrapper.style4.timeline,
+                .wrapper.style4.timeline > .content
+                {
                     padding: 0;
-                    margin: 0;
-                    width: 100vw;
-                    height: 100vh;
-                    z-index: -1;
+                    background-color: #ccc;
+                    height: auto;
+                    text-align: left;
+                }
+                a.button:hover,
+                a.button:active
+                {
+                    box-shadow: inset 0 0 0 1px rgba(201, 54, 58, 0.85) !important;
+                    color: #c9363a !important;
                 }
             </style>
-            <section class="wrapper style4">
-                <iframe src="newsload.html" frameborder="0" width="100%" height="100%"></iframe>
+            <section class="wrapper style4 timeline">
+            <div class="content">
+            	<section id="cd-timeline" class="cd-container">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <img src="assets/img/cd-icon-movie.svg">
+                        </div> <!-- cd-timeline-img -->
+                        <div class="cd-timeline-content">
+                            <img src="../images/sos.jpg" alt="">
+                            <div id="text">
+                                <h2>【老街川流．常民的腳印】</h2>
+                                <p>三峽老街常民故事特展</p>
+                                <a href="https://www.facebook.com/StoryofSanxiaOldStreet2016/" class="button">連結</a>
+                            </div>
+                            <span class="cd-date">2016 / 10 / 29</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+		            <div class="cd-timeline-block">
+			            <div class="cd-timeline-img cd-location">
+				            <img src="assets/img/cd-icon-location.svg" alt="Location">
+			            </div> <!-- cd-timeline-img -->
+
+			            <div class="cd-timeline-content">
+                            <img src="../images/glg1.jpg" alt="">
+			                <div id="text">
+			                    <h2>Google LocalGuides Meetup</h2>
+				                <p>三峽在地嚮導深度旅遊</p>
+				                <a href="https://www.facebook.com/events/1637690463228486/" class="button">連結</a>
+			                </div>
+				            <span class="cd-date">2016 / 10 / 30</span>
+			            </div> <!-- cd-timeline-content -->
+		            </div> <!-- cd-timeline-block -->
+
+		            <div class="cd-timeline-block">
+			            <div class="cd-timeline-img cd-location">
+				            <img src="assets/img/cd-icon-picture.svg" alt="Location">
+			            </div> <!-- cd-timeline-img -->
+
+			            <div class="cd-timeline-content">
+                            <img src="../images/msm.jpg" alt="">
+			                <div id="text">
+			                    <h2>2017梅樹月</h2>
+				                <p>敬請期待</p>
+				                <a href="../../msm/" class="button">連結</a>
+			                </div>
+				            <span class="cd-date">2016 / 10 / 30</span>
+			            </div> <!-- cd-timeline-content -->
+		            </div> <!-- cd-timeline-block -->
+
+		            <div class="cd-timeline-block">
+			            <div class="cd-timeline-img cd-movie">
+				            <img src="assets/img/cd-icon-picture.svg" alt="Movie">
+			            </div> <!-- cd-timeline-img -->
+
+			            <div class="cd-timeline-content">
+				            <h2>還有更多未發現的...</h2>
+				            <p>敬請期待</p>
+				            <span class="cd-date"></span>
+			            </div> <!-- cd-timeline-content -->
+		            </div> <!-- cd-timeline-block -->
+	            </section> <!-- cd-timeline -->
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                <script src="js/main.js"></script> <!-- Resource jQuery -->
+            </div>
             </section>
 			<!-- Footer -->
-				<footer id="footer">
+		<footer id="footer">
             <ul class="icons">
                 <li><a href="tel:0226732333" class="icon alt fa-phone" title="電話聯絡紀念館"><span class="label">Phone</span></a></li>
                 <li><a href="tel:0226736077" class="icon alt fa-fax" title="傳真給紀念館"><span class="label">FAX</span></a></li>
                 <li><a href="https://www.facebook.com/limeishu.org/" class="icon alt fa-facebook" title="Li Mei-Shu Memorial Gallery (李梅樹紀念館)"><span class="label">Facebook</span></a></li>
                 <li><a href="mailto:lms@limeishu.org" class="icon alt fa-envelope" title="寄信給紀念館"><span class="label">Email</span></a></li>
-                <li><a href="https://github.com/ZLCSC-club/limeishu.org" class="icon alt fa-github" title="取得紀念館網站原始碼"><span class="label">GitHub</span></a></li>
-
-
+                <li><a href="https://github.com/ZLCSC" class="icon alt fa-github" title="取得紀念館網站原始碼"><span class="label">GitHub</span></a></li>
             </ul>
             <ul class="copyright">
-                <li>&copy; 2016. 李梅樹紀念館 Li Mei-shu Memorial Gallery.</li>
-                <li>Design: <a href="https://www.zlcsc.club.tw">ZLCSC</a></li>
+                <li>&copy; 2016. 李梅樹紀念館 Li Mei-shu Memorial Gallery.</li><li> Design: LIT Team</li>
+				<li>本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">創用 CC BY-NC-ND 4.0 國際授權條款</a>授權.</li>
+				<li>建議使用<a href="https://www.mozilla.org">Firefox瀏覽器</a></li>
             </ul>
-            <ul class="copyright">
-                <li>本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">創用 CC BY-NC-ND 4.0 國際授權條款</a>授權.</li>
-            </ul>
-
         </footer>
 
 		</div>
         <!-- CSS -->
             <link rel="stylesheet" href="../assets/css/reset.css">
+            <link rel="stylesheet" href="assets/css/style.css"> <!-- Resource style -->
+	        <script src="js/modernizr.js"></script> <!-- Modernizr -->
             <link rel="stylesheet" href="../assets/css/smart.css">
             <link rel="stylesheet" href="../assets/css/main.css">
             <link rel="stylesheet" href="../assets/css/footer.css">
             <link rel="stylesheet" href="../assets/css/font.css">
             <link rel="stylesheet" href="../assets/css/size.css">
-            <link rel="stylesheet" href="assets/css/main.css">
-            <link rel="stylesheet" href="assets/css/timeline.css">
+	        <link rel="stylesheet" href="assets/css/main.css">
 
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
