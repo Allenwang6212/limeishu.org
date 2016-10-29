@@ -1,0 +1,19 @@
+<% layout( 'layout' ) -%>
+    <h1><%= title %></h1>
+    <form action="/create" method="post" accept-charset="utf-8">
+        <input type="text" name="content" /> </form>
+    <% messanges.forEach( function ( messange ){ %>
+        <p> <span>
+      <% if( messange._id == current ){ %>
+      <form action="/update/<%= messange._id %>" method="post" accept-charset="utf-8">
+        <input type="text" name="content" value="<%= messange.content %>" />
+      </form>
+      <% }else{ %>
+        <a href="/edit/<%= messange._id %>" title="Update this messange item"><%= messange.content %></a>
+      <% } %>
+    </code>
+    <span>
+      <a href="/destroy/<%= messange._id %>" title="Delete this messange item">Delete</a>
+    </code>
+  </p>
+<% }); %>
