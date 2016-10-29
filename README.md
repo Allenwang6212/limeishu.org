@@ -1,5 +1,5 @@
-#《李梅樹紀念館網站 (Alpha v5.2) 》
-The Li Mei-shu Memorial Gallery website Alpha v5.2 
+#《李梅樹紀念館網站 (Alpha v5.3) 》
+The Li Mei-shu Memorial Gallery website Alpha v5.3
 
 #by:
     
@@ -39,6 +39,4 @@ The Li Mei-shu Memorial Gallery website Alpha v5.2
 
     Old version website : http://limeishu.org/
 
-    Alpha Deemo version (4.1) website : http://limeishu.zlcsc.club.tw/
-    
-    Alpha Develope version (4.1) website : http://lms.zlcsc.club.tw/
+    Alpha Version (5.3) website : https://limeishu.org.tw/
