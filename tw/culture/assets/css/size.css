@@ -1,3 +1,8 @@
+* {
+    color: #fff;
+}
+
+
 /* XLarge */
 
 @media screen and (max-width: 1680px) {
@@ -507,6 +512,7 @@
         position: relative;
         display: block;
         z-index: 10;
+        color: #fff;
     }
     .info .spotlight.style2.bottom.frim {
         top: 0m;
@@ -521,6 +527,7 @@
         background-position: center center !important;
         background-attachment: scroll;
         background-size: cover;
+        color: #fff;
     }
     .info .spotlight.style2.bottom .content .button,
     .info .spotlight.style2.bottom .content .button:hover {
@@ -534,8 +541,12 @@
         width: 33.33vw;
         padding: .5em;
         text-align: center;
-        background-color: rgba(255, 124, 66, 0.75);
         position: absolute;
         opacity: 1;
+        font-size: .8em;
+        padding: auto;
+    }
+    .info .frim .content {
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }
