@@ -645,9 +645,11 @@ input[type="button"]:disabled,
     position: relative;
     text-align: center;
     padding: 1em;
+/*
     animation: 15s pic ease-in-out infinite;
     -webkit-animation: 15s pic ease-in-out infinite;
     -ms-animation: 15s pic ease-in-out infinite;
+*/
 }
 
 #banner:before {
