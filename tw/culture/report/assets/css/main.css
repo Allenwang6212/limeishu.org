@@ -61,6 +61,14 @@ header.bg {
     display: block;
 }
 
+.wrapper.style4 .content img {
+    width: 15em;
+    height: auto;
+    margin: 2em;
+    display: inline-block;
+    float: left;
+}
+
 .wrapper.style4 a.button {
     border-style: solid;
     color: #111;
