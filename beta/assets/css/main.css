@@ -154,6 +154,7 @@ body {
   z-index: -2; }
 
 #welcome {
+  display: block;
   color: white;
   background-attachment: fixed;
   background-color: #0d0e0f;
@@ -268,6 +269,7 @@ body {
     background-color: #ffd548; }
 
 #footer {
+  bottom: 0;
   position: relative;
   color: white;
   background-color: #1d1d1d;

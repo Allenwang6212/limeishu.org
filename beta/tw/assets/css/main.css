@@ -145,7 +145,7 @@ img {
   max-height: 100vw; }
 
 #footer {
-  max-height: 10em;
+  bottom: 0;
   position: relative;
   color: white;
   background-color: #1d1d1d;
