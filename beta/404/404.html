@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Page Not Found</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        text-decoration:none;
+    }
+    body {
+        background-attachment: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: url(/404/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: sans-serif;
+        width: 100vw;
+        height: 100%;
+    }
+    body:after {
+        background-image: -moz-linear-gradient(top, rgba(108, 108, 108, 0.1), rgba(0, 0, 0, 0.75)), url("overlay.png");;
+        background-image: -webkit-linear-gradient(top, rgba(108, 108, 108, 0.1), rgba(0, 0, 0, 0.75)), url("overlay.png");;
+        background-image: -ms-linear-gradient(top, rgba(108, 108, 108, 0.1), rgba(0, 0, 0, 0.75)), url("overlay.png");;
+        background-image: linear-gradient(top, rgba(108, 108, 108, 0.1), rgba(0, 0, 0, 0.75)), url("overlay.png");;
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    #error {
+        padding: 5em;
+        margin: auto;
+        text-align: center;
+        display: block;
+        z-index: 2;
+    }
+    hr {
+        width: 30em;
+        margin: auto;
+    }
+    p,h2 {
+        padding: .7em;
+    }
+    h1 {
+        font-size: 20em;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    a.button {
+        padding: 1em;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 1);
+        border-radius: 2em;
+    }
+</style>
+<body>
+   <h1>?</h1>
+    <div id="error">
+        <h2>404 Error - Page Not Found.</h2>
+        <hr>
+        <p>
+        您所尋找的頁面尚未被建立或此連結是錯誤的，請稍後再試<br>
+        The page you are looking for this link has not been established or is in error, please try again later.<br>
+        このリンクを探しているページは確立されていないか、またはエラーでは、後ほど再度お試し下さい。
+        </p><br><br>
+        <a href="https://limeishu.org.tw" class="button">回首頁．Home Page</a>
+    </div>
+</body>
+</html>

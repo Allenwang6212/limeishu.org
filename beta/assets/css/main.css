@@ -1,0 +1,308 @@
+@import url(font-awesome.min.css);
+@import url(font.css);
+@import "https://limeishu.org.tw/assets/css/font.css";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Noto Sans TC', sans-serif; }
+
+hr {
+  border: 1px solid white; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6, p, ul, li, footer {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  line-height: normal; }
+
+img {
+  display: block;
+  max-height: 100vw; }
+
+html {
+  background-color: #0d0e0f;
+  width: 100%;
+  height: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  z-index: -2; }
+
+#welcome {
+  color: white;
+  background-attachment: fixed;
+  background-color: #0d0e0f;
+  background-image: url(images/BG1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  text-align: center; }
+  #welcome:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    position: absolute; }
+  #welcome:after {
+    background-image: -moz-linear-gradient(top, rgba(216, 171, 76, 0.1), rgba(88, 76, 48, 0.5)), url("images/overlay.png");
+    background-image: -webkit-linear-gradient(top, rgba(216, 171, 76, 0.1), rgba(88, 76, 48, 0.5)), url("images/overlay.png");
+    background-image: -ms-linear-gradient(top, rgba(216, 171, 76, 0.1), rgba(88, 76, 48, 0.5)), url("images/overlay.png");
+    background-image: linear-gradient(top, rgba(216, 171, 76, 0.1), rgba(88, 76, 48, 0.5)), url("images/overlay.png");
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  #welcome .content {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 10em;
+    height: 100%;
+    top: 20%;
+    padding: 2.5em 0;
+    position: relative;
+    text-align: right;
+    vertical-align: middle;
+    z-index: 1; }
+    #welcome .content header {
+      display: inline-block;
+      vertical-align: middle; }
+      #welcome .content header hr {
+        margin: 1em 0;
+        opacity: .5; }
+      #welcome .content header h1 {
+        margin: 0;
+        font-size: 2.5em; }
+      #welcome .content header p {
+        margin: 0.5em 0 0 0;
+        top: 0;
+        font-size: 1em; }
+      #welcome .content header .image {
+        border-radius: 100%;
+        display: inline-block;
+        height: 20em;
+        margin-left: 3em;
+        vertical-align: middle;
+        width: 20em; }
+        #welcome .content header .image img {
+          width: 20em;
+          height: 20em;
+          border-radius: 100%;
+          display: block;
+          margin: .5em; }
+        #welcome .content header .image.mobile {
+          display: none; }
+    #welcome .content .warning {
+      text-align: center;
+      display: block;
+      border: 1px solid white;
+      border-radius: 1.5em;
+      padding: 0.5em 1em;
+      opacity: .75; }
+
+@media screen and (max-width: 736px) {
+  #welcome {
+    height: 100%; }
+    #welcome .content {
+      top: auto; }
+      #welcome .content header {
+        display: block;
+        text-align: center !important;
+        float: none; }
+        #welcome .content header .image {
+          margin: 0 0 1em 0;
+          display: none; }
+          #welcome .content header .image.mobile {
+            display: block !important; } }
+@media screen and (max-width: 480px) {
+  #welcome .content header .image {
+    margin: auto;
+    margin-bottom: 1em;
+    width: 10em;
+    height: 10em; }
+    #welcome .content header .image img {
+      margin: auto;
+      width: 10em;
+      height: 10em; } }
+.button {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 1em;
+  padding: .5em 1em;
+  margin: .5em auto;
+  transition: all .3s; }
+  .button:hover, .button:focus {
+    border: 1px solid #ffd548;
+    background-color: #ffd548; }
+
+#footer {
+  max-height: 10em;
+  position: relative;
+  color: white;
+  background-color: #1d1d1d;
+  text-align: center;
+  padding: 2em 0em;
+  display: block;
+  opacity: .9;
+  z-index: 0; }
+  #footer .icons {
+    display: block;
+    margin: 1em auto;
+    position: relative; }
+    #footer .icons li {
+      margin: .5em;
+      display: inline-block; }
+      #footer .icons li .icon {
+        padding: .5em;
+        width: 1em;
+        height: 1em;
+        border: 1px solid white;
+        border-radius: 100%;
+        transition: all .3s;
+        font-family: 'FontAwesome';
+        color: white;
+        font-size: 1em; }
+        #footer .icons li .icon:hover {
+          background-color: white;
+          color: #1d1d1d; }
+      #footer .icons li .label {
+        display: none; }
+  #footer .copyright {
+    display: block;
+    margin: auto;
+    position: relative;
+    font-size: 0.5em; }
+
+/*# sourceMappingURL=main.css.map */

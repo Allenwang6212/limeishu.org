@@ -1,0 +1,48 @@
+#banner {
+  color: $white;
+  display: block;
+  height: 100vh;
+  background-color: $gray;
+  background-image: url("./images/BG.jpg");
+  @include backgroundConfig;
+  box-shadow: 4px 4px 12px rgba(0%,0%,0%,0.5);
+  z-index: -1;
+  .content {
+    display: block;
+    position: relative;
+    background-color: $gray-alpha;
+    max-width: 40%;
+    min-height: 50%;
+    left: 0;
+    top: 25%;
+    bottom: 25%;
+    padding: 2em 3.5em;
+    border-radius: 0 1em 1em 0;
+    box-shadow: 4px 4px 12px rgba(0%,0%,0%,0.5);
+    h1 {
+      font-size: $title-xl;
+      margin: 2.5em 0 0 0;
+    }
+    h2 {
+      font-size: $subtitle;
+    }
+    p {
+      font-size: $content-m;
+      opacity: .8;
+    }
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #banner {
+    .content {
+      bottom: 0;
+      padding: 2em;
+      max-width: 100%;
+      text-align: center;
+      h1 {
+        margin: 1.5em 0 0 0;
+      }
+    }
+  }
+}

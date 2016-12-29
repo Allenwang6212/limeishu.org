@@ -1,0 +1,51 @@
+//font-size
+$title-xl: 2.5em;
+$title-l: 2em;
+$title-m: 1.2em;
+$title-s: .8em;
+$subtitle: 1.2em;
+$subtitle-m: 1em;
+$subtitle-s: .5em;
+$content-xl: 1.2em;
+$content-l: 1em;
+$content-m: .8em;
+$content-s: .5em;
+$footnote: .5em;
+//color-config
+//pure
+$white: rgba(255, 255, 255, 1);
+$black: rgb(13, 14, 15);
+$gray: rgb(29, 29, 29);
+$blue: rgba(0, 82, 112, 1);
+$dark-blue: rgb(0, 54, 74);
+$green: rgba(14, 163, 163, 1);
+$dark-green: rgba(67, 116, 20, 1);
+$yellow: rgb(255, 213, 72);
+$orange: rgba(221, 141, 71, 1);
+//alpha
+$gray-alpha: rgba(29, 29, 29, .5);
+$orange-alpha: rgba(221, 141, 71, .75);
+//mixin
+//background
+@mixin backgroundConfig {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//logo
+@mixin logoConfig {
+  width: 20em;
+  height: 20em;
+  border-radius: 100%;
+  display: block;
+  margin: .5em;
+}
+
+//icon
+@mixin iconConfig {
+  font-family: 'FontAwesome';
+  color: $white;
+  font-size: 1em;
+}

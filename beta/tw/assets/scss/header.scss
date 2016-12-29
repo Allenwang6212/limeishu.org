@@ -1,0 +1,198 @@
+#header {
+  color: $white;
+  top: 0;
+  display: block;
+  position: fixed;
+  width: 100%;
+  max-height: 3em;
+  padding: .5em 0;
+  background-color: $gray !important;
+  z-index: 1000;
+  box-shadow: 4px 4px 12px rgba(0%, 0%, 0%, 0.5);
+  h1 {
+    &#logo {
+      display: none;
+    }
+  }
+  img {
+    display: inline-block;
+    &#logo {
+      height: 3em;
+      margin: 0 1em;
+    }
+  }
+  .toggle {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1.5em;
+    width: 2em;
+    color: $gray;
+    background-color: $green;
+    padding: .5em;
+    line-height: 1.5em;
+    text-align: center;
+    z-index: 10000;
+    &.active {
+      transform: translateX(-14em);
+      transition: all .3s;
+    }
+  }
+  #nav {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin: 0 1em;
+    transition: all .3s;
+    ul {
+      li {
+        padding: .5em;
+        display: inline-block;
+        transition: all .3s;
+        color: $green !important;
+        ul {
+          display: none;
+          transition: all .3s;
+          opacity: 0;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          >a {
+            transition: all .3s;
+            color: $green;
+          }
+          ul {
+            clear: right;
+            transition: all .3s;
+            margin-top: .5em;
+            margin-left: -8em;
+            min-width: 10em;
+            padding: .5em;
+            display: block;
+            position: absolute;
+            background-color: $gray;
+            border-radius: 5px;
+            border: 1px solid $green;
+            opacity: 1;
+            box-shadow: 4px 4px 12px rgba(0%, 0%, 0%, 0.5);
+            li {
+              margin: 1px;
+              max-height: 3em;
+              padding: .2em .5em;
+              display: block;
+              border: 0;
+              &:hover,
+              &:focus,
+              &:active {
+                border-radius: 5px;
+                background-color: $green;
+              }
+              a {
+                color: $white;
+              }
+            }
+            &:hover,
+            &:focus,
+            &:active {
+              display: block;
+            }
+            &:before {
+              content: '';
+              width: .5em;
+              height: .5em;
+              margin-top: -0.8em;
+              margin-left: 9em;
+              transform: rotate(45deg);
+              border: 1px solid $green;
+              border-bottom: 0;
+              border-right: 0;
+              background: $gray;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+    &.active {
+      position: fixed;
+      transition: all .3s;
+      top: 0;
+      padding: 2.5em 0;
+      display: block;
+      right: 0;
+      width: 17em;
+      height: 100vh;
+      margin: 0;
+      background-color: $gray;
+      box-shadow: 4px 4px 12px rgba(0%, 0%, 0%, 0.5);
+      ul {
+        li {
+          display: block;
+          padding: .5em 1em;
+          box-shadow: 1px 1px 1px rgba(0%, 0%, 0%, 0.5);
+          &:hover,
+          &:focus,
+          &:active {
+            ul {
+              box-shadow: none;
+              position: relative;
+              margin: 0;
+              display: block;
+              padding: .5em 0;
+              transition: all .3s;
+              position: relative;
+              width: 100%;
+              border: 0;
+              li {
+                transition: all .3s;
+                box-shadow: none;
+                margin: 1px;
+                max-height: 3em;
+                padding: .3em .5em;
+                display: block;
+                border: 0;
+                &:hover,
+                &:focus,
+                &:active {
+                  border: 0;
+                }
+              }
+              &:before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #header {
+    max-height: 1.5em;
+    img {
+      display: inline-block;
+      &#logo {
+        height: 1.5em;
+        display: block;
+        margin: auto;
+      }
+    }
+    #nav {
+      right: -17em;
+      position: absolute;
+      display: block;
+      ul {
+        li {
+          display: none;
+        }
+      }
+    }
+    .toggle {
+      display: inline-block;
+    }
+  }
+}
