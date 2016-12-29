@@ -145,6 +145,7 @@ img {
   max-height: 100vw; }
 
 #footer {
+  max-height: 10em;
   position: relative;
   color: white;
   background-color: #1d1d1d;
@@ -636,5 +637,8 @@ img {
       width: 2.5em; }
     #traffic iframe {
       pointer-events: none; } }
+@media screen and (max-width: 320px) {
+  #traffic {
+    height: 250vh; } }
 
 /*# sourceMappingURL=main.css.map */
