@@ -75,11 +75,12 @@
       display: block;
       width: 100%;
       .container {
-        vertical-align: middle;
         background-color: $gray-alpha;
         text-align: center;
         opacity: 1;
         header {
+          position: relative;
+          vertical-align: middle;
           margin: 5em 2em 5em 2em;
         }
         &:active,

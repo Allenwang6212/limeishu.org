@@ -546,11 +546,12 @@ img {
       display: block;
       width: 100%; }
       #intro .spolight .container {
-        vertical-align: middle;
         background-color: rgba(29, 29, 29, 0.5);
         text-align: center;
         opacity: 1; }
         #intro .spolight .container header {
+          position: relative;
+          vertical-align: middle;
           margin: 5em 2em 5em 2em; }
         #intro .spolight .container:active, #intro .spolight .container:hover, #intro .spolight .container:focus {
           background-color: #0ea3a3; } }
