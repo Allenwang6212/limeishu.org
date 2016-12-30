@@ -145,6 +145,7 @@ img {
   max-height: 100vw; }
 
 #footer {
+  overflow: hidden;
   bottom: 0;
   position: relative;
   color: white;
@@ -370,7 +371,7 @@ img {
     #banner .content h2 {
       font-size: 1.2em; }
     #banner .content p {
-      font-size: 0.8em;
+      font-size: 0.5em;
       opacity: .8; }
 
 @media screen and (max-width: 736px) {
@@ -473,7 +474,7 @@ img {
         margin: .5em;
         font-size: 2em; }
       #info .content .block p {
-        font-size: 1em; }
+        font-size: 0.8em; }
 
 @media screen and (max-width: 1200px) {
   #info .content {
@@ -585,16 +586,19 @@ img {
             color: #0d0e0f;
             font-size: 1em; }
           #traffic .container .content .chooser .option a {
+            transition: all .3s;
             padding: 1em;
             margin: 0 .5em;
             display: block;
-            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+            border: 2px solid white;
             border-radius: 100%;
             width: 5em;
             height: 5em; }
             #traffic .container .content .chooser .option a img {
               width: 5em;
               height: 5em; }
+            #traffic .container .content .chooser .option a.active, #traffic .container .content .chooser .option a:hover {
+              border: 2px solid #437414; }
       #traffic .container .content .guide {
         padding: 1em;
         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
@@ -602,7 +606,7 @@ img {
         #traffic .container .content .guide h3 {
           font-size: 1.2em; }
         #traffic .container .content .guide p {
-          font-size: 1em; }
+          font-size: 0.8em; }
     #traffic .container .maps {
       float: right;
       position: relative;
@@ -625,16 +629,35 @@ img {
 @media screen and (max-width: 736px) {
   #traffic {
     height: 200vh; }
-    #traffic .container .content,
-    #traffic .container .maps {
-      display: block;
-      width: 100%;
-      max-width: 100%; }
-    #traffic .container .content .chooser .option a {
-      padding: .5em; }
-    #traffic .container .content .chooser .option img {
-      height: 2.5em;
-      width: 2.5em; }
+    #traffic .container {
+      padding: 1em; }
+      #traffic .container .content,
+      #traffic .container .maps {
+        margin: 1em 0;
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 100%; }
+      #traffic .container .maps {
+        text-align: center; }
+        #traffic .container .maps p {
+          margin: .5em 0;
+          font-size: 0.5em; }
+      #traffic .container .content .chooser {
+        margin: 1em 1%; }
+        #traffic .container .content .chooser .option {
+          min-width: 23%;
+          margin: 0; }
+          #traffic .container .content .chooser .option h4 {
+            font-size: 0.2em; }
+          #traffic .container .content .chooser .option a {
+            margin: auto;
+            height: 2em;
+            width: 2em;
+            padding: .5em; }
+            #traffic .container .content .chooser .option a img {
+              height: 2em;
+              width: 2em; }
     #traffic iframe {
       pointer-events: none; } }
 @media screen and (max-width: 320px) {

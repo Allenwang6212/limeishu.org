@@ -248,15 +248,17 @@ body {
           #welcome .content header .image.mobile {
             display: block !important; } }
 @media screen and (max-width: 480px) {
-  #welcome .content header .image {
-    margin: auto;
-    margin-bottom: 1em;
-    width: 10em;
-    height: 10em; }
-    #welcome .content header .image img {
+  #welcome {
+    height: 125vh; }
+    #welcome .content header .image {
       margin: auto;
+      margin-bottom: 1em;
       width: 10em;
-      height: 10em; } }
+      height: 10em; }
+      #welcome .content header .image img {
+        margin: auto;
+        width: 10em;
+        height: 10em; } }
 .button {
   display: inline-block;
   border: 1px solid white;
@@ -269,6 +271,7 @@ body {
     background-color: #ffd548; }
 
 #footer {
+  overflow: hidden;
   bottom: 0;
   position: relative;
   color: white;

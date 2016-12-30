@@ -37,16 +37,21 @@
             font-size: $subtitle-m;
           }
           a {
+            transition: all .3s;
             padding: 1em;
             margin: 0 .5em;
             display: block;
-            box-shadow: 4px 4px 12px rgba(0%, 0%, 0%, 0.5);
+            border: 2px solid $white;
             border-radius: 100%;
             width: 5em;
             height: 5em;
             img {
               width: 5em;
               height: 5em;
+            }
+            &.active,
+            &:hover {
+              border: 2px solid $dark-green;
             }
           }
         }
@@ -94,21 +99,40 @@
   #traffic {
     height: 200vh;
     .container {
+      padding: 1em;
       .content,
       .maps {
+        margin: 1em 0;
+        float: none;
         display: block;
         width: 100%;
         max-width: 100%;
       }
+      .maps {
+        text-align: center;
+        p {
+          margin: .5em 0;
+          font-size: $content-m;
+        }
+      }
       .content {
         .chooser {
+          margin: 1em 1%;
           .option {
-            a {
-              padding: .5em;
+            min-width: 23%;
+            margin: 0;
+            h4 {
+              font-size: $content-s;
             }
-            img {
-              height: 2.5em;
-              width: 2.5em;
+            a {
+              margin: auto;
+              height: 2em;
+              width: 2em;
+              padding: .5em;
+              img {
+                height: 2em;
+                width: 2em;
+              }
             }
           }
         }
@@ -119,6 +143,7 @@
     }
   }
 }
+
 @media screen and (max-width: 320px) {
   #traffic {
     height: 250vh;
