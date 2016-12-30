@@ -544,16 +544,15 @@ img {
     height: 300vh; }
     #intro .spolight {
       display: block;
-      width: 100%; } }
-@media screen and (max-width: 360px) {
-  #intro .spolight .container {
-    background-color: rgba(29, 29, 29, 0.5);
-    text-align: center;
-    opacity: 1; }
-    #intro .spolight .container header {
-      margin: 5em 2em 5em 2em; }
-    #intro .spolight .container:active, #intro .spolight .container:hover, #intro .spolight .container:focus {
-      background-color: #0ea3a3; } }
+      width: 100%; }
+      #intro .spolight .container {
+        background-color: rgba(29, 29, 29, 0.5);
+        text-align: center;
+        opacity: 1; }
+        #intro .spolight .container header {
+          margin: 5em 2em 5em 2em; }
+        #intro .spolight .container:active, #intro .spolight .container:hover, #intro .spolight .container:focus {
+          background-color: #0ea3a3; } }
 #traffic {
   color: #0d0e0f;
   display: block;

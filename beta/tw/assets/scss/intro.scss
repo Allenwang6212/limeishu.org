@@ -74,13 +74,6 @@
     .spolight {
       display: block;
       width: 100%;
-    }
-  }
-}
-
-@media screen and (max-width: 360px) {
-  #intro {
-    .spolight {
       .container {
         background-color: $gray-alpha;
         text-align: center;
