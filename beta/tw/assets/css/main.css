@@ -551,7 +551,7 @@ img {
         opacity: 1; }
         #intro .spolight .container header {
           position: relative;
-          margin: 6em 2em; }
+          margin: 5em 2em; }
         #intro .spolight .container:active, #intro .spolight .container:hover, #intro .spolight .container:focus {
           background-color: #0ea3a3; } }
 #traffic {
