@@ -431,15 +431,17 @@ img {
       width: 5%; }
 
 @media screen and (max-width: 736px) {
-  #news h1 {
-    margin: 1em 0 .25em 0; }
-  #news .content {
-    padding: 1em 0; }
-    #news .content .all-news {
-      padding: 1em !important; }
-    #news .content .slick-prev,
-    #news .content .slick-next {
-      display: none !important; } }
+  #news {
+    height: 100%; }
+    #news h1 {
+      margin: 1em 0 .25em 0; }
+    #news .content {
+      padding: 1em 0; }
+      #news .content .all-news {
+        padding: 1em !important; }
+      #news .content .slick-prev,
+      #news .content .slick-next {
+        display: none !important; } }
 #info {
   display: block;
   height: auto;
