@@ -77,13 +77,21 @@
     }
   }
 }
+
 @media screen and (max-width: 360px) {
   #intro {
     .spolight {
       .container {
-        opacity: .25;
+        background-color: $gray-alpha;
+        text-align: center;
+        opacity: 1;
         header {
-          margin: 3em;
+          margin: 5em 2em 5em 2em;
+        }
+        &:active,
+        &:hover,
+        &:focus {
+          background-color: $green;
         }
       }
     }
