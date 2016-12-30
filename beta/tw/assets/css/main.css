@@ -546,6 +546,7 @@ img {
       display: block;
       width: 100%; }
       #intro .spolight .container {
+        vertical-align: middle;
         background-color: rgba(29, 29, 29, 0.5);
         text-align: center;
         opacity: 1; }
