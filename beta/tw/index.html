@@ -136,21 +136,17 @@
         <h1>詳細交通方式</h1>
         <div class="chooser">
           <div class="option">
-            <a class="choose" href="#rail" data-type="rail"><img src="images/Icon/home/train/train.png"></a>
-            <h4>高鐵&amp;火車</h4>
-          </div>
+            <a class="choose" href="#rail" data-type="rail"><img src="/images/Icon/home/train/train.png"></a>
+            <h4>高鐵&amp;火車</h4> </div>
           <div class="option">
-            <a class="choose" href="#mrt" data-type="mrt"><img src="images/Icon/home/mrt/mrt.png"></a>
-            <h4>捷運新埔站</h4>
-          </div>
+            <a class="choose" href="#mrt" data-type="mrt"><img src="/images/Icon/home/mrt/mrt.png"></a>
+            <h4>捷運新埔站</h4> </div>
           <div class="option">
-            <a class="choose" href="#bus" data-type="bus"><img src="images/Icon/home/bus/bus.png"></a>
-            <h4>公車</h4>
-          </div>
+            <a class="choose" href="#bus" data-type="bus"><img src="/images/Icon/home/bus/bus.png"></a>
+            <h4>公車</h4> </div>
           <div class="option">
-            <a class="choose" href="#car" data-type="car"><img src="images/Icon/home/car/car.png"></a>
-            <h4>開車</h4>
-          </div>
+            <a class="choose" href="#car" data-type="car"><img src="/images/Icon/home/car/car.png"></a>
+            <h4>開車</h4> </div>
         </div>
         <div class="guide">
           <div class="msg" data-type="rail">
@@ -189,81 +185,15 @@
         <p> 地址：新北市三峽區中華路四十三巷十號
           <br> Tel：(02)2673-2333
           <br> Fax：(02)2673-6077</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.04437180997!2d121.37067091500435!3d24.930558284020957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681bec4acc85af%3A0x5aac3818a6d0fd16!2zMjM35paw5YyX5biC5LiJ5bO95Y2A5Lit6I-v6LevNDPlt7cxMOiZnw!5e0!3m2!1szh-TW!2stw!4v1464863705137" frameborder="0" style="border:0" width="100%" height="400" allowfullscreen></iframe>
-        <a href="https://www.google.com.tw/maps/place/%E6%9D%8E%E6%A2%85%E6%A8%B9%E7%B4%80%E5%BF%B5%E9%A4%A8/@24.9305631,121.3706709,17z/data=!3m1!4b1!4m5!3m4!1s0x34681bec4aab9289:0x19406de61e70b2d4!8m2!3d24.9305583!4d121.3728596" class="button">打開地圖</a>
-      </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.04437180997!2d121.37067091500435!3d24.930558284020957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681bec4acc85af%3A0x5aac3818a6d0fd16!2zMjM35paw5YyX5biC5LiJ5bO95Y2A5Lit6I-v6LevNDPlt7cxMOiZnw!5e0!3m2!1szh-TW!2stw!4v1464863705137" frameborder="0" style="border:0" width="100%" height="400" allowfullscreen></iframe> <a href="https://www.google.com.tw/maps/place/%E6%9D%8E%E6%A2%85%E6%A8%B9%E7%B4%80%E5%BF%B5%E9%A4%A8/@24.9305631,121.3706709,17z/data=!3m1!4b1!4m5!3m4!1s0x34681bec4aab9289:0x19406de61e70b2d4!8m2!3d24.9305583!4d121.3728596" class="button">打開地圖</a> </div>
   </section>
   <footer id="footer"></footer>
-  <script src="../assets/js/header.js" async></script>
-  <script src="../assets/js/footer.js" async></script>
+  <script src="/assets/js/header.js" async></script>
+  <script src="/assets/js/footer.js" async></script>
   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="assets/js/slick.js"></script>
-  <script>
-    $(function() {
-      //scroll down
-      $(".scrolly").bind('click', function(event) {
-        event.preventDefault(); //先取消超連結原本預設動作
-        var $anchor = $(this);
-        $('body').animate({
-          scrollTop: $($anchor.attr('href')).offset().top
-        }, 1000, 'easeInOutQuint');
-      });
-    });
-    //    traffic slide
-    $('.msg').hide();
-
-    $('.choose').click(function() {
-      $('.msg').hide("slow");
-      $('.choose').removeClass("active");
-      var choosed = $(this).data('type');
-      $('.msg[data-type=' + choosed + ']').show("slow");
-      $('.choose[data-type=' + choosed + ']').addClass("active");
-    })
-    $('.choose[data-type=rail]').trigger("click");
-    
-    //news
-    $('.all-news').slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1, // variableWidth:true,
-      responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      }, {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      }, {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }]
-    });
-
-  </script>
-  <!--  navbar-->
-  <script>
-    $(document).ready(function() {
-      $(".toggle").click(function() {
-        $(this).toggleClass("active");
-        $(".nav").slideToggle();
-        $("#nav").toggleClass("active");
-      });
-    });
-
-  </script>
-  <link rel="stylesheet" href="assets/css/main.css"> </body>
+  <script src="/assets/js/main.js" async></script>
+  <link rel="stylesheet" href="./assets/css/main.css"> </body>
 
 </html>

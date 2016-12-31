@@ -116,7 +116,8 @@ body {
   line-height: 1; }
 
 ol,
-ul {
+ul,
+li {
   list-style: none; }
 
 blockquote,
@@ -134,7 +135,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-h1, h2, h3, h4, h5, h6, p, ul, li, footer {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+footer {
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 300;
   letter-spacing: 1.2px;
@@ -347,7 +357,7 @@ img {
   height: 100vh;
   background-color: #1d1d1d;
   background-image: url("./images/BG.jpg");
-  background-attachment: fixed;
+  background-attachment: local;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -371,8 +381,36 @@ img {
     #banner .content h2 {
       font-size: 1.2em; }
     #banner .content p {
-      font-size: 0.5em;
+      font-size: 0.8em;
       opacity: .8; }
+  #banner.bg {
+    z-index: 1;
+    display: block;
+    position: relative;
+    height: 20em; }
+    #banner.bg .location {
+      font-size: 1em;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight: 100;
+      display: block;
+      position: relative;
+      height: 2em;
+      margin-top: 4em;
+      background-color: #437414;
+      line-height: 2em;
+      padding: 0 1.5em; }
+    #banner.bg .container {
+      position: relative;
+      height: 100%;
+      max-height: 12em;
+      padding: 3em;
+      background-color: rgba(29, 29, 29, 0.5); }
+      #banner.bg .container h1 {
+        display: block;
+        font-size: 2em; }
+      #banner.bg .container p {
+        display: block;
+        font-size: 1.2em; }
 
 @media screen and (max-width: 736px) {
   #banner .content {
@@ -381,7 +419,11 @@ img {
     max-width: 100%;
     text-align: center; }
     #banner .content h1 {
-      margin: 1.5em 0 0 0; } }
+      margin: 1.5em 0 0 0; }
+  #banner.bg .location {
+    margin-top: 2.5em;
+    height: 1.5em;
+    line-height: 1.5em; } }
 #news {
   color: white;
   display: block;
@@ -409,7 +451,9 @@ img {
       display: block !important;
       width: 100%;
       padding: 0 !important;
-      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); }
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+      #news .content img:hover {
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5); }
     #news .content .slick-dots {
       display: block !important;
       position: relative;
@@ -464,7 +508,7 @@ img {
         height: 5em;
         border-radius: 100%;
         padding: .5em;
-        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); }
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
         #info .content .block .image img {
           width: 5em;
           height: 5em; }
@@ -491,7 +535,7 @@ img {
   height: 100vh;
   width: 100vw; }
   #intro .spolight {
-    background-attachment: fixed;
+    background-attachment: local;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -567,7 +611,7 @@ img {
     color: #0d0e0f; }
   #traffic .container {
     display: block;
-    padding: 2em; }
+    padding: 5em 2em; }
     #traffic .container h1 {
       font-size: 2em;
       text-align: center;
@@ -596,15 +640,21 @@ img {
             padding: 1em;
             margin: 0 .5em;
             display: block;
-            border: 2px solid white;
+            overflow: hidden;
+            border: 2px solid transparent;
             border-radius: 100%;
             width: 5em;
             height: 5em; }
             #traffic .container .content .chooser .option a img {
               width: 5em;
-              height: 5em; }
+              height: 5em;
+              transform: translateX(10em);
+              filter: drop-shadow(-10em 0 0 rgba(29, 29, 29, 0.5)); }
             #traffic .container .content .chooser .option a.active, #traffic .container .content .chooser .option a:hover {
-              border: 2px solid #437414; }
+              border: 2px solid #437414;
+              box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
+              #traffic .container .content .chooser .option a.active img, #traffic .container .content .chooser .option a:hover img {
+                filter: drop-shadow(-10em 0 0 #437414); }
       #traffic .container .content .guide {
         padding: 1em;
         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
@@ -669,5 +719,76 @@ img {
 @media screen and (max-width: 320px) {
   #traffic {
     height: 250vh; } }
+#wrapper {
+  color: #0d0e0f;
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 100%; }
+  #wrapper .container {
+    display: block;
+    padding: 2em; }
+    #wrapper .container .chooser {
+      margin: 2em auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%; }
+      #wrapper .container .chooser .option {
+        text-align: center; }
+        #wrapper .container .chooser .option h4 {
+          margin: .5em;
+          display: block;
+          height: 1.2em;
+          font-size: 1.2em; }
+        #wrapper .container .chooser .option a {
+          display: block;
+          transition: all .3s;
+          margin: 0 .5em;
+          overflow: hidden;
+          padding: 1em;
+          width: 5em;
+          height: 5em;
+          border: 2px solid transparent;
+          border-radius: 100%; }
+          #wrapper .container .chooser .option a img {
+            transform: translateX(10em);
+            filter: drop-shadow(-10em 0 0 rgba(29, 29, 29, 0.5));
+            width: 5em;
+            height: 5em; }
+          #wrapper .container .chooser .option a.active, #wrapper .container .chooser .option a:hover {
+            border: 2px solid #437414;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
+            #wrapper .container .chooser .option a.active img, #wrapper .container .chooser .option a:hover img {
+              filter: drop-shadow(-10em 0 0 #437414); }
+    #wrapper .container .guide {
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+      border-radius: 1em;
+      padding: 2em; }
+      #wrapper .container .guide h4 {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        margin: .5em auto; }
+      #wrapper .container .guide li {
+        list-style: circle; }
+      #wrapper .container .guide p {
+        margin: .5em 0;
+        text-align: left;
+        text-indent: 2em;
+        word-wrap: break-word;
+        white-space: pre-line; }
+        #wrapper .container .guide p a {
+          text-indent: 0; }
+  #wrapper .button {
+    margin: auto;
+    border: 1px solid #0d0e0f;
+    color: #0d0e0f; }
+    #wrapper .button:hover {
+      border: 1px solid #ffd548;
+      color: white; }
+  #wrapper a {
+    color: #0d0e0f; }
 
 /*# sourceMappingURL=main.css.map */
