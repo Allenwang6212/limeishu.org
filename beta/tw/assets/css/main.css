@@ -223,7 +223,7 @@ img {
         font-size: 1em; }
         #footer.yellow .icons li .icon:hover {
           background-color: white;
-          color: #ffd548; }
+          color: #ddae10; }
       #footer.yellow .icons li .label {
         display: none; }
   #footer.yellow .copyright {
@@ -490,18 +490,6 @@ img {
         display: block;
         font-size: 1.2em; }
 
-@media screen and (max-width: 736px) {
-  #banner .content {
-    bottom: 0;
-    padding: 2em;
-    max-width: 100%;
-    text-align: center; }
-    #banner .content h1 {
-      margin: 1.5em 0 0 0; }
-  #banner.bg .location {
-    margin-top: 2.5em;
-    height: 1.5em;
-    line-height: 1.5em; } }
 #banner.yellow {
   color: white;
   display: block;
@@ -563,18 +551,6 @@ img {
         display: block;
         font-size: 1.2em; }
 
-@media screen and (max-width: 736px) {
-  #banner .content {
-    bottom: 0;
-    padding: 2em;
-    max-width: 100%;
-    text-align: center; }
-    #banner .content h1 {
-      margin: 1.5em 0 0 0; }
-  #banner.bg .location {
-    margin-top: 2.5em;
-    height: 1.5em;
-    line-height: 1.5em; } }
 #banner.green {
   color: white;
   display: block;
@@ -645,7 +621,7 @@ img {
     #banner .content h1 {
       margin: 1.5em 0 0 0; }
   #banner.bg .location {
-    margin-top: 2.5em;
+    margin-top: 2.5em !important;
     height: 1.5em;
     line-height: 1.5em; } }
 #news {

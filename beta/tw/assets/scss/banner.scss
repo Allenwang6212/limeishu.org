@@ -69,23 +69,24 @@ $colorThemes: (init $white) (yellow $dark-yellow) (green $dark-green);
       }
     }
   }
-  @media screen and (max-width: 736px) {
-    #banner {
-      .content {
-        bottom: 0;
-        padding: 2em;
-        max-width: 100%;
-        text-align: center;
-        h1 {
-          margin: 1.5em 0 0 0;
-        }
+}
+
+@media screen and (max-width: 736px) {
+  #banner {
+    .content {
+      bottom: 0;
+      padding: 2em;
+      max-width: 100%;
+      text-align: center;
+      h1 {
+        margin: 1.5em 0 0 0;
       }
-      &.bg {
-        .location {
-          margin-top: 2.5em;
-          height: 1.5em;
-          line-height: 1.5em;
-        }
+    }
+    &.bg {
+      .location {
+        margin-top: 2.5em !important;
+        height: 1.5em;
+        line-height: 1.5em;
       }
     }
   }
