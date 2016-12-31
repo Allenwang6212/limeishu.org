@@ -49,15 +49,15 @@
             img {
               width: 5em;
               height: 5em;
-              transform: translateX(10em);
-              filter: drop-shadow(-10em 0 0 $gray-alpha);
+              transform: translateY(-10em);
+              filter: drop-shadow(0 10em 0 $gray-alpha);
             }
             &.active,
             &:hover {
               border: 2px solid $dark-green;
               box-shadow: 2px 2px 5px rgba(0%, 0%, 0%, 0.5);
               img {
-                filter: drop-shadow(-10em 0 0 $dark-green);
+                filter: drop-shadow(0 10em 0 $dark-green);
               }
             }
           }

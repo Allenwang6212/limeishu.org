@@ -848,13 +848,13 @@ img {
             #traffic .container .content .chooser .option a img {
               width: 5em;
               height: 5em;
-              transform: translateX(10em);
-              filter: drop-shadow(-10em 0 0 rgba(29, 29, 29, 0.5)); }
+              transform: translateY(-10em);
+              filter: drop-shadow(0 10em 0 rgba(29, 29, 29, 0.5)); }
             #traffic .container .content .chooser .option a.active, #traffic .container .content .chooser .option a:hover {
               border: 2px solid #437414;
               box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
               #traffic .container .content .chooser .option a.active img, #traffic .container .content .chooser .option a:hover img {
-                filter: drop-shadow(-10em 0 0 #437414); }
+                filter: drop-shadow(0 10em 0 #437414); }
       #traffic .container .content .guide {
         padding: 1em;
         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
@@ -953,15 +953,15 @@ img {
           border: 2px solid transparent;
           border-radius: 100%; }
           #wrapper.yellow .container .chooser .option a img {
-            transform: translateX(10em);
-            filter: drop-shadow(-10em 0 0 rgba(29, 29, 29, 0.5));
+            transform: translateY(-10em);
+            filter: drop-shadow(0 10em 0 rgba(29, 29, 29, 0.5));
             width: 5em;
             height: 5em; }
           #wrapper.yellow .container .chooser .option a.active, #wrapper.yellow .container .chooser .option a:hover {
             border: 2px solid #ddae10;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
             #wrapper.yellow .container .chooser .option a.active img, #wrapper.yellow .container .chooser .option a:hover img {
-              filter: drop-shadow(-10em 0 0 #ddae10); }
+              filter: drop-shadow(0 10em 0 #ddae10); }
     #wrapper.yellow .container .guide {
       box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
       border-radius: 1em;
@@ -1026,15 +1026,15 @@ img {
           border: 2px solid transparent;
           border-radius: 100%; }
           #wrapper.green .container .chooser .option a img {
-            transform: translateX(10em);
-            filter: drop-shadow(-10em 0 0 rgba(29, 29, 29, 0.5));
+            transform: translateY(-10em);
+            filter: drop-shadow(0 10em 0 rgba(29, 29, 29, 0.5));
             width: 5em;
             height: 5em; }
           #wrapper.green .container .chooser .option a.active, #wrapper.green .container .chooser .option a:hover {
             border: 2px solid #437414;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
             #wrapper.green .container .chooser .option a.active img, #wrapper.green .container .chooser .option a:hover img {
-              filter: drop-shadow(-10em 0 0 #437414); }
+              filter: drop-shadow(0 10em 0 #437414); }
     #wrapper.green .container .guide {
       box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
       border-radius: 1em;
