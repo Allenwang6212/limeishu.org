@@ -154,7 +154,7 @@ img {
   display: block;
   max-height: 100vw; }
 
-#footer {
+#footer.init {
   overflow: hidden;
   bottom: 0;
   position: relative;
@@ -165,14 +165,14 @@ img {
   display: block;
   opacity: .9;
   z-index: 0; }
-  #footer .icons {
+  #footer.init .icons {
     display: block;
     margin: 1em auto;
     position: relative; }
-    #footer .icons li {
+    #footer.init .icons li {
       margin: .5em;
       display: inline-block; }
-      #footer .icons li .icon {
+      #footer.init .icons li .icon {
         padding: .5em;
         width: 1em;
         height: 1em;
@@ -182,12 +182,90 @@ img {
         font-family: 'FontAwesome';
         color: white;
         font-size: 1em; }
-        #footer .icons li .icon:hover {
+        #footer.init .icons li .icon:hover {
           background-color: white;
-          color: #1d1d1d; }
-      #footer .icons li .label {
+          color: #0d0e0f; }
+      #footer.init .icons li .label {
         display: none; }
-  #footer .copyright {
+  #footer.init .copyright {
+    display: block;
+    margin: auto;
+    position: relative;
+    font-size: 0.5em; }
+
+#footer.yellow {
+  overflow: hidden;
+  bottom: 0;
+  position: relative;
+  color: white;
+  background-color: #1d1d1d;
+  text-align: center;
+  padding: 2em 0em;
+  display: block;
+  opacity: .9;
+  z-index: 0; }
+  #footer.yellow .icons {
+    display: block;
+    margin: 1em auto;
+    position: relative; }
+    #footer.yellow .icons li {
+      margin: .5em;
+      display: inline-block; }
+      #footer.yellow .icons li .icon {
+        padding: .5em;
+        width: 1em;
+        height: 1em;
+        border: 1px solid white;
+        border-radius: 100%;
+        transition: all .3s;
+        font-family: 'FontAwesome';
+        color: white;
+        font-size: 1em; }
+        #footer.yellow .icons li .icon:hover {
+          background-color: white;
+          color: #ffd548; }
+      #footer.yellow .icons li .label {
+        display: none; }
+  #footer.yellow .copyright {
+    display: block;
+    margin: auto;
+    position: relative;
+    font-size: 0.5em; }
+
+#footer.green {
+  overflow: hidden;
+  bottom: 0;
+  position: relative;
+  color: white;
+  background-color: #1d1d1d;
+  text-align: center;
+  padding: 2em 0em;
+  display: block;
+  opacity: .9;
+  z-index: 0; }
+  #footer.green .icons {
+    display: block;
+    margin: 1em auto;
+    position: relative; }
+    #footer.green .icons li {
+      margin: .5em;
+      display: inline-block; }
+      #footer.green .icons li .icon {
+        padding: .5em;
+        width: 1em;
+        height: 1em;
+        border: 1px solid white;
+        border-radius: 100%;
+        transition: all .3s;
+        font-family: 'FontAwesome';
+        color: white;
+        font-size: 1em; }
+        #footer.green .icons li .icon:hover {
+          background-color: white;
+          color: #0ea3a3; }
+      #footer.green .icons li .label {
+        display: none; }
+  #footer.green .copyright {
     display: block;
     margin: auto;
     position: relative;
@@ -351,7 +429,7 @@ img {
         display: none; }
     #header .toggle {
       display: inline-block; } }
-#banner {
+#banner.init {
   color: white;
   display: block;
   height: 100vh;
@@ -363,7 +441,7 @@ img {
   background-size: cover;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
   z-index: -1; }
-  #banner .content {
+  #banner.init .content {
     display: block;
     position: relative;
     background-color: rgba(29, 29, 29, 0.5);
@@ -375,20 +453,166 @@ img {
     padding: 2em 3.5em;
     border-radius: 0 1em 1em 0;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); }
-    #banner .content h1 {
+    #banner.init .content h1 {
       font-size: 2.5em;
       margin: 2.5em 0 0 0; }
-    #banner .content h2 {
+    #banner.init .content h2 {
       font-size: 1.2em; }
-    #banner .content p {
+    #banner.init .content p {
       font-size: 0.8em;
       opacity: .8; }
-  #banner.bg {
+  #banner.init.bg {
     z-index: 1;
     display: block;
     position: relative;
     height: 20em; }
-    #banner.bg .location {
+    #banner.init.bg .location {
+      font-size: 1em;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight: 100;
+      display: block;
+      position: relative;
+      height: 2em;
+      margin-top: 4em;
+      background-color: white;
+      line-height: 2em;
+      padding: 0 1.5em; }
+    #banner.init.bg .container {
+      position: relative;
+      height: 100%;
+      max-height: 12em;
+      padding: 3em;
+      background-color: rgba(29, 29, 29, 0.5); }
+      #banner.init.bg .container h1 {
+        display: block;
+        font-size: 2em; }
+      #banner.init.bg .container p {
+        display: block;
+        font-size: 1.2em; }
+
+@media screen and (max-width: 736px) {
+  #banner .content {
+    bottom: 0;
+    padding: 2em;
+    max-width: 100%;
+    text-align: center; }
+    #banner .content h1 {
+      margin: 1.5em 0 0 0; }
+  #banner.bg .location {
+    margin-top: 2.5em;
+    height: 1.5em;
+    line-height: 1.5em; } }
+#banner.yellow {
+  color: white;
+  display: block;
+  height: 100vh;
+  background-color: #1d1d1d;
+  background-image: url("./images/BG.jpg");
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: -1; }
+  #banner.yellow .content {
+    display: block;
+    position: relative;
+    background-color: rgba(29, 29, 29, 0.5);
+    max-width: 40%;
+    min-height: 50%;
+    left: 0;
+    top: 25%;
+    bottom: 25%;
+    padding: 2em 3.5em;
+    border-radius: 0 1em 1em 0;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); }
+    #banner.yellow .content h1 {
+      font-size: 2.5em;
+      margin: 2.5em 0 0 0; }
+    #banner.yellow .content h2 {
+      font-size: 1.2em; }
+    #banner.yellow .content p {
+      font-size: 0.8em;
+      opacity: .8; }
+  #banner.yellow.bg {
+    z-index: 1;
+    display: block;
+    position: relative;
+    height: 20em; }
+    #banner.yellow.bg .location {
+      font-size: 1em;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight: 100;
+      display: block;
+      position: relative;
+      height: 2em;
+      margin-top: 4em;
+      background-color: #ddae10;
+      line-height: 2em;
+      padding: 0 1.5em; }
+    #banner.yellow.bg .container {
+      position: relative;
+      height: 100%;
+      max-height: 12em;
+      padding: 3em;
+      background-color: rgba(29, 29, 29, 0.5); }
+      #banner.yellow.bg .container h1 {
+        display: block;
+        font-size: 2em; }
+      #banner.yellow.bg .container p {
+        display: block;
+        font-size: 1.2em; }
+
+@media screen and (max-width: 736px) {
+  #banner .content {
+    bottom: 0;
+    padding: 2em;
+    max-width: 100%;
+    text-align: center; }
+    #banner .content h1 {
+      margin: 1.5em 0 0 0; }
+  #banner.bg .location {
+    margin-top: 2.5em;
+    height: 1.5em;
+    line-height: 1.5em; } }
+#banner.green {
+  color: white;
+  display: block;
+  height: 100vh;
+  background-color: #1d1d1d;
+  background-image: url("./images/BG.jpg");
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: -1; }
+  #banner.green .content {
+    display: block;
+    position: relative;
+    background-color: rgba(29, 29, 29, 0.5);
+    max-width: 40%;
+    min-height: 50%;
+    left: 0;
+    top: 25%;
+    bottom: 25%;
+    padding: 2em 3.5em;
+    border-radius: 0 1em 1em 0;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); }
+    #banner.green .content h1 {
+      font-size: 2.5em;
+      margin: 2.5em 0 0 0; }
+    #banner.green .content h2 {
+      font-size: 1.2em; }
+    #banner.green .content p {
+      font-size: 0.8em;
+      opacity: .8; }
+  #banner.green.bg {
+    z-index: 1;
+    display: block;
+    position: relative;
+    height: 20em; }
+    #banner.green.bg .location {
       font-size: 1em;
       font-family: 'Noto Sans TC', sans-serif;
       font-weight: 100;
@@ -399,16 +623,16 @@ img {
       background-color: #437414;
       line-height: 2em;
       padding: 0 1.5em; }
-    #banner.bg .container {
+    #banner.green.bg .container {
       position: relative;
       height: 100%;
       max-height: 12em;
       padding: 3em;
       background-color: rgba(29, 29, 29, 0.5); }
-      #banner.bg .container h1 {
+      #banner.green.bg .container h1 {
         display: block;
         font-size: 2em; }
-      #banner.bg .container p {
+      #banner.green.bg .container p {
         display: block;
         font-size: 1.2em; }
 
@@ -719,30 +943,30 @@ img {
 @media screen and (max-width: 320px) {
   #traffic {
     height: 250vh; } }
-#wrapper {
+#wrapper.yellow {
   color: #0d0e0f;
   display: block;
   background-color: white;
   width: 100%;
   height: 100%; }
-  #wrapper .container {
+  #wrapper.yellow .container {
     display: block;
     padding: 2em; }
-    #wrapper .container .chooser {
+    #wrapper.yellow .container .chooser {
       margin: 2em auto;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: space-around;
       width: 100%; }
-      #wrapper .container .chooser .option {
+      #wrapper.yellow .container .chooser .option {
         text-align: center; }
-        #wrapper .container .chooser .option h4 {
+        #wrapper.yellow .container .chooser .option h4 {
           margin: .5em;
           display: block;
           height: 1.2em;
           font-size: 1.2em; }
-        #wrapper .container .chooser .option a {
+        #wrapper.yellow .container .chooser .option a {
           display: block;
           transition: all .3s;
           margin: 0 .5em;
@@ -752,43 +976,117 @@ img {
           height: 5em;
           border: 2px solid transparent;
           border-radius: 100%; }
-          #wrapper .container .chooser .option a img {
+          #wrapper.yellow .container .chooser .option a img {
             transform: translateX(10em);
             filter: drop-shadow(-10em 0 0 rgba(29, 29, 29, 0.5));
             width: 5em;
             height: 5em; }
-          #wrapper .container .chooser .option a.active, #wrapper .container .chooser .option a:hover {
-            border: 2px solid #437414;
+          #wrapper.yellow .container .chooser .option a.active, #wrapper.yellow .container .chooser .option a:hover {
+            border: 2px solid #ddae10;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
-            #wrapper .container .chooser .option a.active img, #wrapper .container .chooser .option a:hover img {
-              filter: drop-shadow(-10em 0 0 #437414); }
-    #wrapper .container .guide {
+            #wrapper.yellow .container .chooser .option a.active img, #wrapper.yellow .container .chooser .option a:hover img {
+              filter: drop-shadow(-10em 0 0 #ddae10); }
+    #wrapper.yellow .container .guide {
       box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
       border-radius: 1em;
       padding: 2em; }
-      #wrapper .container .guide h4 {
+      #wrapper.yellow .container .guide h4 {
         display: block;
         text-align: center;
         font-size: 2em;
         margin: .5em auto; }
-      #wrapper .container .guide li {
+      #wrapper.yellow .container .guide li {
         list-style: circle; }
-      #wrapper .container .guide p {
+      #wrapper.yellow .container .guide p {
         margin: .5em 0;
         text-align: left;
         text-indent: 2em;
         word-wrap: break-word;
         white-space: pre-line; }
-        #wrapper .container .guide p a {
+        #wrapper.yellow .container .guide p a {
           text-indent: 0; }
-  #wrapper .button {
+  #wrapper.yellow .button {
     margin: auto;
     border: 1px solid #0d0e0f;
     color: #0d0e0f; }
-    #wrapper .button:hover {
-      border: 1px solid #ffd548;
+    #wrapper.yellow .button:hover {
+      border: 1px solid #ddae10;
+      background-color: #ddae10;
       color: white; }
-  #wrapper a {
+  #wrapper.yellow a {
+    color: #0d0e0f; }
+
+#wrapper.green {
+  color: #0d0e0f;
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 100%; }
+  #wrapper.green .container {
+    display: block;
+    padding: 2em; }
+    #wrapper.green .container .chooser {
+      margin: 2em auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%; }
+      #wrapper.green .container .chooser .option {
+        text-align: center; }
+        #wrapper.green .container .chooser .option h4 {
+          margin: .5em;
+          display: block;
+          height: 1.2em;
+          font-size: 1.2em; }
+        #wrapper.green .container .chooser .option a {
+          display: block;
+          transition: all .3s;
+          margin: 0 .5em;
+          overflow: hidden;
+          padding: 1em;
+          width: 5em;
+          height: 5em;
+          border: 2px solid transparent;
+          border-radius: 100%; }
+          #wrapper.green .container .chooser .option a img {
+            transform: translateX(10em);
+            filter: drop-shadow(-10em 0 0 rgba(29, 29, 29, 0.5));
+            width: 5em;
+            height: 5em; }
+          #wrapper.green .container .chooser .option a.active, #wrapper.green .container .chooser .option a:hover {
+            border: 2px solid #437414;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
+            #wrapper.green .container .chooser .option a.active img, #wrapper.green .container .chooser .option a:hover img {
+              filter: drop-shadow(-10em 0 0 #437414); }
+    #wrapper.green .container .guide {
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+      border-radius: 1em;
+      padding: 2em; }
+      #wrapper.green .container .guide h4 {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        margin: .5em auto; }
+      #wrapper.green .container .guide li {
+        list-style: circle; }
+      #wrapper.green .container .guide p {
+        margin: .5em 0;
+        text-align: left;
+        text-indent: 2em;
+        word-wrap: break-word;
+        white-space: pre-line; }
+        #wrapper.green .container .guide p a {
+          text-indent: 0; }
+  #wrapper.green .button {
+    margin: auto;
+    border: 1px solid #0d0e0f;
+    color: #0d0e0f; }
+    #wrapper.green .button:hover {
+      border: 1px solid #437414;
+      background-color: #437414;
+      color: white; }
+  #wrapper.green a {
     color: #0d0e0f; }
 
 /*# sourceMappingURL=main.css.map */
