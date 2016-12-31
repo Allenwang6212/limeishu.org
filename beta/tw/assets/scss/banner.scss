@@ -76,7 +76,7 @@ $colorThemes: (init $white) (yellow $dark-yellow) (green $dark-green);
     .content {
       bottom: 0;
       padding: 2em;
-      max-width: 100%;
+      max-width: 100% !important;
       text-align: center;
       h1 {
         margin: 1.5em 0 0 0;
