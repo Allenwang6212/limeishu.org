@@ -614,12 +614,12 @@ img {
 
 @media screen and (max-width: 736px) {
   #banner .content {
-    bottom: 0;
-    padding: 2em;
+    bottom: 0 !important;
+    padding: 2em !important;
     max-width: 100% !important;
     text-align: center; }
     #banner .content h1 {
-      margin: 1.5em 0 0 0; }
+      margin: 1.5em 0 0 0 !important; }
   #banner.bg .location {
     margin-top: 2.5em !important;
     height: 1.5em;
