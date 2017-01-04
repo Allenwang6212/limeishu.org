@@ -430,6 +430,7 @@ img {
     #header .toggle {
       display: inline-block; } }
 #banner.init {
+  z-index: 0;
   color: white;
   display: block;
   height: 100vh;
@@ -439,8 +440,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
-  z-index: -1; }
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); }
   #banner.init .content {
     display: block;
     position: relative;
@@ -491,6 +491,7 @@ img {
         font-size: 1.2em; }
 
 #banner.yellow {
+  z-index: 0;
   color: white;
   display: block;
   height: 100vh;
@@ -500,8 +501,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
-  z-index: -1; }
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); }
   #banner.yellow .content {
     display: block;
     position: relative;
@@ -552,6 +552,7 @@ img {
         font-size: 1.2em; }
 
 #banner.green {
+  z-index: 0;
   color: white;
   display: block;
   height: 100vh;
@@ -561,8 +562,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
-  z-index: -1; }
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); }
   #banner.green .content {
     display: block;
     position: relative;

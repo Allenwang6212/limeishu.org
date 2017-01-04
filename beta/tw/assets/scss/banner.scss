@@ -3,6 +3,7 @@ $colorThemes: (init $white) (yellow $dark-yellow) (green $dark-green);
   $class: nth($colorClass, 1);
   $theme: nth($colorClass, 2);
   #banner.#{$class} {
+    z-index: 0;
     color: $white;
     display: block;
     height: 100vh;
@@ -10,7 +11,6 @@ $colorThemes: (init $white) (yellow $dark-yellow) (green $dark-green);
     background-image: url("./images/BG.jpg");
     @include backgroundConfig;
     box-shadow: 4px 4px 12px rgba(0%, 0%, 0%, 0.5);
-    z-index: -1;
     .content {
       display: block;
       position: relative;
