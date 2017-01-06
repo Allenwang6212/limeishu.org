@@ -801,10 +801,11 @@ img {
         #intro .spolight .container:active, #intro .spolight .container:hover, #intro .spolight .container:focus {
           background-color: #0ea3a3; } }
 #traffic {
+  position: relative;
   color: #0d0e0f;
   display: block;
   background-color: white;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: 3; }
   #traffic a {
@@ -819,7 +820,7 @@ img {
     #traffic .container .content {
       float: left;
       margin: .5em;
-      width: 40%;
+      width: 45%;
       position: relative;
       display: inline-block; }
       #traffic .container .content .chooser {
@@ -851,10 +852,10 @@ img {
               transform: translateY(-10em);
               filter: drop-shadow(0 10em 0 rgba(29, 29, 29, 0.5)); }
             #traffic .container .content .chooser .option a.active, #traffic .container .content .chooser .option a:hover {
-              border: 2px solid #437414;
+              border: 2px solid #0ea3a3;
               box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
               #traffic .container .content .chooser .option a.active img, #traffic .container .content .chooser .option a:hover img {
-                filter: drop-shadow(0 10em 0 #437414); }
+                filter: drop-shadow(0 10em 0 #0ea3a3); }
       #traffic .container .content .guide {
         padding: 1em;
         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
@@ -864,11 +865,10 @@ img {
         #traffic .container .content .guide p {
           font-size: 0.8em; }
     #traffic .container .maps {
-      float: right;
       position: relative;
       margin: .5em;
       display: inline-block;
-      max-width: 60%;
+      max-width: 50%;
       min-width: 50%; }
       #traffic .container .maps a.button {
         text-align: center;
@@ -878,8 +878,8 @@ img {
     border: 1px solid #0d0e0f;
     color: #0d0e0f; }
     #traffic .button:hover {
-      background-color: #437414;
-      border: 1px solid #437414;
+      background-color: #0ea3a3;
+      border: 1px solid #0ea3a3;
       color: white; }
 
 @media screen and (max-width: 736px) {
@@ -916,9 +916,6 @@ img {
               width: 2em; }
     #traffic iframe {
       pointer-events: none; } }
-@media screen and (max-width: 320px) {
-  #traffic {
-    height: 250vh; } }
 #wrapper.yellow {
   color: #0d0e0f;
   display: block;

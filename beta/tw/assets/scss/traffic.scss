@@ -1,8 +1,9 @@
 #traffic {
+  position: relative;
   color: $black;
   display: block;
   background-color: $white;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: 3;
   a {
@@ -19,7 +20,7 @@
     .content {
       float: left;
       margin: .5em;
-      width: 40%;
+      width: 45%;
       position: relative;
       display: inline-block;
       .chooser {
@@ -54,10 +55,10 @@
             }
             &.active,
             &:hover {
-              border: 2px solid $dark-green;
+              border: 2px solid $green;
               box-shadow: 2px 2px 5px rgba(0%, 0%, 0%, 0.5);
               img {
-                filter: drop-shadow(0 10em 0 $dark-green);
+                filter: drop-shadow(0 10em 0 $green);
               }
             }
           }
@@ -76,11 +77,10 @@
       }
     }
     .maps {
-      float: right;
       position: relative;
       margin: .5em;
       display: inline-block;
-      max-width: 60%;
+      max-width: 50%;
       min-width: 50%;
       a {
         &.button {
@@ -95,8 +95,8 @@
     border: 1px solid $black;
     color: $black;
     &:hover {
-      background-color: $dark-green;
-      border: 1px solid $dark-green;
+      background-color: $green;
+      border: 1px solid $green;
       color: $white;
     }
   }
@@ -148,11 +148,5 @@
     iframe {
       pointer-events: none;
     }
-  }
-}
-
-@media screen and (max-width: 320px) {
-  #traffic {
-    height: 250vh;
   }
 }
