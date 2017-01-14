@@ -47,12 +47,8 @@
 				text-align: center;
 				position: relative;
 				padding: 2em;
-				h1,
-				p {
-					display: inline-flex;
-				}
 				h1 {
-					margin: 0 auto;
+					margin: 0;
 					font-size: $title-m;
 					border: 0;
 				}

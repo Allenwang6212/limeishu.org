@@ -359,11 +359,8 @@ html, body {
         text-align: center;
         position: relative;
         padding: 2em; }
-        #project .container .card .content h1,
-        #project .container .card .content p {
-          display: inline-flex; }
         #project .container .card .content h1 {
-          margin: 0 auto;
+          margin: 0;
           font-size: 1.2em;
           border: 0; }
         #project .container .card .content p {
