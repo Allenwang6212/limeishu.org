@@ -1,11 +1,22 @@
 $(function () {
 	$(window).scroll(function () {
-		var height = document.body.scrollHeight;
+		var height = document.body.clientHeight;
 		var scrollHight = $(this).scrollTop();
 		if (scrollHight >= (height * 0.4 - 48)) {
 			$("#nav").addClass("scrolled");
 		} else {
 			$("#nav").removeClass("scrolled");
+		}
+		if (scrollHight >= (height * 0.4 - 48)) {
+			$("#nav").addClass("how");
+		} else {
+			$("#nav").removeClass("how");
+		}
+		if (scrollHight >= (height * 1.4 - 48)) {
+			$("#nav").removeClass("how");
+			$("#nav").addClass("project");
+		} else {
+			$("#nav").removeClass("project");
 		}
 	});
 });

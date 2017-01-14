@@ -161,6 +161,19 @@ html, body {
   height: 100%;
   background-color: white; }
 
+.button {
+  transition: all .3s;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin: .5em;
+  padding: .5em;
+  border: 1px solid white;
+  border-radius: 1em; }
+  .button:hover {
+    color: #0d0e0f;
+    background-color: white; }
+
 #banner {
   display: flex;
   flex-direction: column;
@@ -207,20 +220,33 @@ html, body {
       flex-wrap: nowrap;
       display: flex; }
       #bar #nav ul li {
+        transition: all .3s;
         width: 20%;
         line-height: 3em;
         display: inline-flex; }
         #bar #nav ul li a {
-          transition: all .3s;
           text-align: center;
           display: block;
           margin: auto;
           width: 100%; }
-          #bar #nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.75);
+        #bar #nav ul li:hover {
+          background-color: rgba(255, 255, 255, 0.75); }
+          #bar #nav ul li:hover a {
             color: #0d0e0f; }
-    #bar #nav.scrolled {
+    #bar #nav.scrolled.how {
+      transition: all .3s;
       background-color: #f43e3e; }
+      #bar #nav.scrolled.how ul li:nth-child(1) {
+        background-color: white; }
+        #bar #nav.scrolled.how ul li:nth-child(1) a {
+          color: #f43e3e; }
+    #bar #nav.scrolled.project {
+      transition: all .3s;
+      background-color: #0ea3a3; }
+      #bar #nav.scrolled.project ul li:nth-child(2) {
+        background-color: white; }
+        #bar #nav.scrolled.project ul li:nth-child(2) a {
+          color: #0ea3a3; }
 
 #how {
   background-attachment: local;
@@ -281,17 +307,7 @@ html, body {
 @media screen and (max-width: 1200px) {
   #how .container {
     width: 100%; } }
-.button {
-  transition: all .3s;
-  color: white;
-  font-size: 1em;
-  text-align: center;
-  margin: .5em;
-  padding: .5em;
-  border: 1px solid white;
-  border-radius: 1em; }
-  .button:hover {
-    color: #0d0e0f;
-    background-color: white; }
+#project {
+  height: 100vh; }
 
 /*# sourceMappingURL=main.css.map */

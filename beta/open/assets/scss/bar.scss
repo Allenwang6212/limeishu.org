@@ -17,25 +17,41 @@
 			flex-wrap: nowrap;
 			display: flex;
 			li {
+				transition: all .3s;
 				width: 20%;
 				line-height: 3em;
 				display: inline-flex;
 				a {
-					transition: all .3s;
 					text-align: center;
 					display: block;
 					margin: auto;
 					width: 100%;
-					&:hover {
-						background-color: rgba($white, .75);
+				}
+				&:hover {
+					background-color: rgba($white, .75);
+					a {
 						color: $black;
 					}
 				}
 			}
 		}
-		
-		&.scrolled {
-			background-color: $red;
+		$barStyle: (how, $red ,1) (project, $green ,2);
+		@each $style in $barStyle {
+			$class: nth($style, 1);
+			$color: nth($style, 2);
+			$nth: nth($style, 3);
+			&.scrolled.#{$class} {
+				transition: all .3s;
+				background-color: $color;
+				ul {
+					li:nth-child(#{$nth}) {
+						background-color: $white;
+						a {
+							color: $color;
+						}
+					}
+				}
+			}
 		}
 	}
 }
