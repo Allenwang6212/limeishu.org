@@ -209,6 +209,23 @@ html, body {
         margin: 0 .5em;
         color: white;
         font-weight: 400; }
+  #banner:before {
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background: url("images/bg.png") transparent;
+    background-attachment: fixed;
+    background-size: contain;
+    opacity: .25;
+    content: '';
+    display: block;
+    position: absolute;
+    height: 60vh;
+    left: 0;
+    top: 0;
+    width: 100vw; }
 
 #bar {
   z-index: 100;

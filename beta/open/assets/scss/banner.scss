@@ -34,4 +34,19 @@
 			}
 		}
 	}
+	&:before {
+		@include backgroundConfig;
+		background-position: center center;
+		background: url("images/bg.png") transparent;
+		background-attachment: fixed;
+		background-size: contain;
+		opacity: .25;
+		content: '';
+		display: block;
+		position: absolute;
+		height: 60vh;
+		left: 0;
+		top: 0;
+		width: 100vw;
+	}
 }
