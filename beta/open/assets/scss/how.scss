@@ -9,7 +9,7 @@
 		height: 100%;
 		width: 45%;
 		position: relative;
-		background: hsla(0, 0%, 100%, .3);
+		background: hsla(0, 0%, 100%, .5);
 		overflow: hidden;
 		.content {
 			height: 100%;
@@ -53,7 +53,7 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
-			filter: blur(10px);
+			filter: blur(20px);
 			margin: -3em;
 			background: url("images/how.jpg") 0 / cover fixed;
 		}

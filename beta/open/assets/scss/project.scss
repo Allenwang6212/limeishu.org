@@ -23,9 +23,11 @@
 		flex-direction: row;
 		align-items: center;
 		.card {
+			border: 3px solid transparent;
 			transition: all .3s;
 			z-index: 0;
 			height: 100%;
+			max-width: 20%;
 			width: 20%;
 			position: relative;
 			background: hsla(0, 0%, 100%, .3);
