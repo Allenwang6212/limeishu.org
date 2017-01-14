@@ -3,10 +3,12 @@
 	color: $white;
 	height: 100%;
 	flex-direction: column;
+	-webkit-flex-direction: column;
 	justify-content: center;
+	-webkit-justify-content: center;
 	h1 {
 		margin: .5em auto;
-		display: inline-flex;
+		display: inline-block;
 		position: relative;
 		text-align: center;
 		font-size: $title-xl;
