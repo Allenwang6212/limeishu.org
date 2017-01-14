@@ -9,14 +9,19 @@ $(function () {
 		}
 		if (scrollHight >= (height * 0.4 - 48)) {
 			$("#nav").addClass("how");
+			$(".goto").addClass("how");
 		} else {
 			$("#nav").removeClass("how");
+			$(".goto").removeClass("how");
 		}
 		if (scrollHight >= (height * 1.4 - 48)) {
 			$("#nav").removeClass("how");
+			$(".goto").removeClass("how");
 			$("#nav").addClass("project");
+			$(".goto").addClass("project");
 		} else {
 			$("#nav").removeClass("project");
+			$(".goto").removeClass("project");
 		}
 	});
 });
@@ -38,6 +43,6 @@ for (var i = 0; i < items.length; ++i) {
 	$(patchs[i]).css('background-image', 'url(' + $(items[i]).find('img').attr('src') + ')');
 };
 
-var buttonIcon = '<icon class="fa fa-arrow-circle-right" aria-hidden="true">';
+var buttonIcon = '<icon class="fa fa-arrow-circle-right" aria-hidden="true"></icon>';
 var button = jQuery('a.button');
 button.append(buttonIcon);

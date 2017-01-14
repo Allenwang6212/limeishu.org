@@ -267,6 +267,23 @@ html, body {
         background-color: white; }
         #bar #nav.scrolled.how ul li:nth-child(1) a {
           color: #0ea3a3; }
+    #bar #nav .goto {
+      display: none; }
+      #bar #nav .goto.how {
+        text-align: center;
+        font-size: 2em;
+        line-height: 2em;
+        transition: all .3s;
+        display: block;
+        position: fixed;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        background-color: white;
+        color: #0ea3a3;
+        margin: 1em;
+        bottom: 0;
+        right: 0; }
     #bar #nav.scrolled.project {
       box-shadow: 1px 1px 4px rgba(13, 14, 15, 0.5);
       transition: all .3s;
@@ -275,6 +292,23 @@ html, body {
         background-color: white; }
         #bar #nav.scrolled.project ul li:nth-child(2) a {
           color: #f43e3e; }
+    #bar #nav .goto {
+      display: none; }
+      #bar #nav .goto.project {
+        text-align: center;
+        font-size: 2em;
+        line-height: 2em;
+        transition: all .3s;
+        display: block;
+        position: fixed;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        background-color: white;
+        color: #f43e3e;
+        margin: 1em;
+        bottom: 0;
+        right: 0; }
 
 #how {
   background-attachment: local;

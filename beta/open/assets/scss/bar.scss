@@ -53,6 +53,25 @@
 					}
 				}
 			}
+			.goto {
+				display: none;
+				&.#{$class} {
+					text-align: center;
+					font-size: $title-l;
+					line-height: 2em;
+					transition: all .3s;
+					display: block;
+					position: fixed;
+					width: 2em;
+					height: 2em;
+					border-radius: 50%;
+					background-color: $white;
+					color: $color;
+					margin: 1em;
+					bottom: 0;
+					right: 0;
+				}
+			}
 		}
 	}
 }
