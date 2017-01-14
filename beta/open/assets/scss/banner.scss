@@ -1,0 +1,31 @@
+#banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 60%;
+	background: -webkit-linear-gradient(45deg, $yellow, $red, $orange);
+	header {
+		display: flex;
+		position: relative;
+		text-align: center;
+		color: $white;
+		flex-direction: column;
+		justify-content: center;
+		h1 {
+			margin: 0 auto;
+			font-weight: 200;
+			font-size: $title-xl * 1.75;
+			display: flex;
+		}
+		p {
+			margin: 0 auto;
+			font-weight: 200;
+			color: $light-gray;
+			display: flex;
+			b {
+				color: $white;
+				font-weight: 400;
+			}
+		}
+	}
+}

@@ -1,0 +1,69 @@
+#how {
+	@include backgroundConfig;
+	background: url("images/how.jpg") 0 / cover fixed;
+	color: $white;
+	height: 100vh;
+	display: block;
+	.container {
+		z-index: 0;
+		height: 100%;
+		width: 45%;
+		position: relative;
+		background: hsla(0, 0%, 100%, .3);
+		overflow: hidden;
+		.content {
+			height: 100%;
+			display: flex;
+			padding: 1em;
+			flex-direction: column;
+			justify-content: center;
+			h1 {
+				font-weight: 200;
+				position: relative;
+				display: flex;
+				font-size: $title-xl;
+				b {
+					padding: 0 .5em;
+					margin: 0 .5em;
+					font-weight: 400;
+					border-right: 3px solid $green;
+				}
+			}
+			p {
+				margin-left: calc(#{$title-xl} * 2 + 2em);
+				padding: 2em;
+				display: flex;
+			}
+			#link {
+				margin-left: calc(#{$title-xl} * 2 + 2em);
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				.button {
+					display: inline-block;
+					position: relative;
+				}
+			}
+		}
+		&:before {
+			z-index: -1;
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			filter: blur(10px);
+			margin: -3em;
+			background: url("images/how.jpg") 0 / cover fixed;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#how {
+		.container {
+			width: 100%;
+		}
+	}
+}

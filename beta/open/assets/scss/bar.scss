@@ -1,0 +1,41 @@
+#bar {
+	z-index: 100;
+	width: 100%;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	#nav {
+		transition: all .3s;
+		display: flex;
+		position: relative;
+		ul {
+			height: 3em;
+			width: 100%;
+			align-items: stretch;
+			position: relative;
+			align-content: stretch;
+			flex-wrap: nowrap;
+			display: flex;
+			li {
+				width: 20%;
+				line-height: 3em;
+				display: inline-flex;
+				a {
+					transition: all .3s;
+					text-align: center;
+					display: block;
+					margin: auto;
+					width: 100%;
+					&:hover {
+						background-color: rgba($white, .75);
+						color: $black;
+					}
+				}
+			}
+		}
+		
+		&.scrolled {
+			background-color: $red;
+		}
+	}
+}
