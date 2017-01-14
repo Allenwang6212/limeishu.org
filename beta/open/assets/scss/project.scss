@@ -76,6 +76,7 @@
 				bottom: 0;
 				left: 0;
 				filter: blur(30px);
+				-webkit-backdrop-filter: blur(30px);
 				margin: -3em;
 				background: url("images/project.jpg") 0 / cover fixed;
 			}
