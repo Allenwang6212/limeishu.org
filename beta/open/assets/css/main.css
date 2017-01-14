@@ -167,7 +167,7 @@ html, body {
   font-size: 1em;
   text-align: center;
   margin: .5em;
-  padding: .5em;
+  padding: .5em .5em .5em 1em;
   border: 1px solid white;
   border-radius: 1em; }
   .button:hover {
@@ -235,18 +235,18 @@ html, body {
             color: #0d0e0f; }
     #bar #nav.scrolled.how {
       transition: all .3s;
-      background-color: #f43e3e; }
+      background-color: #0ea3a3; }
       #bar #nav.scrolled.how ul li:nth-child(1) {
         background-color: white; }
         #bar #nav.scrolled.how ul li:nth-child(1) a {
-          color: #f43e3e; }
+          color: #0ea3a3; }
     #bar #nav.scrolled.project {
       transition: all .3s;
-      background-color: #0ea3a3; }
+      background-color: #f43e3e; }
       #bar #nav.scrolled.project ul li:nth-child(2) {
         background-color: white; }
         #bar #nav.scrolled.project ul li:nth-child(2) a {
-          color: #0ea3a3; }
+          color: #f43e3e; }
 
 #how {
   background-attachment: local;
@@ -308,6 +308,86 @@ html, body {
   #how .container {
     width: 100%; } }
 #project {
-  height: 100vh; }
+  display: flex;
+  color: white;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("images/project.jpg") 0/cover fixed; }
+  #project h1 {
+    margin: .5em auto;
+    display: inline-flex;
+    position: relative;
+    text-align: center;
+    font-size: 2.5em;
+    border-bottom: 3px solid #f43e3e; }
+  #project .container {
+    margin: .5em 0;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center; }
+    #project .container .card {
+      transition: all .3s;
+      z-index: 0;
+      height: 100%;
+      width: 20%;
+      position: relative;
+      background: rgba(255, 255, 255, 0.3);
+      overflow: hidden;
+      display: inline-flex;
+      border-radius: 5px;
+      flex-direction: column; }
+      #project .container .card img {
+        display: none; }
+      #project .container .card .image {
+        display: flex;
+        position: relative;
+        height: 40%;
+        width: 100%;
+        background-attachment: local;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      #project .container .card .content {
+        text-align: center;
+        position: relative;
+        padding: 2em; }
+        #project .container .card .content h1,
+        #project .container .card .content p {
+          display: inline-flex; }
+        #project .container .card .content h1 {
+          margin: 0 auto;
+          font-size: 1.2em;
+          border: 0; }
+        #project .container .card .content p {
+          font-size: 0.8em; }
+      #project .container .card a {
+        text-align: center; }
+        #project .container .card a.button {
+          font-size: 0.8em;
+          display: block;
+          margin: 0 auto;
+          border: 0; }
+      #project .container .card:before {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        filter: blur(30px);
+        margin: -3em;
+        background: url("images/project.jpg") 0/cover fixed; }
+      #project .container .card:hover {
+        box-shadow: 1em 1em 3em rgba(255, 255, 255, 0.3);
+        border: 3px solid #f43e3e; }
 
 /*# sourceMappingURL=main.css.map */

@@ -31,3 +31,13 @@ $(function () {
 		}, 1000, 'easeInOutQuint');
 	});
 });
+
+var items = jQuery('#project>.container>.card');
+var patchs = jQuery('#project>.container>.card>.image');
+for (var i = 0; i < items.length; ++i) {
+	$(patchs[i]).css('background-image', 'url(' + $(items[i]).find('img').attr('src') + ')');
+};
+
+var buttonIcon = '<icon class="fa fa-arrow-circle-right" aria-hidden="true">';
+var button = jQuery('a.button');
+button.append(buttonIcon);
