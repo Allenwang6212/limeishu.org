@@ -35,12 +35,13 @@
 				}
 			}
 		}
-		$barStyle: (how, $green ,1) (project, $red ,2);
+		$barStyle: (how, $green, 1) (project, $red, 2);
 		@each $style in $barStyle {
 			$class: nth($style, 1);
 			$color: nth($style, 2);
 			$nth: nth($style, 3);
 			&.scrolled.#{$class} {
+				box-shadow: 1px 1px 4px rgba($black, .5);
 				transition: all .3s;
 				background-color: $color;
 				ul {

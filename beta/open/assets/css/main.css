@@ -234,6 +234,7 @@ html, body {
           #bar #nav ul li:hover a {
             color: #0d0e0f; }
     #bar #nav.scrolled.how {
+      box-shadow: 1px 1px 4px rgba(13, 14, 15, 0.5);
       transition: all .3s;
       background-color: #0ea3a3; }
       #bar #nav.scrolled.how ul li:nth-child(1) {
@@ -241,6 +242,7 @@ html, body {
         #bar #nav.scrolled.how ul li:nth-child(1) a {
           color: #0ea3a3; }
     #bar #nav.scrolled.project {
+      box-shadow: 1px 1px 4px rgba(13, 14, 15, 0.5);
       transition: all .3s;
       background-color: #f43e3e; }
       #bar #nav.scrolled.project ul li:nth-child(2) {
