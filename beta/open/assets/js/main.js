@@ -11,18 +11,20 @@ $(function () {
 			var how = 1;
 		}
 		if (width <= 1200 & width > 480) {
-			var project = 1.2;
+			var project = 1;
 			var banner = 0.4;
 			var coda = 5;
 		} else if (width <= 480) {
 			var project = 2.5;
 			var banner = 0.4;
 			var coda = 5;
-		}
-		else {
+		} else {
 			var project = 1;
 			var banner = 0.6;
 			var coda = 48;
+		}
+		if (width <= 768 & width > 480) {
+			var project = 1.2;
 		}
 		if (width <= 480) {
 			if (scrollHight >= (height * banner - coda)) {
@@ -102,3 +104,12 @@ for (var i = 0; i < itemsT.length; ++i) {
 var buttonIcon = '<icon class="fa fa-angle-right" aria-hidden="true"></icon>';
 var button = jQuery('a.button');
 button.append(buttonIcon);
+
+//a tage rewrite
+var aContent = jQuery("a");
+for (var i = 0; i < aContent.length; ++i) {
+	console.log(aContent[i].getAttribute("href"));
+	if (aContent[i].getAttribute("href") == '#') {
+		aContent[i].removeAttribute("href");
+	}
+}
