@@ -23,6 +23,15 @@ $(function () {
 			$("#nav").removeClass("project");
 			$(".goto").removeClass("project");
 		}
+		if (scrollHight >= (height * 2.4 - 48)) {
+			$("#nav").removeClass("project");
+			$(".goto").removeClass("project");
+			$("#nav").addClass("team");
+			$(".goto").addClass("team");
+		} else {
+			$("#nav").removeClass("team");
+			$(".goto").removeClass("team");
+		}
 	});
 });
 
@@ -36,11 +45,20 @@ $(function () {
 		}, 1000, 'easeInOutQuint');
 	});
 });
-
-var items = jQuery('#project>.container>.card');
-var patchs = jQuery('#project>.container>.card>.image');
-for (var i = 0; i < items.length; ++i) {
-	$(patchs[i]).css('background-image', 'url(' + $(items[i]).find('img').attr('src') + ')');
+var defaultImg = 'assets/css/images/member/default.png'
+var itemsP = jQuery('#project>.container>.card');
+var patchsP = jQuery('#project>.container>.card>.image');
+for (var i = 0; i < itemsP.length; ++i) {
+	$(patchsP[i]).css('background-image', 'url(' + $(itemsP[i]).find('img').attr('src') + ')');
+};
+var itemsT = jQuery('#team>.container>.member>.pic');
+var patchsT = jQuery('#team>.container>.member>.pic>.image');
+for (var i = 0; i < itemsT.length; ++i) {
+	$(patchsT[i]).css('background-image', 'url(' + $(itemsT[i]).find('img').attr('src') + ')');
+	var isNull = $(itemsT[i]).find('img').attr('src');
+	if (isNull=='') {
+		$(patchsT[i]).css('background-image', 'url(' + defaultImg + ')');
+	}
 };
 
 var buttonIcon = '<icon class="fa fa-arrow-circle-right" aria-hidden="true"></icon>';

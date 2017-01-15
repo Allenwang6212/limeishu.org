@@ -35,7 +35,7 @@
 				}
 			}
 		}
-		$barStyle: (how, $green, 1) (project, $red, 2);
+		$barStyle: (how, $green, 1) (project, $red, 2) (team, $blue, 3);
 		@each $style in $barStyle {
 			$class: nth($style, 1);
 			$color: nth($style, 2);
@@ -54,6 +54,7 @@
 				}
 			}
 			.goto {
+				box-shadow: 1px 1px 4px rgba($black, .5);
 				display: none;
 				&.#{$class} {
 					text-align: center;
