@@ -48,7 +48,7 @@ $('.all-news').slick({
     }
       }]
 });
-<!--  navbar-->
+//  navbar
 $(document).ready(function () {
   $(".toggle").click(function () {
     $(this).toggleClass("active");

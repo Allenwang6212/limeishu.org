@@ -38,7 +38,6 @@
 		justify-content: space-around;
 		align-content: space-around;
 		flex-flow: wrap;
-		display: flex;
 		.member {
 			margin: 1em 0;
 			padding: 1em;
@@ -88,15 +87,89 @@
 				}
 				.info {
 					display: block;
-					margin: auto;
+					margin: .5em auto;
 					a {
 						font-size: $content-xl;
 						border: 0;
-						display: inline-flex;
+						display: inline-block;
 						color: $black;
-						.fa-arrow-circle-right {
+						padding: 0;
+						.fa-angle-right {
 							display: none;
 						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#team {
+		padding: 4em 0;
+		height: 200%;
+		header {
+			padding: 1em 2em;
+		}
+		.container {
+			justify-content: space-around;
+			align-items: space-around;
+			align-content: space-around;
+			flex-flow: wrap;
+			height: 100%;
+			.member {
+				display: flex;
+				width: 100%;
+				.content {
+					padding: 2em 1em;
+					h1 {
+						font-size: $subtitle-m;
+					}
+					p {
+						font-size: $content-m;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#team {
+		display: block;
+		padding: 4em 0;
+		height: auto;
+		header {
+			padding: 1em 2em;
+			h1 {
+				font-size: $title-m;
+			}
+			p {
+				font-size: $subtitle-s;
+			}
+		}
+		.container {
+			justify-content: space-around;
+			align-items: space-around;
+			align-content: space-around;
+			flex-flow: wrap;
+			height: 100%;
+			.member {
+				display: flex;
+				width: 100%;
+				flex-direction: column;
+				-webkit-flex-direction: column;
+				.pic {
+					width: 100%
+				}
+				.content {
+					width: 100%;
+					padding: 0;
+					h1 {
+						font-size: $subtitle-m;
+					}
+					p {
+						font-size: $content-m;
 					}
 				}
 			}

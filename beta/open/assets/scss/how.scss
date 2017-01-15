@@ -1,4 +1,5 @@
 #how {
+	overflow: hidden;
 	@include backgroundConfig;
 	background: url("images/how.jpg") 0 / cover fixed;
 	color: $white;
@@ -30,12 +31,12 @@
 				}
 			}
 			p {
-				margin-left: calc(#{$title-xl} * 2 + 2em);
+				margin-left: calc(#{$title-xl} * 2+2em);
 				padding: 2em;
 				display: flex;
 			}
 			#link {
-				margin-left: calc(#{$title-xl} * 2 + 2em);
+				margin-left: calc(#{$title-xl} * 2+2em);
 				display: flex;
 				flex-direction: row;
 				justify-content: center;
@@ -53,7 +54,7 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
-			filter: blur(20px);
+			filter: blur(15px);
 			-webkit-backdrop-filter: blur(20px);
 			margin: -3em;
 			background: url("images/how.jpg") 0 / cover fixed;
@@ -63,8 +64,45 @@
 
 @media screen and (max-width: 1200px) {
 	#how {
+		height: 60%;
 		.container {
 			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#how {
+		height: 100%;
+		.container {
+			width: 100%;
+			.content {
+				padding: .5em;
+				text-align: center;
+				h1 {
+					display: block;
+					margin: 0 auto;
+					b {
+						border: 0;
+						border-bottom: 3px solid $green;
+						display: block;
+						margin: .2em auto;
+						padding: 0;
+					}
+				}
+				p {
+					display: block;
+					padding: .5em;
+				}
+				#link {
+					width: 100%;
+					display: block;
+					margin: 0;
+					.button {
+						display: block;
+					}
+				}
+			}
 		}
 	}
 }

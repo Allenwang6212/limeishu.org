@@ -5,7 +5,8 @@
 	justify-content: center;
 	-webkit-flex-direction: column;
 	-webkit-justify-content: center;
-	min-height: 60%;
+	height: 60%;
+	overflow: hidden;
 	background: -webkit-linear-gradient(45deg, $yellow, $red, $orange);
 	header {
 		display: flex;
@@ -36,17 +37,33 @@
 	}
 	&:before {
 		@include backgroundConfig;
-		background-position: center center;
-		background: url("images/bg.png") transparent;
-		background-attachment: fixed;
-		background-size: contain;
+		background: url("images/bg.png") transparent 0 / cover fixed;
 		opacity: .25;
 		content: '';
 		display: block;
 		position: absolute;
-		height: 60vh;
+		height: 60%;
 		left: 0;
 		top: 0;
-		width: 100vw;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#banner {
+		height: 40%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#banner {
+		header {
+			h1 {
+				font-size: $title-xl;
+			}
+			p {
+				font-size: $subtitle-s;
+			}
+		}
 	}
 }

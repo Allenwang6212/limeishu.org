@@ -1,20 +1,49 @@
+$("#nav .toggle h1").hide();
+//bar 
 $(function () {
 	$(window).scroll(function () {
 		var height = document.body.clientHeight;
+		var width = document.body.clientWidth;
 		var scrollHight = $(this).scrollTop();
-		if (scrollHight >= (height * 0.4 - 48)) {
+		if (width <= 1200 & width > 768) {
+			var how = 0.6;
+		} else {
+			var how = 1;
+		}
+		if (width <= 1200 & width > 480) {
+			var project = 1.2;
+			var banner = 0.4;
+			var coda = 5;
+		} else if (width <= 480) {
+			var project = 2.5;
+			var banner = 0.4;
+			var coda = 5;
+		}
+		else {
+			var project = 1;
+			var banner = 0.6;
+			var coda = 48;
+		}
+		if (width <= 480) {
+			if (scrollHight >= (height * banner - coda)) {
+				$("#nav .toggle h1").show();
+			} else {
+				$("#nav .toggle h1").hide();
+			}
+		}
+		if (scrollHight >= (height * banner - coda)) {
 			$("#nav").addClass("scrolled");
 		} else {
 			$("#nav").removeClass("scrolled");
 		}
-		if (scrollHight >= (height * 0.4 - 48)) {
+		if (scrollHight >= (height * banner - coda)) {
 			$("#nav").addClass("how");
 			$(".goto").addClass("how");
 		} else {
 			$("#nav").removeClass("how");
 			$(".goto").removeClass("how");
 		}
-		if (scrollHight >= (height * 1.4 - 48)) {
+		if (scrollHight >= (height * (how + banner) - coda)) {
 			$("#nav").removeClass("how");
 			$(".goto").removeClass("how");
 			$("#nav").addClass("project");
@@ -23,7 +52,7 @@ $(function () {
 			$("#nav").removeClass("project");
 			$(".goto").removeClass("project");
 		}
-		if (scrollHight >= (height * 2.4 - 48)) {
+		if (scrollHight >= (height * (how + project + banner) - coda)) {
 			$("#nav").removeClass("project");
 			$(".goto").removeClass("project");
 			$("#nav").addClass("team");
@@ -34,7 +63,15 @@ $(function () {
 		}
 	});
 });
-
+//nav
+$(document).ready(function () {
+	$(".toggle").click(function () {
+		$(this).toggleClass("active");
+		$(".nav").slideToggle();
+		$("#nav").toggleClass("active");
+	});
+});
+//scrolly
 $(function () {
 	//scroll down
 	$(".scrolly").bind('click', function (event) {
@@ -45,6 +82,7 @@ $(function () {
 		}, 1000, 'easeInOutQuint');
 	});
 });
+//member image rewrite
 var defaultImg = 'assets/css/images/member/default.png'
 var itemsP = jQuery('#project>.container>.card');
 var patchsP = jQuery('#project>.container>.card>.image');
@@ -56,11 +94,11 @@ var patchsT = jQuery('#team>.container>.member>.pic>.image');
 for (var i = 0; i < itemsT.length; ++i) {
 	$(patchsT[i]).css('background-image', 'url(' + $(itemsT[i]).find('img').attr('src') + ')');
 	var isNull = $(itemsT[i]).find('img').attr('src');
-	if (isNull=='') {
+	if (isNull == '') {
 		$(patchsT[i]).css('background-image', 'url(' + defaultImg + ')');
 	}
 };
-
-var buttonIcon = '<icon class="fa fa-arrow-circle-right" aria-hidden="true"></icon>';
+//button
+var buttonIcon = '<icon class="fa fa-angle-right" aria-hidden="true"></icon>';
 var button = jQuery('a.button');
 button.append(buttonIcon);
