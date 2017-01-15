@@ -103,6 +103,11 @@
 					}
 				}
 			}
+			&:before {
+				filter: none;
+				background: none;
+				overflow: hidden;
+			}
 		}
 	}
 }

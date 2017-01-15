@@ -52,6 +52,9 @@
 @media screen and (max-width: 1200px) {
 	#banner {
 		height: 40%;
+		&:before {
+			height: 40%;
+		}
 	}
 }
 

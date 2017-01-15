@@ -227,7 +227,9 @@ html, body {
 
 @media screen and (max-width: 1200px) {
   #banner {
-    height: 40%; } }
+    height: 40%; }
+    #banner:before {
+      height: 40%; } }
 @media screen and (max-width: 480px) {
   #banner header h1 {
     font-size: 2.5em; }
@@ -546,7 +548,11 @@ html, body {
           display: block;
           margin: 0; }
           #how .container .content #link .button {
-            display: block; } }
+            display: block; }
+      #how .container:before {
+        filter: none;
+        background: none;
+        overflow: hidden; } }
 #project {
   display: flex;
   color: white;
@@ -681,7 +687,10 @@ html, body {
           #project .container .card .content p {
             font-size: 0.8em; }
         #project .container .card .button {
-          margin: 0 1em; } }
+          margin: 0 1em; }
+        #project .container .card:before {
+          filter: none;
+          background: none; } }
 #team {
   display: flex;
   color: #0d0e0f;
