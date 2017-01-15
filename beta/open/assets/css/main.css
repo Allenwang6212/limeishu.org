@@ -520,9 +520,13 @@ html, body {
 
 @media screen and (max-width: 1200px) {
   #how {
+    color: #0d0e0f;
     height: 60%; }
     #how .container {
-      width: 100%; } }
+      width: 100%; }
+      #how .container .content a {
+        color: #0d0e0f;
+        border-color: #0d0e0f; } }
 @media screen and (max-width: 768px) {
   #how {
     height: 100%; }

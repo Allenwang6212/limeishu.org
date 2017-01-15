@@ -64,9 +64,16 @@
 
 @media screen and (max-width: 1200px) {
 	#how {
+		color: $black;
 		height: 60%;
 		.container {
 			width: 100%;
+			.content {
+				a {
+					color: $black;
+					border-color: $black;
+				}
+			}
 		}
 	}
 }
