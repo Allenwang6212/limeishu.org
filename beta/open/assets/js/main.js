@@ -108,7 +108,6 @@ button.append(buttonIcon);
 //a tage rewrite
 var aContent = jQuery("a");
 for (var i = 0; i < aContent.length; ++i) {
-	console.log(aContent[i].getAttribute("href"));
 	if (aContent[i].getAttribute("href") == '#') {
 		aContent[i].removeAttribute("href");
 	}
