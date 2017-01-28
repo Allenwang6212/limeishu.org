@@ -1,0 +1,72 @@
+#banner {
+	@include flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	-webkit-flex-direction: column;
+	-webkit-justify-content: center;
+	height: 60%;
+	overflow: hidden;
+	background: -webkit-linear-gradient(45deg, $yellow, $red, $orange);
+	header {
+		display: flex;
+		position: relative;
+		text-align: center;
+		color: $white;
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		justify-content: center;
+		-webkit-justify-content: center;
+		h1 {
+			margin: 0 auto;
+			font-weight: 200;
+			font-size: $title-xl * 1.75;
+			display: block;
+		}
+		p {
+			margin: 0 auto;
+			font-weight: 200;
+			color: $light-gray;
+			display: block;
+			b {
+				margin: 0 .5em;
+				color: $white;
+				font-weight: 400;
+			}
+		}
+	}
+	&:before {
+		@include backgroundConfig;
+		background: url("images/bg.png") transparent 0 / cover fixed;
+		opacity: .25;
+		content: '';
+		display: block;
+		position: absolute;
+		height: 60%;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#banner {
+		height: 40%;
+		&:before {
+			height: 40%;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#banner {
+		header {
+			h1 {
+				font-size: $title-xl;
+			}
+			p {
+				font-size: $subtitle-s;
+			}
+		}
+	}
+}
