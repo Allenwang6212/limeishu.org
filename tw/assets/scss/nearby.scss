@@ -1,5 +1,5 @@
 #nearby {
-  overflow: hidden;
+    overflow: hidden;
     z-index: -1;
     display: flex;
     background-color: $black;
@@ -11,8 +11,22 @@
     .spotlight {
         position: relative;
         display: inline-flex;
-        width: calc(100vw / 3) !important;
+        width: calc(100vw / 5) !important;
         height: calc(100vh / 3);
+        @media screen and (max-width: 1440px) {
+            width: calc(100vw / 4) !important;
+            height: calc(100vh / 2.5);
+        }
+        @media screen and (max-width: 1080px) {
+            width: calc(100vw / 3) !important;
+        }
+
+        @media screen and (max-width: 980px) {
+            width: calc(100vw / 2) !important;
+        }
+        @media screen and (max-width: 640px) {
+            width: 100vw !important;
+        }
 
         img {
             display: none;
