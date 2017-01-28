@@ -232,7 +232,7 @@ body {
           height: 20em;
           border-radius: 100%;
           display: block;
-          margin: .5em; }
+          margin: 0.5em; }
         #welcome .content header .image.mobile {
           display: none; }
     #welcome .content .warning {
@@ -281,6 +281,7 @@ body {
     background-color: #ffd548; }
 
 #footer.init {
+  z-index: 1000;
   overflow: hidden;
   bottom: 0;
   position: relative;
@@ -320,6 +321,7 @@ body {
     font-size: 0.5em; }
 
 #footer.yellow {
+  z-index: 1000;
   overflow: hidden;
   bottom: 0;
   position: relative;
@@ -359,6 +361,7 @@ body {
     font-size: 0.5em; }
 
 #footer.green {
+  z-index: 1000;
   overflow: hidden;
   bottom: 0;
   position: relative;

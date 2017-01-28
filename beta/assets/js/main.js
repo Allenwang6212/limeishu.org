@@ -19,6 +19,8 @@ $('.choose').click(function () {
 })
 $('.choose[data-type=rail]').trigger("click");
 $('.choose[data-type=info]').trigger("click");
+$('.choose[data-type=source]').trigger("click");
+$('.choose[data-type=self]').trigger("click");
 //news
 $('.all-news').slick({
   dots: true

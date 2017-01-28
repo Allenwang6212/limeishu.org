@@ -2,16 +2,15 @@
 $title-xl: 2.5em;
 $title-l: 2em;
 $title-m: 1.2em;
-$title-s: .8em;
+$title-s: 0.8em;
 $subtitle: 1.2em;
 $subtitle-m: 1em;
-$subtitle-s: .5em;
+$subtitle-s: 0.5em;
 $content-xl: 1em;
-$content-l: .8em;
-$content-m: .5em;
-$content-s: .2em;
-$footnote: .5em;
-//color-config
+$content-l: 0.8em;
+$content-m: 0.5em;
+$content-s: 0.2em;
+$footnote: 0.5em; //color-config
 //pure
 $white: rgba(255, 255, 255, 1);
 $black: rgb(13, 14, 15);
@@ -23,31 +22,27 @@ $dark-green: rgba(67, 116, 20, 1);
 $yellow: rgb(255, 213, 72);
 $dark-yellow: rgb(221, 174, 16);
 $orange: rgba(221, 141, 71, 1);
-//alpha
+$red: #FC4C45; //alpha
 $gray-alpha: rgba(29, 29, 29, .5);
-$orange-alpha: rgba(221, 141, 71, .75);
-//mixin
+$orange-alpha: rgba(221, 141, 71, .75); //mixin
 //background
 @mixin backgroundConfig {
-  background-attachment: local;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 //logo
 @mixin logoConfig {
-  width: 20em;
-  height: 20em;
-  border-radius: 100%;
-  display: block;
-  margin: .5em;
+    width: 20em;
+    height: 20em;
+    border-radius: 100%;
+    display: block;
+    margin: 0.5em;
 }
-
-
 //icon
 @mixin iconConfig {
-  font-family: 'FontAwesome';
-  color: $white;
-  font-size: 1em;
+    font-family: 'FontAwesome';
+    color: $white;
+    font-size: 1em;
 }

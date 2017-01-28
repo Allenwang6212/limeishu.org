@@ -4,6 +4,7 @@ $colorThemes: (init $black) (yellow $dark-yellow) (green $green);
   $class: nth($colorClass, 1);
   $theme: nth($colorClass, 2);
   #footer.#{$class} {
+    z-index: 1000;
     overflow: hidden;
     bottom: 0;
     position: relative;

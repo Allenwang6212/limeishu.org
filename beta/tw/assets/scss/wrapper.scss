@@ -1,4 +1,4 @@
-$colorThemes: (yellow $dark-yellow) (green $dark-green);
+$colorThemes: (yellow $dark-yellow) (green $dark-green) (red $red) (blue $blue);
 @each $colorClass in $colorThemes {
   $class: nth($colorClass, 1);
   $theme: nth($colorClass, 2);
