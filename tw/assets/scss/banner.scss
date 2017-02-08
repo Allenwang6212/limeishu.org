@@ -3,6 +3,7 @@ $colorThemes: (init $white) (yellow $dark-yellow) (green $dark-green) (red $red)
   $class: nth($colorClass, 1);
   $theme: nth($colorClass, 2);
   #banner.#{$class} {
+    overflow: hidden;
     z-index: 0;
     color: $white;
     display: block;
@@ -40,6 +41,13 @@ $colorThemes: (init $white) (yellow $dark-yellow) (green $dark-green) (red $red)
       display: block;
       position: relative;
       height: 20em;
+      &.news {
+        height: 15em;
+        .container {
+          max-height: 10em;
+          padding: 1em 3em;
+        }
+      }
       .location {
         font-size: $subtitle-m;
         font-family: 'Noto Sans TC', sans-serif;

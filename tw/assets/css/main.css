@@ -433,6 +433,7 @@ img {
     #header .toggle {
       display: inline-block; } }
 #banner.init {
+  overflow: hidden;
   z-index: 0;
   color: white;
   display: block;
@@ -469,6 +470,11 @@ img {
     display: block;
     position: relative;
     height: 20em; }
+    #banner.init.bg.news {
+      height: 15em; }
+      #banner.init.bg.news .container {
+        max-height: 10em;
+        padding: 1em 3em; }
     #banner.init.bg .location {
       font-size: 1em;
       font-family: 'Noto Sans TC', sans-serif;
@@ -494,6 +500,7 @@ img {
         font-size: 1.2em; }
 
 #banner.yellow {
+  overflow: hidden;
   z-index: 0;
   color: white;
   display: block;
@@ -530,6 +537,11 @@ img {
     display: block;
     position: relative;
     height: 20em; }
+    #banner.yellow.bg.news {
+      height: 15em; }
+      #banner.yellow.bg.news .container {
+        max-height: 10em;
+        padding: 1em 3em; }
     #banner.yellow.bg .location {
       font-size: 1em;
       font-family: 'Noto Sans TC', sans-serif;
@@ -555,6 +567,7 @@ img {
         font-size: 1.2em; }
 
 #banner.green {
+  overflow: hidden;
   z-index: 0;
   color: white;
   display: block;
@@ -591,6 +604,11 @@ img {
     display: block;
     position: relative;
     height: 20em; }
+    #banner.green.bg.news {
+      height: 15em; }
+      #banner.green.bg.news .container {
+        max-height: 10em;
+        padding: 1em 3em; }
     #banner.green.bg .location {
       font-size: 1em;
       font-family: 'Noto Sans TC', sans-serif;
@@ -616,6 +634,7 @@ img {
         font-size: 1.2em; }
 
 #banner.red {
+  overflow: hidden;
   z-index: 0;
   color: white;
   display: block;
@@ -652,6 +671,11 @@ img {
     display: block;
     position: relative;
     height: 20em; }
+    #banner.red.bg.news {
+      height: 15em; }
+      #banner.red.bg.news .container {
+        max-height: 10em;
+        padding: 1em 3em; }
     #banner.red.bg .location {
       font-size: 1em;
       font-family: 'Noto Sans TC', sans-serif;
@@ -677,6 +701,7 @@ img {
         font-size: 1.2em; }
 
 #banner.blue {
+  overflow: hidden;
   z-index: 0;
   color: white;
   display: block;
@@ -713,6 +738,11 @@ img {
     display: block;
     position: relative;
     height: 20em; }
+    #banner.blue.bg.news {
+      height: 15em; }
+      #banner.blue.bg.news .container {
+        max-height: 10em;
+        padding: 1em 3em; }
     #banner.blue.bg .location {
       font-size: 1em;
       font-family: 'Noto Sans TC', sans-serif;
