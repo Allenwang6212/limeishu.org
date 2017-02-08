@@ -24,7 +24,11 @@ $colorThemes: (yellow $dark-yellow) (green $dark-green) (red $red) (blue $blue);
           }
         }
         h2 {
-          margin: 1em;
+          text-align: center;
+          position: relative;
+          width: 100%;
+          display: block;
+          margin: 1em auto !important;
           font-size: $title-l;
         }
         h2,
