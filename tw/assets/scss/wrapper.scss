@@ -128,5 +128,14 @@ $colorThemes: (yellow $dark-yellow) (green $dark-green) (red $red) (blue $blue);
     a {
       color: $black;
     }
+    &.news {
+      .container {
+        max-width: 70%;
+        margin: auto;
+        @media screen and (max-width: 768px) {
+          max-width: 100%;
+        }
+      }
+    }
   }
 }
