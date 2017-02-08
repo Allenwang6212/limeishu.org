@@ -1087,7 +1087,7 @@ img {
       width: auto; }
       @media screen and (max-width: 768px) {
         #wrapper.yellow .container .content img {
-          width: 100%;
+          width: 90%;
           max-height: auto !important;
           height: auto; } }
     #wrapper.yellow .container .content h2 {
@@ -1178,7 +1178,8 @@ img {
     margin: auto; }
     @media screen and (max-width: 768px) {
       #wrapper.yellow.news .container {
-        max-width: 100%; } }
+        max-width: 100%;
+        padding: 1em; } }
 
 #wrapper.green {
   color: #0d0e0f;
@@ -1196,7 +1197,7 @@ img {
       width: auto; }
       @media screen and (max-width: 768px) {
         #wrapper.green .container .content img {
-          width: 100%;
+          width: 90%;
           max-height: auto !important;
           height: auto; } }
     #wrapper.green .container .content h2 {
@@ -1287,7 +1288,8 @@ img {
     margin: auto; }
     @media screen and (max-width: 768px) {
       #wrapper.green.news .container {
-        max-width: 100%; } }
+        max-width: 100%;
+        padding: 1em; } }
 
 #wrapper.red {
   color: #0d0e0f;
@@ -1305,7 +1307,7 @@ img {
       width: auto; }
       @media screen and (max-width: 768px) {
         #wrapper.red .container .content img {
-          width: 100%;
+          width: 90%;
           max-height: auto !important;
           height: auto; } }
     #wrapper.red .container .content h2 {
@@ -1396,7 +1398,8 @@ img {
     margin: auto; }
     @media screen and (max-width: 768px) {
       #wrapper.red.news .container {
-        max-width: 100%; } }
+        max-width: 100%;
+        padding: 1em; } }
 
 #wrapper.blue {
   color: #0d0e0f;
@@ -1414,7 +1417,7 @@ img {
       width: auto; }
       @media screen and (max-width: 768px) {
         #wrapper.blue .container .content img {
-          width: 100%;
+          width: 90%;
           max-height: auto !important;
           height: auto; } }
     #wrapper.blue .container .content h2 {
@@ -1505,7 +1508,8 @@ img {
     margin: auto; }
     @media screen and (max-width: 768px) {
       #wrapper.blue.news .container {
-        max-width: 100%; } }
+        max-width: 100%;
+        padding: 1em; } }
 
 .timeline {
   display: flex;
