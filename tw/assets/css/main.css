@@ -1050,6 +1050,27 @@ img {
   #wrapper.yellow .container {
     display: block;
     padding: 2em; }
+    #wrapper.yellow .container .content img {
+      margin: 1em;
+      display: block;
+      max-height: 50%;
+      width: auto; }
+    #wrapper.yellow .container .content h2 {
+      margin: 1em;
+      font-size: 1.2em; }
+    #wrapper.yellow .container .content h2,
+    #wrapper.yellow .container .content h3,
+    #wrapper.yellow .container .content h4 {
+      margin: 1em;
+      font-weight: 500; }
+    #wrapper.yellow .container .content p {
+      margin: 1em;
+      text-align: left;
+      text-indent: 2em;
+      word-wrap: break-word;
+      white-space: pre-line; }
+      #wrapper.yellow .container .content p a {
+        text-indent: 0; }
     #wrapper.yellow .container .chooser {
       margin: 2em auto;
       position: relative;
@@ -1123,6 +1144,27 @@ img {
   #wrapper.green .container {
     display: block;
     padding: 2em; }
+    #wrapper.green .container .content img {
+      margin: 1em;
+      display: block;
+      max-height: 50%;
+      width: auto; }
+    #wrapper.green .container .content h2 {
+      margin: 1em;
+      font-size: 1.2em; }
+    #wrapper.green .container .content h2,
+    #wrapper.green .container .content h3,
+    #wrapper.green .container .content h4 {
+      margin: 1em;
+      font-weight: 500; }
+    #wrapper.green .container .content p {
+      margin: 1em;
+      text-align: left;
+      text-indent: 2em;
+      word-wrap: break-word;
+      white-space: pre-line; }
+      #wrapper.green .container .content p a {
+        text-indent: 0; }
     #wrapper.green .container .chooser {
       margin: 2em auto;
       position: relative;
@@ -1196,6 +1238,27 @@ img {
   #wrapper.red .container {
     display: block;
     padding: 2em; }
+    #wrapper.red .container .content img {
+      margin: 1em;
+      display: block;
+      max-height: 50%;
+      width: auto; }
+    #wrapper.red .container .content h2 {
+      margin: 1em;
+      font-size: 1.2em; }
+    #wrapper.red .container .content h2,
+    #wrapper.red .container .content h3,
+    #wrapper.red .container .content h4 {
+      margin: 1em;
+      font-weight: 500; }
+    #wrapper.red .container .content p {
+      margin: 1em;
+      text-align: left;
+      text-indent: 2em;
+      word-wrap: break-word;
+      white-space: pre-line; }
+      #wrapper.red .container .content p a {
+        text-indent: 0; }
     #wrapper.red .container .chooser {
       margin: 2em auto;
       position: relative;
@@ -1269,6 +1332,27 @@ img {
   #wrapper.blue .container {
     display: block;
     padding: 2em; }
+    #wrapper.blue .container .content img {
+      margin: 1em;
+      display: block;
+      max-height: 50%;
+      width: auto; }
+    #wrapper.blue .container .content h2 {
+      margin: 1em;
+      font-size: 1.2em; }
+    #wrapper.blue .container .content h2,
+    #wrapper.blue .container .content h3,
+    #wrapper.blue .container .content h4 {
+      margin: 1em;
+      font-weight: 500; }
+    #wrapper.blue .container .content p {
+      margin: 1em;
+      text-align: left;
+      text-indent: 2em;
+      word-wrap: break-word;
+      white-space: pre-line; }
+      #wrapper.blue .container .content p a {
+        text-indent: 0; }
     #wrapper.blue .container .chooser {
       margin: 2em auto;
       position: relative;

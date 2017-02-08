@@ -11,6 +11,34 @@ $colorThemes: (yellow $dark-yellow) (green $dark-green) (red $red) (blue $blue);
     .container {
       display: block;
       padding: 2em;
+      .content {
+        img {
+          margin: 1em;
+          display: block;
+          max-height: 50%;
+          width: auto;
+        }
+        h2 {
+          margin: 1em;
+          font-size: $subtitle;
+        }
+        h2,
+        h3,
+        h4 {
+          margin: 1em;
+          font-weight: 500;
+        }
+        p {
+          margin: 1em;
+          text-align: left;
+          text-indent: 2em;
+          word-wrap: break-word;
+          white-space: pre-line;
+          a {
+            text-indent: 0;
+          }
+        }
+      }
       .chooser {
         margin: 2em auto;
         position: relative;
