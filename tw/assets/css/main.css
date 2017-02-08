@@ -1081,7 +1081,7 @@ img {
     display: block;
     padding: 2em; }
     #wrapper.yellow .container .content img {
-      margin: 1em;
+      margin: 1em 2em;
       display: block;
       max-height: 50%;
       width: auto; }
@@ -1191,7 +1191,7 @@ img {
     display: block;
     padding: 2em; }
     #wrapper.green .container .content img {
-      margin: 1em;
+      margin: 1em 2em;
       display: block;
       max-height: 50%;
       width: auto; }
@@ -1301,7 +1301,7 @@ img {
     display: block;
     padding: 2em; }
     #wrapper.red .container .content img {
-      margin: 1em;
+      margin: 1em 2em;
       display: block;
       max-height: 50%;
       width: auto; }
@@ -1411,7 +1411,7 @@ img {
     display: block;
     padding: 2em; }
     #wrapper.blue .container .content img {
-      margin: 1em;
+      margin: 1em 2em;
       display: block;
       max-height: 50%;
       width: auto; }
