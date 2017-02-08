@@ -88,6 +88,10 @@
                     width: 70%;
                     border-left: 1px solid $color;
 
+                    h3 {
+                        font-weight: 400;
+                    }
+
                     &:before {
                         width: 1em;
                         height: 1em;
