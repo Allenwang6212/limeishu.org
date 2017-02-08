@@ -11,7 +11,7 @@
     .spotlight {
         position: relative;
         display: inline-flex;
-        width: calc(100% / 5) !important;
+        width: calc(100% / 4) !important;
         height: calc(100vh / 3);
         @media screen and (max-width: 1440px) {
             width: calc(100% / 4) !important;
