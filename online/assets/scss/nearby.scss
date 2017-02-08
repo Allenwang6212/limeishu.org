@@ -1,0 +1,72 @@
+#nearby {
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    background-color: $black;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .spotlight {
+        position: relative;
+        display: inline-flex;
+        width: calc(100% / 4) !important;
+        height: calc(100vh / 3);
+        @media screen and (max-width: 1440px) {
+            width: calc(100% / 4) !important;
+            height: calc(100vh / 2.5);
+        }
+        @media screen and (max-width: 1080px) {
+            width: calc(100% / 3) !important;
+        }
+
+        @media screen and (max-width: 980px) {
+            width: calc(100% / 2) !important;
+        }
+        @media screen and (max-width: 640px) {
+            width: 100% !important;
+        }
+
+        img {
+            display: none;
+        }
+
+        .image {
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            @include backgroundConfig;
+        }
+
+        .content {
+            z-index: 0;
+            transition: all 0.3s;
+            color: $white;
+            display: block;
+            position: absolute;
+            background: rgba($black,.5);
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            transform: translateY(60%);
+
+            &:hover {
+                background: rgba($black,.8);
+                transform: translateY(0%);
+            }
+
+            .container {
+                transition: all 0.3s;
+                position: relative;
+                padding: 1em;
+
+                h2 {
+                    font-weight: 200;
+                    font-size: $subtitle;
+                }
+            }
+        }
+    }
+}
