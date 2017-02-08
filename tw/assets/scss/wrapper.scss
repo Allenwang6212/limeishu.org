@@ -17,6 +17,11 @@ $colorThemes: (yellow $dark-yellow) (green $dark-green) (red $red) (blue $blue);
           display: block;
           max-height: 50%;
           width: auto;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            max-height: auto !important;
+            height: auto;
+          }
         }
         h2 {
           margin: 1em;
