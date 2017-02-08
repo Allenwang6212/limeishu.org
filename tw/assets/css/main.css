@@ -1399,6 +1399,8 @@ img {
         padding: 1em;
         width: 70%;
         border-left: 1px solid #FC4C45; }
+        .timeline.history.red li .timeline-content h3 {
+          font-weight: 500 !important; }
         .timeline.history.red li .timeline-content:before {
           width: 1em;
           height: 1em;
@@ -1436,6 +1438,8 @@ img {
         padding: 1em;
         width: 70%;
         border-left: 1px solid #0ea3a3; }
+        .timeline.history.green li .timeline-content h3 {
+          font-weight: 500 !important; }
         .timeline.history.green li .timeline-content:before {
           width: 1em;
           height: 1em;
@@ -1473,6 +1477,8 @@ img {
         padding: 1em;
         width: 70%;
         border-left: 1px solid #005270; }
+        .timeline.history.blue li .timeline-content h3 {
+          font-weight: 500 !important; }
         .timeline.history.blue li .timeline-content:before {
           width: 1em;
           height: 1em;
