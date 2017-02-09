@@ -21,34 +21,37 @@ $('.choose[data-type=rail]').trigger("click");
 $('.choose[data-type=info]').trigger("click");
 $('.choose[data-type=source]').trigger("click");
 $('.choose[data-type=self]').trigger("click");
+$('#header>img#logo').click(function () {
+  window.location = "https://limeishu.org.tw";
+});
 //news
 $('.all-news').slick({
-  dots: true
-  , infinite: true
-  , speed: 500
-  , slidesToShow: 3
-  , slidesToScroll: 1, // variableWidth:true,
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1, // variableWidth:true,
   responsive: [{
-    breakpoint: 1024
-    , settings: {
-      slidesToShow: 3
-      , slidesToScroll: 3
-      , infinite: true
-      , dots: true
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      infinite: true,
+      dots: true
     }
-      }, {
-    breakpoint: 600
-    , settings: {
-      slidesToShow: 2
-      , slidesToScroll: 2
+  }, {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2
     }
-      }, {
-    breakpoint: 480
-    , settings: {
-      slidesToShow: 1
-      , slidesToScroll: 1
+  }, {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
     }
-      }]
+  }]
 });
 //  navbar
 $(document).ready(function () {
