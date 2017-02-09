@@ -27,4 +27,4 @@ The Li Mei-shu Memorial Gallery website Release v17.1.28
 
 #License
 
-    GPL v3.0
+    MIT
