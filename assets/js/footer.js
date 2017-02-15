@@ -23,4 +23,6 @@ if (URL.indexOf(lang1 + '/') > 0) {
     footer.innerHTML = content_EN;
 } else if (URL.indexOf(lang3 + '/') > 0) {
     footer.innerHTML = content_JP;
+} else {
+    footer.innerHTML = content_EN;
 }
