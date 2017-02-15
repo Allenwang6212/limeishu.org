@@ -5,4 +5,7 @@ $(document).ready(function () {
         $.ajax({
                 url: 'https://www.google.com.tw/search?q=site:limeishu.org.tw&gws_rd=cr,ssl&ei=ytyjWLvLFYn68gXyrJXQAQ'
         });
+        $.ajax({
+                url: 'https://www.google.com.tw/search?q=李梅樹紀念館&gws_rd=cr,ssl&ei=ytyjWLvLFYn68gXyrJXQAQ'
+        });
 })
