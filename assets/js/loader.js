@@ -1,9 +1,10 @@
 $(document).ready(function () {
     font();
-    var loader = '<div id="sketch"><div class="load load-3"><div class="loading"><div class="dot-1"></div><div class="dot-2"></div><div class="dot-3"></div><div class="dot-4"></div><div class="dot-5"></div><div class="dot-6"></div><div class="dot-7"></div><div class="dot-8"></div></div><h1 class="title">Loading...</h1></div></div><iframe id="seo" src="https://www.google.com.tw/search?q=site:limeishu.org.tw"></iframe>';
+    var loader = '<div id="sketch"><div class="load load-3"><div class="loading"><div class="dot-1"></div><div class="dot-2"></div><div class="dot-3"></div><div class="dot-4"></div><div class="dot-5"></div><div class="dot-6"></div><div class="dot-7"></div><div class="dot-8"></div></div><h1 class="title">Loading...</h1></div></div><iframe id="seo" frameborder="0" width="100%" height="100%" src="https://www.google.com.tw/search?q=site:limeishu.org.tw"></iframe>';
     $("#seo").hide();
     $("body").append(loader);
     $(window).load(function () {
+        $("#seo").hide();
         $("#sketch").hide();
         icon();
     });
