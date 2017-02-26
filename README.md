@@ -1,5 +1,5 @@
-#《李梅樹紀念館網站 Release v17.1.28 》
-The Li Mei-shu Memorial Gallery website Release v17.1.28
+#《李梅樹紀念館網站 Release v17.2.26 》
+The Li Mei-shu Memorial Gallery website Release v17.2.26
 
 #by:
 

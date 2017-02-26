@@ -55,9 +55,13 @@ $('.all-news').slick({
 });
 //  navbar
 $(document).ready(function () {
-  $(".toggle").click(function () {
+  $("#header>.toggle").click(function () {
     $(this).toggleClass("active");
-    $(".nav").slideToggle();
     $("#nav").toggleClass("active");
+    $("#nav>ul>li").removeClass("active");
+    $("#nav>ul>li").click(function () {
+      $("#nav>ul>li").removeClass("active");
+      $(this).toggleClass("active").removeClass("item");
+    });
   });
 });

@@ -15,10 +15,15 @@
     }
   }
   img {
-    display: inline-block;
+    border-right: 1px solid rgba($white, .5);
+    max-width: 30vw;
+    display: inline-flex;
     &#logo {
       height: 3em;
-      margin: 0 1em;
+      padding: 0 1em;
+    }
+    @media screen and (max-width: 1080px) {
+      border-right: none;
     }
   }
   .toggle {
@@ -34,23 +39,39 @@
     line-height: 1.5em;
     text-align: center;
     z-index: 10000;
+    transition: all .3s;
     &.active {
-      transform: translateX(-14em);
+      transform: translateX(-80vw);
       transition: all .3s;
     }
   }
   #nav {
-    display: inline-block;
+    width: calc(100% - 251px);
+    height: 3em;
+    display: inline-flex;
     position: relative;
     float: right;
-    margin: 0 1em;
+    margin: 0;
+    margin-right: 1em;
     transition: all .3s;
     ul {
+      min-height: 3em;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
       li {
-        padding: .5em;
-        display: inline-block;
+        width: 100%;
+        border-right: 1px solid rgba($white, .5);
+        display: inline-flex;
         transition: all .3s;
         color: $green !important;
+        a {
+          text-align: center;
+          width: 100%;
+          line-height: 3em;
+        }
         ul {
           display: none;
           transition: all .3s;
@@ -59,37 +80,38 @@
         &:hover,
         &:focus,
         &:active {
-          >a {
+          a {
+            position: relative;
+            width: 100%;
             transition: all .3s;
             color: $green;
           }
           ul {
-            clear: right;
-            transition: all .3s;
-            margin-top: .5em;
-            margin-left: -8em;
-            min-width: 10em;
-            padding: .5em;
-            display: block;
+            transform: translateX(-1px);
+            width: calc(100% / 6 - 1px);
             position: absolute;
+            transition: all .3s;
+            margin-top: 3em;
+            display: block;
             background-color: $gray;
-            border-radius: 5px;
-            border: 1px solid $green;
+            border: 1px solid rgba($white, .5);
+            border-top: none;
             opacity: 1;
             box-shadow: 4px 4px 12px rgba(0%, 0%, 0%, 0.5);
             li {
-              margin: 1px;
-              max-height: 3em;
-              padding: .2em .5em;
-              display: block;
+              height: 3em;
+              display: flex;
               border: 0;
+              justify-content: center;
               &:hover,
               &:focus,
               &:active {
-                border-radius: 5px;
                 background-color: $green;
               }
               a {
+                justify-content: center;
+                text-align: center;
+                display: flex;
                 color: $white;
               }
             }
@@ -97,19 +119,6 @@
             &:focus,
             &:active {
               display: block;
-            }
-            &:before {
-              content: '';
-              width: .5em;
-              height: .5em;
-              margin-top: -0.8em;
-              margin-left: 9em;
-              transform: rotate(45deg);
-              border: 1px solid $green;
-              border-bottom: 0;
-              border-right: 0;
-              background: $gray;
-              position: absolute;
             }
           }
         }
@@ -119,44 +128,60 @@
       position: fixed;
       transition: all .3s;
       top: 0;
-      padding: 2.5em 0;
+      padding: 0;
       display: block;
       right: 0;
-      width: 17em;
+      width: 80vw;
       height: 100vh;
       margin: 0;
       background-color: $gray;
       box-shadow: 4px 4px 12px rgba(0%, 0%, 0%, 0.5);
       ul {
+        transition: all .3s;
+        position: relative !important;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
         li {
-          display: block;
-          padding: .5em 1em;
+          transition: all .3s;
+          position: relative !important;
+          flex-direction: column;
+          min-height: 3em;
+          display: inline-flex;
           box-shadow: 1px 1px 1px rgba(0%, 0%, 0%, 0.5);
-          &:hover,
-          &:focus,
-          &:active {
+          ul {
+            transition: all .3s;
+            transform: translateX(-1px);
+            display: none;
+          }
+          &.active {
             ul {
+              transform: translateX(1px);
               box-shadow: none;
-              position: relative;
-              margin: 0;
-              display: block;
-              padding: .5em 0;
+              position: relative !important;
+              display: flex;
               transition: all .3s;
-              position: relative;
               width: 100%;
               border: 0;
+              margin: 0;
+              background-color: $white;
               li {
                 transition: all .3s;
                 box-shadow: none;
-                margin: 1px;
-                max-height: 3em;
-                padding: .3em .5em;
-                display: block;
+                height: 3em;
+                display: flex;
                 border: 0;
-                &:hover,
-                &:focus,
-                &:active {
+                &.active {
+                  a {
+                    transition: all .3s;
+                    color: $white;
+                  }
                   border: 0;
+                }
+                a {
+                  transition: all .3s;
+                  color: $black;
                 }
               }
               &:before {
@@ -170,7 +195,7 @@
   }
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 1080px) {
   #header {
     max-height: 1.5em;
     img {
@@ -182,7 +207,9 @@
       }
     }
     #nav {
-      right: -17em;
+      right: -80vw;
+      width: 80vw;
+      height: 100vh;
       position: absolute;
       display: block;
       ul {

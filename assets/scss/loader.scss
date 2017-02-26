@@ -1,0 +1,267 @@
+$ispink:#ea1a52;
+$isblue:#1a9aea;
+$isgreen:#1aeaca;
+$isyellow:#ffcb1c;
+@keyframes turn {
+	from {
+		transform: rotate(45deg);
+	}
+	to {
+		transform: rotate(405deg);
+	}
+}
+
+@keyframes dotTurn {
+	from {
+		transform: rotate(90deg);
+	}
+	to {
+		transform: rotate(450deg);
+	}
+}
+
+@keyframes windowsTurn {
+	0% {
+		opacity: 0;
+		transform: rotate(-45deg);
+	}
+	2% {
+		opacity: 1;
+	}
+	25% {
+		transform: rotate(360deg);
+	}
+	55% {
+		transform: rotate(585deg);
+	}
+	78% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+		transform: rotate(945deg);
+	}
+	99% {
+		transform: rotate(945deg);
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes persent-1 {
+	0% {
+		border-color: $ispink;
+		transform: rotate(-135deg);
+	}
+	49% {
+		border-color: $ispink;
+	}
+	50% {
+		border-color: #fff;
+		transform: rotate(-135deg);
+	}
+	100% {
+		border-color: #fff;
+		transform: rotate(45deg);
+	}
+}
+
+@keyframes persent-2 {
+	0% {
+		transform: rotate(225deg);
+	}
+	50% {
+		transform: rotate(405deg);
+	}
+	100% {
+		transform: rotate(405deg);
+	}
+}
+
+@keyframes persent-3 {
+	0% {
+		border-color: #fff;
+		transform: rotate(-90deg);
+	}
+	50% {
+		border-color: #fff;
+		transform: rotate(135deg);
+	}
+	51% {
+		border-color: $ispink;
+	}
+	100% {
+		border-color: $ispink;
+		transform: rotate(135deg);
+	}
+}
+
+#sketch {
+	transition: all .3s;
+	top: 0;
+	position: fixed !important;
+	z-index: 1000000;
+	background-color: $isblue;
+	text-align: center;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: space-around;
+	flex-direction: column;
+	flex-flow: wrap;
+	header {
+		position: relative;
+		width: 100%;
+		display: flex;
+		margin: 0 auto;
+		flex-direction: column;
+		h1 {
+			margin: 0 auto;
+			display: flex;
+		}
+		p {
+			margin: 0 auto;
+			display: flex;
+		}
+	}
+	.load {
+		padding: .5em;
+		margin: auto;
+		display: inline-flex;
+		border-radius: 5px;
+		flex-direction: column;
+		.loading {
+			animation: linear turn 3s infinite;
+			height: 10em;
+			width: 10em;
+			display: block;
+			border-radius: 50%;
+			border: 5px solid;
+		}
+		h1 {
+			font-weight: 200;
+			margin: .5em auto;
+			display: flex;
+			font-size: 1em;
+		}
+		&.load-1 {
+			.loading {
+				animation: linear turn 3s infinite;
+				border-top-color: transparent !important;
+			}
+		}
+		&.load-2 {
+			.loading {
+				transform: translateY(5em);
+				animation: none;
+				border: 0;
+				@for $i from 1 to 22 {
+					.dot-#{$i} {
+						transform: rotate(90deg);
+						$sleep: (11 - $i) * 0.07;
+						position: relative;
+						animation: ease-in-out 3s dotTurn #{$sleep}s infinite;
+						&:before {
+							content: '';
+							position: absolute;
+							width: .5em;
+							height: .5em;
+							border-radius: .5em;
+							display: block;
+							background-color: $isyellow;
+						}
+					}
+				}
+			}
+		}
+		&.load-3 {
+			color: #fff;
+			.loading {
+				transform: translateY(5em);
+				animation: none;
+				border: 0;
+				@for $i from 1 to 22 {
+					.dot-#{$i} {
+						opacity: 0;
+						transform: rotate(-45deg);
+						$sleep: (11 - $i) * 0.25;
+						position: relative;
+						animation: cubic-bezier(0, .30, 1, .70) 8s windowsTurn #{$sleep}s infinite;
+						&:before {
+							content: '';
+							position: absolute;
+							width: .5em;
+							height: .5em;
+							border-radius: 50%;
+							display: block;
+							background-color: #fff;
+						}
+					}
+				}
+			}
+		}
+		&.load-4 {
+			.loading {
+				z-index: 0;
+				position: relative;
+				animation: none;
+				overflow: hidden;
+				border: 5px solid transparent;
+				border-bottom-color: transparent;
+				border-left-color: transparent;
+			}
+			[class^="persent"] {
+				content: '';
+				position: absolute;
+				width: 10em;
+				height: 10em;
+				display: block;
+				border: 5px solid #fff;
+				border-radius: 50%;
+				border-bottom-color: transparent;
+				border-left-color: transparent;
+			}
+			.persent-1 {
+				border-color: $ispink;
+				transform: rotate(45deg);
+				animation: linear persent-1 3s infinite;
+				z-index: 2;
+			}
+			.persent-2 {
+				border-color: $ispink;
+				transform: rotate(225deg);
+				//				animation: linear persent-2 3s infinite;
+				z-index: 1;
+				border-left-color: $ispink;
+			}
+			.persent-3 {
+				//								border-color:  $ispink;
+				transform: rotate(-135deg);
+				animation: linear persent-3 3s infinite;
+				z-index: 2;
+			}
+		}
+		&:nth-child(4n) {
+			.loading {
+				border-color: $isblue;
+			}
+		}
+		&:nth-child(4n+1) {
+			.loading {
+				border-color: $ispink;
+			}
+		}
+		&:nth-child(4n+2) {
+			.loading {
+				border-color: $isgreen;
+			}
+		}
+		&:nth-child(4n+3) {
+			.loading {
+				border-color: $isyellow;
+			}
+		}
+	}
+}
