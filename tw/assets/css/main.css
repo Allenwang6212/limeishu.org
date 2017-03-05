@@ -344,7 +344,7 @@ img {
         display: inline-flex;
         transition: all .3s;
         color: #0ea3a3 !important; }
-        @media screen and (max-width: 1080px) {
+        @media screen and (min-width: 1080px) {
           #header #nav ul li:nth-child(1) {
             border-left: 1px solid rgba(255, 255, 255, 0.5); } }
         #header #nav ul li a {

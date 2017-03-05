@@ -67,7 +67,7 @@
         transition: all .3s;
         color: $green !important;
         &:nth-child(1) {
-          @media screen and (max-width: 1080px) {
+          @media screen and (min-width: 1080px) {
             border-left: 1px solid rgba($white, .5);
           }
         }
