@@ -20,7 +20,7 @@ if (URL.indexOf(lang1 + '/') > 0) {
 }
 
 var chrome = navigator.userAgent.search("Chrome") > -1;
-var desktop = document.body.clientWidth > 1080 || document.$("#header").clientWidth > 1080;
+var desktop = document.body.clientWidth > 1080 || document.documentElement.clientWidth > 1080;
 if (desktop) {
     if (chrome) {
         $("#nav>ul>li>ul").css('transform', 'translateX(-1px)')
