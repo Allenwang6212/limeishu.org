@@ -15,7 +15,6 @@
     }
   }
   img {
-    border-right: 1px solid rgba($white, .5);
     max-width: 30vw;
     display: inline-flex;
     &#logo {
@@ -67,6 +66,9 @@
         display: inline-flex;
         transition: all .3s;
         color: $green !important;
+        &:nth-child(1){
+          border-left: 1px solid rgba($white, .5);
+        }
         a {
           text-align: center;
           width: 100%;
@@ -152,7 +154,6 @@
           box-shadow: 1px 1px 1px rgba(0%, 0%, 0%, 0.5);
           ul {
             transition: all .3s;
-            transform: translateX(-1px);
             display: none;
           }
           &.active {

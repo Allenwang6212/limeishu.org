@@ -18,3 +18,10 @@ if (URL.indexOf(lang1 + '/') > 0) {
 } else if (URL.indexOf(lang3 + '/') > 0) {
     header.innerHTML = content_JP;
 }
+
+var chrome = navigator.userAgent.search("Chrome") > -1;
+if (chrome) {
+    $("#nav>ul>li>ul").css('transform','translateX(-1px)')
+} else {
+    $("#nav>ul>li>ul").css('transform','translateX(calc(-100% + 1px))')
+}

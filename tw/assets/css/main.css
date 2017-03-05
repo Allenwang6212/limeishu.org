@@ -297,7 +297,6 @@ img {
   #header h1#logo {
     display: none; }
   #header img {
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
     max-width: 30vw;
     display: inline-flex; }
     #header img#logo {
@@ -345,6 +344,8 @@ img {
         display: inline-flex;
         transition: all .3s;
         color: #0ea3a3 !important; }
+        #header #nav ul li:nth-child(1) {
+          border-left: 1px solid rgba(255, 255, 255, 0.5); }
         #header #nav ul li a {
           text-align: center;
           width: 100%;
@@ -412,7 +413,6 @@ img {
           box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
           #header #nav.active ul li ul {
             transition: all .3s;
-            transform: translateX(-1px);
             display: none; }
           #header #nav.active ul li.active ul {
             transform: translateX(1px);
