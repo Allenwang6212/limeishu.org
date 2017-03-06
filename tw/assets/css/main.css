@@ -2296,7 +2296,7 @@ img {
         align-items: center;
         display: inline-flex;
         margin: 1em 0 !important;
-        font-size: 0.5em;
+        font-size: 1em;
         width: 30%; }
       .timeline.history.red li .timeline-content {
         padding: 1em;
@@ -2335,7 +2335,7 @@ img {
         align-items: center;
         display: inline-flex;
         margin: 1em 0 !important;
-        font-size: 0.5em;
+        font-size: 1em;
         width: 30%; }
       .timeline.history.green li .timeline-content {
         padding: 1em;
@@ -2374,7 +2374,7 @@ img {
         align-items: center;
         display: inline-flex;
         margin: 1em 0 !important;
-        font-size: 0.5em;
+        font-size: 1em;
         width: 30%; }
       .timeline.history.blue li .timeline-content {
         padding: 1em;

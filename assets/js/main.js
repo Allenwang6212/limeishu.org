@@ -1,3 +1,16 @@
+$(document).ready(function () {
+    var chrome = navigator.userAgent.search("Chrome") > -1;
+    var safari = navigator.userAgent.search("Safari") > -1;
+    var desktop = document.body.clientWidth > 1080 || document.documentElement.clientWidth > 1080;
+    if (desktop) {
+        if (chrome) {
+            $("#nav>ul>li>ul").css('transform', 'translateX(-1px)')
+        } else {
+            $("#nav>ul>li>ul").css('transform', 'translateX(calc(-100% + 1px))')
+        };
+    };
+});
+
 $(function () {
   //scroll down
   $(".scrolly").bind('click', function (event) {
