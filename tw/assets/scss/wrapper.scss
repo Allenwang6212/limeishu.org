@@ -14,11 +14,10 @@ $colorThemes: (yellow $dark-yellow) (green $dark-green) (red $red) (blue $blue);
       padding: 2em;
       .content {
         img {
-          margin: 1em 2em;
           display: block;
-          max-height: 25%;
-          width: auto;
-          @media screen and (max-width: 768px) {
+          height: 5em;
+          width: 5em;
+          @media screen and (max-width: 1024px) {
             width: 90%;
             max-height: auto !important;
             height: auto;
