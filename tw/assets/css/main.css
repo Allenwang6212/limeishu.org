@@ -1145,6 +1145,23 @@ img {
     #sketch .load:nth-child(4n+3) .loading {
       border-color: #ffcb1c; }
 
+.debug {
+  transition: all .3s;
+  background-color: #FC4C45;
+  display: flex;
+  padding: 2em;
+  position: fixed;
+  width: calc(100vw - 4em);
+  height: calc(100vh - 4em);
+  z-index: 100000000;
+  top: 0;
+  justify-content: center;
+  flex-direction: column; }
+  .debug p {
+    display: flex;
+    font-size: 1.2em;
+    color: white; }
+
 #banner.init {
   overflow: hidden;
   z-index: 0;

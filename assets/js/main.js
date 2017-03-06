@@ -1,14 +1,14 @@
 $(document).ready(function () {
-    var chrome = navigator.userAgent.search("Chrome") > -1;
-    var safari = navigator.userAgent.search("Safari") > -1;
-    var desktop = document.body.clientWidth > 1080 || document.documentElement.clientWidth > 1080;
-    if (desktop) {
-        if (chrome) {
-            $("#nav>ul>li>ul").css('transform', 'translateX(-1px)')
-        } else {
-            $("#nav>ul>li>ul").css('transform', 'translateX(calc(-100% + 1px))')
-        };
+  var chrome = navigator.userAgent.search("Chrome") > -1;
+  var safari = navigator.userAgent.search("Safari") > -1;
+  var desktop = document.body.clientWidth > 1080 || document.documentElement.clientWidth > 1080;
+  if (desktop) {
+    if (chrome) {
+      $("#nav>ul>li>ul").css('transform', 'translateX(-1px)')
+    } else {
+      $("#nav>ul>li>ul").css('transform', 'translateX(calc(-100% + 1px))')
     };
+  };
 });
 
 $(function () {
@@ -78,3 +78,19 @@ $(document).ready(function () {
     });
   });
 });
+
+//debug
+function debug() {
+  $.getJSON("/version.json", (data) => {
+    var version = data.version;
+    var update_time = data.update_time;
+    var developer = data.developer;
+    var best_browser = data.best_browser;
+    var debugInfo = '<div class="debug" onclick="exit();"><p>Version: ' + version + '</p><p>Update Time: ' + update_time + '</p><p>Developer: ' + developer + '</p><p>Best Browser: ' + best_browser + '</p></div>';
+    $("body").append(debugInfo);
+  });
+}
+
+function exit() {
+  $(".debug").hide();
+}
