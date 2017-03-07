@@ -71,7 +71,7 @@
 				}
 			}
 		}
-		$barStyle: (how, $green, 1) (project, $red, 2) (team, $blue, 3);
+		$barStyle: (what, $pink, 1) (intro, $red, 2) (team, $blue, 3);
 		@each $style in $barStyle {
 			$class: nth($style, 1);
 			$color: nth($style, 2);

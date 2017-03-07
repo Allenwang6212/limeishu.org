@@ -315,23 +315,23 @@ html, body {
             color: #0d0e0f; }
     #bar #nav.scrolled {
       background: #E1147F; }
-    #bar #nav.scrolled.how {
+    #bar #nav.scrolled.what {
       box-shadow: 1px 1px 4px rgba(13, 14, 15, 0.5);
       transition: all .3s;
-      background-color: #0ea3a3; }
-      #bar #nav.scrolled.how ul li:nth-child(1) {
+      background-color: #E1147F; }
+      #bar #nav.scrolled.what ul li:nth-child(1) {
         background-color: white; }
-        #bar #nav.scrolled.how ul li:nth-child(1) a {
-          color: #0ea3a3; }
-      #bar #nav.scrolled.how .toggle,
-      #bar #nav.scrolled.how .toggle.active {
-        background-color: #0ea3a3; }
-        #bar #nav.scrolled.how .toggle h1,
-        #bar #nav.scrolled.how .toggle.active h1 {
-          background-color: #0ea3a3; }
+        #bar #nav.scrolled.what ul li:nth-child(1) a {
+          color: #E1147F; }
+      #bar #nav.scrolled.what .toggle,
+      #bar #nav.scrolled.what .toggle.active {
+        background-color: #E1147F; }
+        #bar #nav.scrolled.what .toggle h1,
+        #bar #nav.scrolled.what .toggle.active h1 {
+          background-color: #E1147F; }
     #bar #nav .goto {
       display: none; }
-      #bar #nav .goto.how {
+      #bar #nav .goto.what {
         position: fixed;
         box-shadow: 1px 1px 4px rgba(13, 14, 15, 0.5);
         text-align: center;
@@ -344,12 +344,12 @@ html, body {
         height: 2em;
         border-radius: 50%;
         background-color: white;
-        color: #0ea3a3;
+        color: #E1147F;
         margin: 2em;
         bottom: 0;
         right: 0; }
       @media screen and (max-width: 768px) {
-        #bar #nav .goto.how {
+        #bar #nav .goto.what {
           display: none; } }
     #bar #nav.active {
       position: absolute;
@@ -366,23 +366,23 @@ html, body {
           width: 100%; }
     #bar #nav.scrolled {
       background: #E1147F; }
-    #bar #nav.scrolled.project {
+    #bar #nav.scrolled.intro {
       box-shadow: 1px 1px 4px rgba(13, 14, 15, 0.5);
       transition: all .3s;
       background-color: #f43e3e; }
-      #bar #nav.scrolled.project ul li:nth-child(2) {
+      #bar #nav.scrolled.intro ul li:nth-child(2) {
         background-color: white; }
-        #bar #nav.scrolled.project ul li:nth-child(2) a {
+        #bar #nav.scrolled.intro ul li:nth-child(2) a {
           color: #f43e3e; }
-      #bar #nav.scrolled.project .toggle,
-      #bar #nav.scrolled.project .toggle.active {
+      #bar #nav.scrolled.intro .toggle,
+      #bar #nav.scrolled.intro .toggle.active {
         background-color: #f43e3e; }
-        #bar #nav.scrolled.project .toggle h1,
-        #bar #nav.scrolled.project .toggle.active h1 {
+        #bar #nav.scrolled.intro .toggle h1,
+        #bar #nav.scrolled.intro .toggle.active h1 {
           background-color: #f43e3e; }
     #bar #nav .goto {
       display: none; }
-      #bar #nav .goto.project {
+      #bar #nav .goto.intro {
         position: fixed;
         box-shadow: 1px 1px 4px rgba(13, 14, 15, 0.5);
         text-align: center;
@@ -400,7 +400,7 @@ html, body {
         bottom: 0;
         right: 0; }
       @media screen and (max-width: 768px) {
-        #bar #nav .goto.project {
+        #bar #nav .goto.intro {
           display: none; } }
     #bar #nav.active {
       position: absolute;
@@ -980,5 +980,23 @@ html, body {
     margin: auto;
     position: relative;
     font-size: 0.5em; }
+
+.page {
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: relative; }
+  .page.fullscreen {
+    height: 100vh;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .page p {
+    padding: 2em; }
+  .page.darken > div {
+    background: rgba(0, 0, 0, 0.3); }
+  .page.lighten > div {
+    background: rgba(255, 255, 255, 0.3); }
 
 /*# sourceMappingURL=main.css.map */

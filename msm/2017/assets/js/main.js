@@ -5,10 +5,18 @@ $(function () {
 		var height = document.body.clientHeight;
 		var width = document.body.clientWidth;
 		var scrollHight = $(this).scrollTop();
+		var barStyle = ['what','intro']
 		if (scrollHight / (height - 48) >= 1) {
 			$("#nav").addClass("scrolled");
 		} else {
 			$("#nav").removeClass("scrolled");
+		}
+		for (var i = 0; i < barStyle.length; ++i) {
+			if ((scrollHight / (height) >= i + 1) && (scrollHight / (height) < i + 2)) {
+				$("#nav").addClass(barStyle[i]);
+			} else {
+				$("#nav").removeClass(barStyle[i]);
+			}
 		}
 	});
 });

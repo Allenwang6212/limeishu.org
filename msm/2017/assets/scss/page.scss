@@ -1,0 +1,23 @@
+.page {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    &.fullscreen {
+        height: 100vh;
+        @include backgroundConfig;
+    }
+    p {
+        padding: 2em;
+    }
+    &.darken {
+        >div {
+            background: hsla(0, 50%, 0, .3);
+        }
+    }
+    &.lighten {
+        >div {
+            background: hsla(0, 0, 100%, .3);
+        }
+    }
+}
