@@ -1,0 +1,111 @@
+#intro {
+    overflow: hidden;
+    color: $black;
+    height: 100vh;
+    display: flex;
+    .container {
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        .content {
+            height: calc(100% - 2em * 2);
+            width: calc(100% - 2em * 2);
+            display: flex;
+            padding: 2em;
+            flex-direction: column;
+            justify-content: space-around;
+            overflow: hidden;
+            z-index: 10;
+            header {
+                @include column;
+                * {
+                    margin: .25em auto;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                }
+                h1 {
+                    font-weight: 200;
+                    font-size: $title-xl;
+                }
+                h3 {
+                    font-weight: 200;
+                    font-size: $subtitle;
+                }
+                p {
+                    font-size: $content-xl;
+                }
+            }
+            .map {
+                display: flex;
+                padding: 2em 3em;
+                z-index: 1;
+                position: relative;
+                height: 70%;
+                .go {
+                    transition: all .3s;
+                    z-index: 9;
+                    position: absolute;
+                    display: inline-flex;
+                    height: calc(100vh + 3em);
+                    width: 5em;
+                    background: rgba($white, .7);
+                    >icon {
+                        transition: all .3s;
+                        color: rgba($black, .5);
+                        justify-content: center;
+                        height: 3em;
+                        margin: auto;
+                    }
+                    &.left {
+                        left: 0;
+                        transform: translate(-2em, -30vh);
+                    }
+                    &.right {
+                        right: 0;
+                        transform: translate(2em, -30vh);
+                    }
+                    &:hover {
+                        transition: all .3s;
+                        width: 8em;
+                        box-shadow: 0 0 15px rgba($black, .8);
+                        >icon {
+                            transition: all .3s;
+                            color: rgba($black, .8);
+                        }
+                    }
+                }
+                .display {
+                    transition: all .3s;
+                    z-index: 1;
+                    position: absolute;
+                    justify-content: space-around;
+                    .point {
+                        width: calc(100vw /4);
+                        height: 70vh;
+                        display: inline-flex;
+                        float: left;
+                        .container {
+                            display: flex;
+                            padding: 1em;
+                            height: calc(70vh - 1em * 2);
+                            position: relative;
+                            @include column;
+                            float: left;
+                            header {
+                                display: flex;
+                                img {
+                                    display: flex;
+                                    margin: .5em auto;
+                                    position: relative;
+                                    height: 20em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

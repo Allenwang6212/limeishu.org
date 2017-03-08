@@ -318,17 +318,18 @@ html, body {
     #bar #nav.scrolled.what {
       box-shadow: 1px 1px 4px rgba(13, 14, 15, 0.5);
       transition: all .3s;
-      background-color: #E1147F; }
+      background-color: #0ea3a3; }
       #bar #nav.scrolled.what ul li:nth-child(1) {
         background-color: white; }
         #bar #nav.scrolled.what ul li:nth-child(1) a {
-          color: #E1147F; }
+          color: #0ea3a3; }
       #bar #nav.scrolled.what .toggle,
       #bar #nav.scrolled.what .toggle.active {
-        background-color: #E1147F; }
+        background-color: #0ea3a3; }
         #bar #nav.scrolled.what .toggle h1,
         #bar #nav.scrolled.what .toggle.active h1 {
-          background-color: #E1147F; }
+          transition: all .3s;
+          background-color: #0ea3a3; }
     #bar #nav .goto {
       display: none; }
       #bar #nav .goto.what {
@@ -344,7 +345,7 @@ html, body {
         height: 2em;
         border-radius: 50%;
         background-color: white;
-        color: #E1147F;
+        color: #0ea3a3;
         margin: 2em;
         bottom: 0;
         right: 0; }
@@ -369,17 +370,18 @@ html, body {
     #bar #nav.scrolled.intro {
       box-shadow: 1px 1px 4px rgba(13, 14, 15, 0.5);
       transition: all .3s;
-      background-color: #f43e3e; }
+      background-color: #E1147F; }
       #bar #nav.scrolled.intro ul li:nth-child(2) {
         background-color: white; }
         #bar #nav.scrolled.intro ul li:nth-child(2) a {
-          color: #f43e3e; }
+          color: #E1147F; }
       #bar #nav.scrolled.intro .toggle,
       #bar #nav.scrolled.intro .toggle.active {
-        background-color: #f43e3e; }
+        background-color: #E1147F; }
         #bar #nav.scrolled.intro .toggle h1,
         #bar #nav.scrolled.intro .toggle.active h1 {
-          background-color: #f43e3e; }
+          transition: all .3s;
+          background-color: #E1147F; }
     #bar #nav .goto {
       display: none; }
       #bar #nav .goto.intro {
@@ -395,7 +397,7 @@ html, body {
         height: 2em;
         border-radius: 50%;
         background-color: white;
-        color: #f43e3e;
+        color: #E1147F;
         margin: 2em;
         bottom: 0;
         right: 0; }
@@ -430,6 +432,7 @@ html, body {
         background-color: #005270; }
         #bar #nav.scrolled.team .toggle h1,
         #bar #nav.scrolled.team .toggle.active h1 {
+          transition: all .3s;
           background-color: #005270; }
     #bar #nav .goto {
       display: none; }
@@ -483,103 +486,6 @@ html, body {
         #bar #nav ul li {
           box-shadow: 1px 1px 1px rgba(13, 14, 15, 0.2); } }
 
-#how {
-  overflow: hidden;
-  background-attachment: local;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: url("images/how.jpg") 0/cover fixed;
-  color: white;
-  height: 100vh;
-  display: block; }
-  #how .container {
-    z-index: 0;
-    height: 100%;
-    width: 45%;
-    position: relative;
-    background: rgba(255, 255, 255, 0.5);
-    overflow: hidden; }
-    #how .container .content {
-      height: 100%;
-      display: flex;
-      padding: 1em;
-      flex-direction: column;
-      justify-content: center; }
-      #how .container .content h1 {
-        font-weight: 200;
-        position: relative;
-        display: flex;
-        font-size: 2.5em; }
-        #how .container .content h1 b {
-          padding: 0 .5em;
-          margin: 0 .5em;
-          font-weight: 400;
-          border-right: 3px solid #0ea3a3; }
-      #how .container .content p {
-        margin-left: calc(2.5em * 2+2em);
-        padding: 2em;
-        display: flex; }
-      #how .container .content #link {
-        margin-left: calc(2.5em * 2+2em);
-        display: flex;
-        flex-direction: row;
-        justify-content: center; }
-        #how .container .content #link .button {
-          display: inline-block;
-          position: relative; }
-    #how .container:before {
-      z-index: -1;
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      filter: blur(15px);
-      -webkit-backdrop-filter: blur(20px);
-      margin: -3em;
-      background: url("images/how.jpg") 0/cover fixed; }
-
-@media screen and (max-width: 1200px) {
-  #how {
-    color: #0d0e0f;
-    height: 60%; }
-    #how .container {
-      width: 100%; }
-      #how .container .content a {
-        color: #0d0e0f;
-        border-color: #0d0e0f; } }
-@media screen and (max-width: 768px) {
-  #how {
-    height: 100%; }
-    #how .container {
-      width: 100%; }
-      #how .container .content {
-        padding: .5em;
-        text-align: center; }
-        #how .container .content h1 {
-          display: block;
-          margin: 0 auto; }
-          #how .container .content h1 b {
-            border: 0;
-            border-bottom: 3px solid #0ea3a3;
-            display: block;
-            margin: .2em auto;
-            padding: 0; }
-        #how .container .content p {
-          display: block;
-          padding: .5em; }
-        #how .container .content #link {
-          width: 100%;
-          display: block;
-          margin: 0; }
-          #how .container .content #link .button {
-            display: block; }
-      #how .container:before {
-        filter: none;
-        background: none;
-        overflow: hidden; } }
 #project {
   display: flex;
   color: white;
@@ -588,7 +494,7 @@ html, body {
   -webkit-flex-direction: column;
   justify-content: center;
   -webkit-justify-content: center;
-  background-attachment: local;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -627,7 +533,7 @@ html, body {
         position: relative;
         height: 40%;
         width: 100%;
-        background-attachment: local;
+        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
@@ -777,7 +683,7 @@ html, body {
         #team .container .member .pic img {
           display: none; }
         #team .container .member .pic .image {
-          background-attachment: local;
+          background-attachment: fixed;
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -992,11 +898,243 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
-  .page p {
-    padding: 2em; }
   .page.darken > div {
     background: rgba(0, 0, 0, 0.3); }
   .page.lighten > div {
     background: rgba(255, 255, 255, 0.3); }
+
+.container {
+  display: flex;
+  position: relative;
+  width: auto;
+  height: 100%; }
+  .container > .content {
+    display: flex;
+    padding: 2em;
+    padding-top: 5em; }
+
+.spotlight {
+  position: relative;
+  display: flex; }
+  .spotlight.fullpage {
+    width: 100%;
+    height: 100vh; }
+
+#welcome {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(90deg, transparent 60%, rgba(0, 0, 0, 0.2));
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-around;
+  align-items: center; }
+
+#what {
+  overflow: hidden;
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("images/what.jpg") 0/cover fixed;
+  color: white;
+  height: 100vh;
+  display: block; }
+  #what .container {
+    z-index: 0;
+    height: 100%;
+    width: 40%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden; }
+    #what .container .content {
+      height: calc(100% - 1em * 2);
+      display: flex;
+      padding: 1em 2em;
+      flex-direction: column;
+      justify-content: space-around; }
+      #what .container .content header {
+        border-left: 3px solid #0ea3a3;
+        margin: auto 1em;
+        margin-bottom: 1em; }
+        #what .container .content header h1 {
+          padding: 0 1rem;
+          font-weight: 200;
+          position: relative;
+          display: flex;
+          font-size: 2.5em; }
+        #what .container .content header h3 {
+          padding: 1.5rem 1rem;
+          padding-top: .25rem;
+          font-weight: 200;
+          position: relative;
+          display: flex;
+          font-size: 1.2em; }
+        #what .container .content header p {
+          margin-left: calc(2.5em * 2+2em);
+          padding: 0 1rem;
+          display: flex;
+          font-size: 1em; }
+      #what .container .content #link {
+        margin: auto;
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        #what .container .content #link .button {
+          display: inline-block;
+          position: relative; }
+    #what .container:before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      filter: blur(15px);
+      -webkit-backdrop-filter: blur(20px);
+      margin: -3em;
+      background: url("images/what.jpg") 0/cover fixed; }
+
+@media screen and (max-width: 1200px) {
+  #what .container {
+    width: 60%; } }
+@media screen and (max-width: 768px) {
+  #what {
+    color: #0d0e0f;
+    height: 100%; }
+    #what .container {
+      width: 100%; }
+      #what .container .content {
+        padding: 1.5em .5em;
+        height: calc(100% - 1.5em *2);
+        text-align: center;
+        justify-content: center; }
+        #what .container .content header {
+          border: 0;
+          margin: 0;
+          padding: 0; }
+          #what .container .content header h1 {
+            font-size: 2em;
+            display: block;
+            margin: 0 auto; }
+            #what .container .content header h1 b {
+              border: 0;
+              border-bottom: 3px solid #0ea3a3;
+              display: block;
+              margin: .2em auto;
+              padding: 0; }
+          #what .container .content header p {
+            display: block;
+            padding: .5em; }
+        #what .container .content #link {
+          width: 100%;
+          display: block;
+          margin: 0; }
+          #what .container .content #link .button {
+            color: #0d0e0f;
+            border-color: #0d0e0f;
+            display: block; }
+            #what .container .content #link .button:hover {
+              border-color: white; }
+      #what .container:before {
+        filter: none;
+        background: none;
+        overflow: hidden; } }
+#intro {
+  overflow: hidden;
+  color: #0d0e0f;
+  height: 100vh;
+  display: flex; }
+  #intro .container {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: relative; }
+    #intro .container .content {
+      height: calc(100% - 2em * 2);
+      width: calc(100% - 2em * 2);
+      display: flex;
+      padding: 2em;
+      flex-direction: column;
+      justify-content: space-around;
+      overflow: hidden;
+      z-index: 10; }
+      #intro .container .content header {
+        flex-direction: column; }
+        #intro .container .content header * {
+          margin: .25em auto;
+          position: relative;
+          display: flex;
+          justify-content: center; }
+        #intro .container .content header h1 {
+          font-weight: 200;
+          font-size: 2.5em; }
+        #intro .container .content header h3 {
+          font-weight: 200;
+          font-size: 1.2em; }
+        #intro .container .content header p {
+          font-size: 1em; }
+      #intro .container .content .map {
+        display: flex;
+        padding: 2em 3em;
+        z-index: 1;
+        position: relative;
+        height: 70%; }
+        #intro .container .content .map .go {
+          transition: all .3s;
+          z-index: 9;
+          position: absolute;
+          display: inline-flex;
+          height: calc(100vh + 3em);
+          width: 5em;
+          background: rgba(255, 255, 255, 0.7); }
+          #intro .container .content .map .go > icon {
+            transition: all .3s;
+            color: rgba(13, 14, 15, 0.5);
+            justify-content: center;
+            height: 3em;
+            margin: auto; }
+          #intro .container .content .map .go.left {
+            left: 0;
+            transform: translate(-2em, -30vh); }
+          #intro .container .content .map .go.right {
+            right: 0;
+            transform: translate(2em, -30vh); }
+          #intro .container .content .map .go:hover {
+            transition: all .3s;
+            width: 8em;
+            box-shadow: 0 0 15px rgba(13, 14, 15, 0.8); }
+            #intro .container .content .map .go:hover > icon {
+              transition: all .3s;
+              color: rgba(13, 14, 15, 0.8); }
+        #intro .container .content .map .display {
+          transition: all .3s;
+          z-index: 1;
+          position: absolute;
+          justify-content: space-around; }
+          #intro .container .content .map .display .point {
+            width: calc(100vw /4);
+            height: 70vh;
+            display: inline-flex;
+            float: left; }
+            #intro .container .content .map .display .point .container {
+              display: flex;
+              padding: 1em;
+              height: calc(70vh - 1em * 2);
+              position: relative;
+              flex-direction: column;
+              float: left; }
+              #intro .container .content .map .display .point .container header {
+                display: flex; }
+                #intro .container .content .map .display .point .container header img {
+                  display: flex;
+                  margin: .5em auto;
+                  position: relative;
+                  height: 20em; }
 
 /*# sourceMappingURL=main.css.map */

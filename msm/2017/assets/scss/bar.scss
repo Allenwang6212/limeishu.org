@@ -71,7 +71,7 @@
 				}
 			}
 		}
-		$barStyle: (what, $pink, 1) (intro, $red, 2) (team, $blue, 3);
+		$barStyle: (what, $green, 1) (intro, $pink, 2) (team, $blue, 3);
 		@each $style in $barStyle {
 			$class: nth($style, 1);
 			$color: nth($style, 2);
@@ -95,6 +95,7 @@
 				.toggle.active {
 					background-color: $color;
 					h1 {
+						transition: all .3s;
 						background-color: $color;
 					}
 				}

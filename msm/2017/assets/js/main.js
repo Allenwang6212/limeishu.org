@@ -5,11 +5,13 @@ $(function () {
 		var height = document.body.clientHeight;
 		var width = document.body.clientWidth;
 		var scrollHight = $(this).scrollTop();
-		var barStyle = ['what','intro']
+		var barStyle = ['what', 'intro']
 		if (scrollHight / (height - 48) >= 1) {
 			$("#nav").addClass("scrolled");
+			$("#nav .toggle h1").show();
 		} else {
 			$("#nav").removeClass("scrolled");
+			$("#nav .toggle h1").hide();
 		}
 		for (var i = 0; i < barStyle.length; ++i) {
 			if ((scrollHight / (height) >= i + 1) && (scrollHight / (height) < i + 2)) {
@@ -64,6 +66,30 @@ button.append(buttonIcon);
 var aContent = jQuery("a");
 for (var i = 0; i < aContent.length; ++i) {
 	if (aContent[i].getAttribute("href") == '#') {
-		aContent[i].removeAttribute("href");
+		aContent[i].removeAttribute("href").bind('click', function () {
+			event.preventDefault();
+		});
 	}
 }
+
+$(document).ready(function () {
+	var width = document.body.clientWidth;
+	var display = $(".map>.display");
+	var pointNum = $(".map>.display>div").length;
+	var displayWidth = pointNum * (width / 4);
+	var desktop = width > 768;
+	if (desktop) {
+		display.css('width', displayWidth);
+	}
+	var clickEvent = 0;
+	$(".map>.right").click( function () {
+		clickEvent = clickEvent - 1;
+		display.css('transform','translateX('+((width / 4) * clickEvent).toString()+'px)');
+		console.log('translateX('+((width / 3) * clickEvent).toString()+'px)');
+	});
+	$(".map>.left").click( function () {
+		clickEvent = clickEvent + 1;
+		display.css('transform','translateX('+((width / 4) * clickEvent).toString()+'px)');
+		console.log('translateX('+((width / 3) * clickEvent).toString()+'px)');
+	});
+});

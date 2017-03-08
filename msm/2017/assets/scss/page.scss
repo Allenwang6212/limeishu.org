@@ -7,9 +7,6 @@
         height: 100vh;
         @include backgroundConfig;
     }
-    p {
-        padding: 2em;
-    }
     &.darken {
         >div {
             background: hsla(0, 50%, 0, .3);
