@@ -210,7 +210,7 @@ html, body {
     #banner header h2 {
       margin: 0 auto;
       font-weight: 200;
-      color: white;
+      color: #cecece;
       display: block;
       font-size: 1.2em; }
       #banner header h2 b {
@@ -221,7 +221,7 @@ html, body {
       margin: 0 auto;
       padding: .5em;
       font-weight: 200;
-      color: white;
+      color: #cecece;
       display: block;
       max-width: 980px; }
   #banner:before {
@@ -419,24 +419,24 @@ html, body {
           width: 100%; }
     #bar #nav.scrolled {
       background: #E1147F; }
-    #bar #nav.scrolled.team {
+    #bar #nav.scrolled.site {
       box-shadow: 1px 1px 4px rgba(13, 14, 15, 0.5);
       transition: all .3s;
       background-color: #005270; }
-      #bar #nav.scrolled.team ul li:nth-child(3) {
+      #bar #nav.scrolled.site ul li:nth-child(3) {
         background-color: white; }
-        #bar #nav.scrolled.team ul li:nth-child(3) a {
+        #bar #nav.scrolled.site ul li:nth-child(3) a {
           color: #005270; }
-      #bar #nav.scrolled.team .toggle,
-      #bar #nav.scrolled.team .toggle.active {
+      #bar #nav.scrolled.site .toggle,
+      #bar #nav.scrolled.site .toggle.active {
         background-color: #005270; }
-        #bar #nav.scrolled.team .toggle h1,
-        #bar #nav.scrolled.team .toggle.active h1 {
+        #bar #nav.scrolled.site .toggle h1,
+        #bar #nav.scrolled.site .toggle.active h1 {
           transition: all .3s;
           background-color: #005270; }
     #bar #nav .goto {
       display: none; }
-      #bar #nav .goto.team {
+      #bar #nav .goto.site {
         position: fixed;
         box-shadow: 1px 1px 4px rgba(13, 14, 15, 0.5);
         text-align: center;
@@ -454,7 +454,7 @@ html, body {
         bottom: 0;
         right: 0; }
       @media screen and (max-width: 768px) {
-        #bar #nav .goto.team {
+        #bar #nav .goto.site {
           display: none; } }
     #bar #nav.active {
       position: absolute;
@@ -914,11 +914,313 @@ html, body {
     padding-top: 5em; }
 
 .spotlight {
-  position: relative;
-  display: flex; }
-  .spotlight.fullpage {
-    width: 100%;
-    height: 100vh; }
+  overflow: hidden;
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  display: block; }
+  .spotlight.left {
+    background: url("images/what.jpg") 0/cover fixed; }
+    .spotlight.left .container {
+      z-index: 0;
+      height: 100%;
+      width: 40%;
+      position: relative;
+      background: rgba(255, 255, 255, 0.5);
+      overflow: hidden; }
+      .spotlight.left .container .content {
+        height: calc(100% - 1em * 2);
+        display: flex;
+        padding: 1em 2em;
+        flex-direction: column;
+        justify-content: space-around; }
+        .spotlight.left .container .content header {
+          border-left: 3px solid #0ea3a3;
+          margin: auto 1em;
+          margin-bottom: 1em; }
+          .spotlight.left .container .content header h1 {
+            padding: 0 1rem;
+            font-weight: 200;
+            position: relative;
+            display: flex;
+            font-size: 2.5em; }
+          .spotlight.left .container .content header h3 {
+            padding: 1.5rem 1rem;
+            padding-top: .25rem;
+            font-weight: 200;
+            position: relative;
+            display: flex;
+            font-size: 1.2em; }
+          .spotlight.left .container .content header p {
+            margin-left: calc(2.5em * 2+2em);
+            padding: 0 1rem;
+            display: flex;
+            font-size: 1em; }
+        .spotlight.left .container .content #link {
+          margin: auto;
+          margin-top: 1em;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          .spotlight.left .container .content #link .button {
+            display: inline-block;
+            position: relative; }
+      .spotlight.left .container:before {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        filter: blur(15px);
+        -webkit-backdrop-filter: blur(20px);
+        margin: -3em;
+        background: url("images/what.jpg") 0/cover fixed; }
+    @media screen and (max-width: 1200px) {
+      .spotlight.left .container {
+        width: 60%; } }
+    @media screen and (max-width: 768px) {
+      .spotlight.left {
+        color: #0d0e0f;
+        height: 100%; }
+        .spotlight.left .container {
+          width: 100%; }
+          .spotlight.left .container .content {
+            padding: 1.5em .5em;
+            height: calc(100% - 1.5em *2);
+            text-align: center;
+            justify-content: center; }
+            .spotlight.left .container .content header {
+              border: 0;
+              margin: 0;
+              padding: 0; }
+              .spotlight.left .container .content header h1 {
+                font-size: 2em;
+                display: block;
+                margin: 0 auto; }
+                .spotlight.left .container .content header h1 b {
+                  border: 0;
+                  border-bottom: 3px solid #0ea3a3;
+                  display: block;
+                  margin: .2em auto;
+                  padding: 0; }
+              .spotlight.left .container .content header p {
+                display: block;
+                padding: .5em; }
+            .spotlight.left .container .content #link {
+              width: 100%;
+              display: block;
+              margin: 0; }
+              .spotlight.left .container .content #link .button {
+                color: #0d0e0f;
+                border-color: #0d0e0f;
+                display: block; }
+                .spotlight.left .container .content #link .button:hover {
+                  border-color: white; }
+          .spotlight.left .container:before {
+            filter: none;
+            background: none;
+            overflow: hidden; } }
+  .spotlight.right .container {
+    right: 0;
+    z-index: 0;
+    height: 100%;
+    width: 40%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden; }
+    .spotlight.right .container .content {
+      height: calc(100% - 1em * 2);
+      display: flex;
+      padding: 1em 2em;
+      flex-direction: column;
+      justify-content: space-around; }
+      .spotlight.right .container .content header {
+        border-left: 3px solid #0ea3a3;
+        margin: auto 1em;
+        margin-bottom: 1em; }
+        .spotlight.right .container .content header h1 {
+          padding: 0 1rem;
+          font-weight: 200;
+          position: relative;
+          display: flex;
+          font-size: 2.5em; }
+        .spotlight.right .container .content header h3 {
+          padding: 1.5rem 1rem;
+          padding-top: .25rem;
+          font-weight: 200;
+          position: relative;
+          display: flex;
+          font-size: 1.2em; }
+        .spotlight.right .container .content header p {
+          margin-left: calc(2.5em * 2+2em);
+          padding: 0 1rem;
+          display: flex;
+          font-size: 1em; }
+      .spotlight.right .container .content #link {
+        margin: auto;
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        .spotlight.right .container .content #link .button {
+          display: inline-block;
+          position: relative; }
+    .spotlight.right .container:before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      filter: blur(15px);
+      -webkit-backdrop-filter: blur(20px);
+      margin: -3em;
+      background: url("images/intro.jpg") 0/cover fixed; }
+  @media screen and (max-width: 1200px) {
+    .spotlight.right .container {
+      width: 60%; } }
+  @media screen and (max-width: 768px) {
+    .spotlight.right {
+      color: #0d0e0f;
+      height: 100%; }
+      .spotlight.right .container {
+        width: 100%; }
+        .spotlight.right .container .content {
+          padding: 1.5em .5em;
+          height: calc(100% - 1.5em *2);
+          text-align: center;
+          justify-content: center; }
+          .spotlight.right .container .content header {
+            border: 0;
+            margin: 0;
+            padding: 0; }
+            .spotlight.right .container .content header h1 {
+              font-size: 2em;
+              display: block;
+              margin: 0 auto; }
+              .spotlight.right .container .content header h1 b {
+                border: 0;
+                border-bottom: 3px solid #0ea3a3;
+                display: block;
+                margin: .2em auto;
+                padding: 0; }
+            .spotlight.right .container .content header p {
+              display: block;
+              padding: .5em; }
+          .spotlight.right .container .content #link {
+            width: 100%;
+            display: block;
+            margin: 0; }
+            .spotlight.right .container .content #link .button {
+              color: #0d0e0f;
+              border-color: #0d0e0f;
+              display: block; }
+              .spotlight.right .container .content #link .button:hover {
+                border-color: white; }
+        .spotlight.right .container:before {
+          filter: none;
+          background: none;
+          overflow: hidden; } }
+  .spotlight.full {
+    background: url("images/intro.jpg") 0/cover fixed;
+    color: white !important; }
+    .spotlight.full .container {
+      right: 0;
+      z-index: 0;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      background: rgba(255, 255, 255, 0.5);
+      overflow: hidden; }
+      .spotlight.full .container .content {
+        height: calc(100% - 1em * 2);
+        display: flex;
+        padding: 1em 2em;
+        flex-direction: column;
+        justify-content: space-around; }
+        .spotlight.full .container .content header {
+          margin: auto 1em; }
+          .spotlight.full .container .content header > * {
+            justify-content: center; }
+          .spotlight.full .container .content header h1 {
+            padding: 0 1rem;
+            font-weight: 200;
+            position: relative;
+            display: flex;
+            font-size: 2.5em; }
+          .spotlight.full .container .content header h3 {
+            padding: 1.5rem 1rem;
+            padding-top: .25rem;
+            font-weight: 200;
+            position: relative;
+            display: flex;
+            font-size: 1.2em; }
+          .spotlight.full .container .content header p,
+          .spotlight.full .container .content header li > p {
+            justify-content: center;
+            margin-left: calc(2.5em * 2+2em);
+            padding: 0 1rem;
+            display: flex;
+            font-size: 1em; }
+        .spotlight.full .container .content #link {
+          margin: auto;
+          margin-top: 1em;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          .spotlight.full .container .content #link .button {
+            display: inline-block;
+            position: relative; }
+      .spotlight.full .container:before {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        filter: blur(15px);
+        -webkit-backdrop-filter: blur(20px);
+        margin: -3em;
+        background: url("images/intro.jpg") 0/cover fixed; }
+    @media screen and (max-width: 768px) {
+      .spotlight.full {
+        color: #0d0e0f !important;
+        height: 100%; }
+        .spotlight.full .container {
+          width: 100%; }
+          .spotlight.full .container .content {
+            padding: 1.5em .5em;
+            height: calc(100% - 1.5em *2);
+            text-align: center;
+            justify-content: center; }
+            .spotlight.full .container .content header {
+              border: 0;
+              margin: 0;
+              padding: 0; }
+              .spotlight.full .container .content header h1 {
+                font-size: 1.2em;
+                display: block;
+                margin: 0 auto; }
+              .spotlight.full .container .content header p {
+                display: block;
+                padding: .5em;
+                font-size: 0.5em; }
+              .spotlight.full .container .content header p,
+              .spotlight.full .container .content header li > p {
+                display: block;
+                padding: .5em;
+                font-size: 0.5em; }
+          .spotlight.full .container:before {
+            filter: none;
+            background: none;
+            overflow: hidden; } }
 
 #welcome {
   display: flex;
@@ -933,129 +1235,17 @@ html, body {
   justify-content: space-around;
   align-items: center; }
 
-#what {
-  overflow: hidden;
-  background-attachment: local;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: url("images/what.jpg") 0/cover fixed;
-  color: white;
-  height: 100vh;
-  display: block; }
-  #what .container {
-    z-index: 0;
-    height: 100%;
-    width: 40%;
-    position: relative;
-    background: rgba(255, 255, 255, 0.5);
-    overflow: hidden; }
-    #what .container .content {
-      height: calc(100% - 1em * 2);
-      display: flex;
-      padding: 1em 2em;
-      flex-direction: column;
-      justify-content: space-around; }
-      #what .container .content header {
-        border-left: 3px solid #0ea3a3;
-        margin: auto 1em;
-        margin-bottom: 1em; }
-        #what .container .content header h1 {
-          padding: 0 1rem;
-          font-weight: 200;
-          position: relative;
-          display: flex;
-          font-size: 2.5em; }
-        #what .container .content header h3 {
-          padding: 1.5rem 1rem;
-          padding-top: .25rem;
-          font-weight: 200;
-          position: relative;
-          display: flex;
-          font-size: 1.2em; }
-        #what .container .content header p {
-          margin-left: calc(2.5em * 2+2em);
-          padding: 0 1rem;
-          display: flex;
-          font-size: 1em; }
-      #what .container .content #link {
-        margin: auto;
-        margin-top: 1em;
-        display: flex;
-        flex-direction: row;
-        justify-content: center; }
-        #what .container .content #link .button {
-          display: inline-block;
-          position: relative; }
-    #what .container:before {
-      z-index: -1;
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      filter: blur(15px);
-      -webkit-backdrop-filter: blur(20px);
-      margin: -3em;
-      background: url("images/what.jpg") 0/cover fixed; }
-
-@media screen and (max-width: 1200px) {
-  #what .container {
-    width: 60%; } }
-@media screen and (max-width: 768px) {
-  #what {
-    color: #0d0e0f;
-    height: 100%; }
-    #what .container {
-      width: 100%; }
-      #what .container .content {
-        padding: 1.5em .5em;
-        height: calc(100% - 1.5em *2);
-        text-align: center;
-        justify-content: center; }
-        #what .container .content header {
-          border: 0;
-          margin: 0;
-          padding: 0; }
-          #what .container .content header h1 {
-            font-size: 2em;
-            display: block;
-            margin: 0 auto; }
-            #what .container .content header h1 b {
-              border: 0;
-              border-bottom: 3px solid #0ea3a3;
-              display: block;
-              margin: .2em auto;
-              padding: 0; }
-          #what .container .content header p {
-            display: block;
-            padding: .5em; }
-        #what .container .content #link {
-          width: 100%;
-          display: block;
-          margin: 0; }
-          #what .container .content #link .button {
-            color: #0d0e0f;
-            border-color: #0d0e0f;
-            display: block; }
-            #what .container .content #link .button:hover {
-              border-color: white; }
-      #what .container:before {
-        filter: none;
-        background: none;
-        overflow: hidden; } }
-#intro {
+.slide {
   overflow: hidden;
   color: #0d0e0f;
   height: 100vh;
   display: flex; }
-  #intro .container {
+  .slide .container {
     z-index: 0;
     height: 100%;
     width: 100%;
     position: relative; }
-    #intro .container .content {
+    .slide .container .content {
       height: calc(100% - 2em * 2);
       width: calc(100% - 2em * 2);
       display: flex;
@@ -1064,77 +1254,108 @@ html, body {
       justify-content: space-around;
       overflow: hidden;
       z-index: 10; }
-      #intro .container .content header {
+      .slide .container .content header {
+        margin-top: 3em;
         flex-direction: column; }
-        #intro .container .content header * {
+        .slide .container .content header * {
           margin: .25em auto;
           position: relative;
           display: flex;
           justify-content: center; }
-        #intro .container .content header h1 {
+        .slide .container .content header h1 {
           font-weight: 200;
           font-size: 2.5em; }
-        #intro .container .content header h3 {
+        .slide .container .content header h3 {
           font-weight: 200;
           font-size: 1.2em; }
-        #intro .container .content header p {
+        .slide .container .content header p {
           font-size: 1em; }
-      #intro .container .content .map {
+      .slide .container .content .map {
         display: flex;
         padding: 2em 3em;
         z-index: 1;
         position: relative;
         height: 70%; }
-        #intro .container .content .map .go {
+        .slide .container .content .map .go {
           transition: all .3s;
           z-index: 9;
           position: absolute;
           display: inline-flex;
-          height: calc(100vh + 3em);
+          height: calc(60vh);
           width: 5em;
           background: rgba(255, 255, 255, 0.7); }
-          #intro .container .content .map .go > icon {
+          .slide .container .content .map .go > icon {
             transition: all .3s;
             color: rgba(13, 14, 15, 0.5);
             justify-content: center;
-            height: 3em;
-            margin: auto; }
-          #intro .container .content .map .go.left {
+            margin: auto;
+            font-size: 2.5em; }
+          .slide .container .content .map .go.left {
             left: 0;
-            transform: translate(-2em, -30vh); }
-          #intro .container .content .map .go.right {
+            transform: translateX(-2em);
+            box-shadow: 15px 0 15px -15px rgba(13, 14, 15, 0.8); }
+          .slide .container .content .map .go.right {
             right: 0;
-            transform: translate(2em, -30vh); }
-          #intro .container .content .map .go:hover {
+            transform: translateX(2em);
+            box-shadow: -15px 0 15px -15px rgba(13, 14, 15, 0.8); }
+          .slide .container .content .map .go:hover {
             transition: all .3s;
             width: 8em;
-            box-shadow: 0 0 15px rgba(13, 14, 15, 0.8); }
-            #intro .container .content .map .go:hover > icon {
+            background: rgba(255, 255, 255, 0.9); }
+            .slide .container .content .map .go:hover > icon {
               transition: all .3s;
               color: rgba(13, 14, 15, 0.8); }
-        #intro .container .content .map .display {
+        .slide .container .content .map .display {
           transition: all .3s;
           z-index: 1;
           position: absolute;
-          justify-content: space-around; }
-          #intro .container .content .map .display .point {
+          justify-content: space-around;
+          background-color: #005270;
+          box-shadow: inset 0 0 15px rgba(13, 14, 15, 0.5); }
+          .slide .container .content .map .display .point {
             width: calc(100vw /4);
-            height: 70vh;
+            height: 60vh;
             display: inline-flex;
             float: left; }
-            #intro .container .content .map .display .point .container {
+            .slide .container .content .map .display .point .container {
               display: flex;
-              padding: 1em;
-              height: calc(70vh - 1em * 2);
+              box-shadow: 0 0 15px rgba(13, 14, 15, 0.5);
+              border-radius: 5px;
+              margin: 1em;
+              height: calc(60vh - 1em * 2);
               position: relative;
               flex-direction: column;
-              float: left; }
-              #intro .container .content .map .display .point .container header {
+              float: left;
+              background-color: white; }
+              .slide .container .content .map .display .point .container header {
+                position: relative;
+                margin: 0;
                 display: flex; }
-                #intro .container .content .map .display .point .container header img {
+                .slide .container .content .map .display .point .container header img {
                   display: flex;
                   margin: .5em auto;
                   position: relative;
-                  height: 20em; }
+                  height: 15em;
+                  border-radius: 50%; }
+                .slide .container .content .map .display .point .container header h1 {
+                  font-size: 1.2em;
+                  margin: 0 auto; }
+              .slide .container .content .map .display .point .container .content {
+                width: calc(100vw /4 - 1em * 2);
+                position: relative;
+                padding: .5em;
+                max-height: 5em; }
+                .slide .container .content .map .display .point .container .content > .button {
+                  border-color: #0d0e0f;
+                  color: #0d0e0f; }
+                  .slide .container .content .map .display .point .container .content > .button:hover {
+                    color: white;
+                    background-color: #0d0e0f; }
+                .slide .container .content .map .display .point .container .content li,
+                .slide .container .content .map .display .point .container .content p,
+                .slide .container .content .map .display .point .container .content a {
+                  text-align: center;
+                  justify-content: center;
+                  font-size: 0.5em; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,4 @@
-#intro {
+.slide {
     overflow: hidden;
     color: $black;
     height: 100vh;
@@ -18,6 +18,7 @@
             overflow: hidden;
             z-index: 10;
             header {
+                margin-top: 3em;
                 @include column;
                 * {
                     margin: .25em auto;
@@ -48,28 +49,30 @@
                     z-index: 9;
                     position: absolute;
                     display: inline-flex;
-                    height: calc(100vh + 3em);
+                    height: calc(60vh);
                     width: 5em;
                     background: rgba($white, .7);
                     >icon {
                         transition: all .3s;
                         color: rgba($black, .5);
                         justify-content: center;
-                        height: 3em;
                         margin: auto;
+                        font-size: $title-xl;
                     }
                     &.left {
                         left: 0;
-                        transform: translate(-2em, -30vh);
+                        transform: translateX(-2em);
+                        box-shadow: 15px 0 15px -15px rgba($black, .8);
                     }
                     &.right {
                         right: 0;
-                        transform: translate(2em, -30vh);
+                        transform: translateX(2em);
+                        box-shadow: -15px 0 15px -15px rgba($black, .8);
                     }
                     &:hover {
                         transition: all .3s;
                         width: 8em;
-                        box-shadow: 0 0 15px rgba($black, .8);
+                        background: rgba($white, .9);
                         >icon {
                             transition: all .3s;
                             color: rgba($black, .8);
@@ -81,25 +84,58 @@
                     z-index: 1;
                     position: absolute;
                     justify-content: space-around;
+                    background-color: $blue;
+                    box-shadow: inset 0 0 15px rgba($black, .5);
                     .point {
                         width: calc(100vw /4);
-                        height: 70vh;
+                        height: 60vh;
                         display: inline-flex;
                         float: left;
                         .container {
                             display: flex;
-                            padding: 1em;
-                            height: calc(70vh - 1em * 2);
+                            box-shadow: 0 0 15px rgba($black, .5);
+                            border-radius: 5px;
+                            margin: 1em;
+                            height: calc(60vh - 1em * 2);
                             position: relative;
                             @include column;
                             float: left;
+                            background-color: $white;
                             header {
+                                position: relative;
+                                margin: 0;
                                 display: flex;
                                 img {
                                     display: flex;
                                     margin: .5em auto;
                                     position: relative;
-                                    height: 20em;
+                                    height: 15em;
+                                    border-radius: 50%;
+                                }
+                                h1 {
+                                    font-size: $subtitle;
+                                    margin: 0 auto;
+                                }
+                            }
+                            .content {
+                                width: calc(100vw /4 - 1em * 2);
+                                position: relative;
+                                padding: .5em;
+                                max-height: 5em;
+                                >.button {
+                                    border-color: $black;
+                                    color: $black;
+                                    &:hover {
+                                        color: $white;
+                                        background-color: $black;
+                                    }
+                                }
+                                li,
+                                p,
+                                a {
+                                    text-align: center;
+                                    justify-content: center;
+                                    font-size: $content-m;
                                 }
                             }
                         }
