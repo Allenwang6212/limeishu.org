@@ -1513,7 +1513,11 @@ html, body {
     display: flex;
     margin: .5em auto;
     justify-content: center;
-    font-size: 2em; }
+    font-size: 2.5em;
+    font-weight: 200; }
+    @media screen and (max-width: 768px) {
+      .timeline h1 {
+        font-size: 1.2em; } }
   .timeline .container {
     position: relative;
     display: flex;
