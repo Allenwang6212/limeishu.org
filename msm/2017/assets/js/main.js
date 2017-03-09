@@ -5,7 +5,7 @@ $(function () {
 		var height = document.body.clientHeight;
 		var width = document.body.clientWidth;
 		var scrollHight = $(this).scrollTop();
-		var barStyle = ['what', 'intro', 'site']
+		var barStyle = ['what', 'intro', 'site', 'detail']
 		if (scrollHight / (height - 48) >= 1) {
 			$("#nav").addClass("scrolled");
 			$("#nav .toggle h1").show();
@@ -19,6 +19,9 @@ $(function () {
 			} else {
 				$("#nav").removeClass(barStyle[i]);
 			}
+		}
+		if (scrollHight / (height) > 4) {
+			$("#nav").addClass(barStyle[3]);
 		}
 	});
 });

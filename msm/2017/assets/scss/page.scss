@@ -4,12 +4,18 @@
     height: auto;
     position: relative;
     &.fullscreen {
-        height: 100vh;
+        min-height: 100vh;
         @include backgroundConfig;
+        .container {
+            width: 100vw;
+            .content {
+                width: 100%;
+            }
+        }
     }
     &.darken {
         >div {
-            background: hsla(0, 50%, 0, .3);
+            background: $black;
         }
     }
     &.lighten {

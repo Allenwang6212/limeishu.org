@@ -71,7 +71,7 @@
 				}
 			}
 		}
-		$barStyle: (what, $green, 1) (intro, $pink, 2) (site, $blue, 3);
+		$barStyle: (what, $green, 1) (intro, $pink, 2) (site, $blue, 3) (detail, $dark-yellow, 4);
 		@each $style in $barStyle {
 			$class: nth($style, 1);
 			$color: nth($style, 2);
@@ -144,7 +144,7 @@
 			}
 		}
 	}
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 768px) {
 		#nav {
 			background-color: $black;
 			position: absolute;
