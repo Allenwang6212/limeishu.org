@@ -7,6 +7,12 @@
     >* {
         color: $white !important;
     }
+    h1 {
+        display: flex;
+        margin: .5em auto;
+        justify-content: center;
+        font-size: $title-l;
+    }
     .container {
         position: relative;
         display: flex;
