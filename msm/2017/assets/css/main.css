@@ -1254,6 +1254,10 @@ html, body {
       justify-content: space-around;
       overflow: hidden;
       z-index: 10; }
+      @media screen and (max-width: 768px) {
+        .slide .container .content {
+          padding: 0;
+          width: 100%; } }
       .slide .container .content header {
         margin-top: 3em;
         flex-direction: column; }
@@ -1276,6 +1280,10 @@ html, body {
         z-index: 1;
         position: relative;
         height: 70%; }
+        @media screen and (max-width: 768px) {
+          .slide .container .content .map {
+            padding: .5em 0;
+            width: 100%; } }
         .slide .container .content .map .go {
           transition: all .3s;
           z-index: 9;
@@ -1290,14 +1298,23 @@ html, body {
             justify-content: center;
             margin: auto;
             font-size: 2.5em; }
+            @media screen and (max-width: 768px) {
+              .slide .container .content .map .go > icon {
+                font-size: 1.2em; } }
           .slide .container .content .map .go.left {
             left: 0;
             transform: translateX(-2em);
             box-shadow: 15px 0 15px -15px rgba(13, 14, 15, 0.8); }
+            @media screen and (max-width: 768px) {
+              .slide .container .content .map .go.left {
+                transform: translateX(0px); } }
           .slide .container .content .map .go.right {
             right: 0;
             transform: translateX(2em);
             box-shadow: -15px 0 15px -15px rgba(13, 14, 15, 0.8); }
+            @media screen and (max-width: 768px) {
+              .slide .container .content .map .go.right {
+                transform: translateX(0px); } }
           .slide .container .content .map .go:hover {
             transition: all .3s;
             width: 8em;
@@ -1305,6 +1322,12 @@ html, body {
             .slide .container .content .map .go:hover > icon {
               transition: all .3s;
               color: rgba(13, 14, 15, 0.8); }
+            @media screen and (max-width: 768px) {
+              .slide .container .content .map .go:hover {
+                width: 3em; } }
+          @media screen and (max-width: 768px) {
+            .slide .container .content .map .go {
+              width: 2em; } }
         .slide .container .content .map .display {
           transition: all .3s;
           z-index: 1;
@@ -1312,11 +1335,17 @@ html, body {
           justify-content: space-around;
           background-color: #005270;
           box-shadow: inset 0 0 15px rgba(13, 14, 15, 0.5); }
+          @media screen and (max-width: 768px) {
+            .slide .container .content .map .display {
+              left: 0; } }
           .slide .container .content .map .display .point {
             width: calc(100vw /4);
             height: 60vh;
             display: inline-flex;
             float: left; }
+            @media screen and (max-width: 768px) {
+              .slide .container .content .map .display .point {
+                width: 100vw; } }
             .slide .container .content .map .display .point .container {
               display: flex;
               box-shadow: 0 0 15px rgba(13, 14, 15, 0.5);
@@ -1326,25 +1355,61 @@ html, body {
               position: relative;
               flex-direction: column;
               float: left;
-              background-color: white; }
+              background-color: white;
+              justify-content: center; }
               .slide .container .content .map .display .point .container header {
                 position: relative;
                 margin: 0;
-                display: flex; }
+                display: flex;
+                height: 16rem; }
+                @media screen and (max-width: 1280px), screen and (max-height: 980px) {
+                  .slide .container .content .map .display .point .container header {
+                    height: 12.5rem; } }
+                @media screen and (max-width: 768px) {
+                  .slide .container .content .map .display .point .container header {
+                    height: 5rem;
+                    margin: 0 auto; } }
                 .slide .container .content .map .display .point .container header img {
                   display: flex;
-                  margin: .5em auto;
+                  margin: .5rem auto;
                   position: relative;
-                  height: 15em;
+                  height: 15rem;
                   border-radius: 50%; }
-                .slide .container .content .map .display .point .container header h1 {
-                  font-size: 1.2em;
-                  margin: 0 auto; }
+                  @media screen and (max-width: 1280px), screen and (max-height: 980px) {
+                    .slide .container .content .map .display .point .container header img {
+                      height: 11.5rem;
+                      margin: .25rem auto; } }
+                  @media screen and (max-width: 768px) {
+                    .slide .container .content .map .display .point .container header img {
+                      height: 5rem;
+                      margin: auto; } }
               .slide .container .content .map .display .point .container .content {
                 width: calc(100vw /4 - 1em * 2);
                 position: relative;
                 padding: .5em;
-                max-height: 5em; }
+                height: calc(100% - 16rem);
+                bottom: 0;
+                justify-content: center; }
+                @media screen and (max-width: 1280px), screen and (max-height: 980px) {
+                  .slide .container .content .map .display .point .container .content {
+                    height: calc(100% - 12.5rem); } }
+                @media screen and (max-width: 768px) {
+                  .slide .container .content .map .display .point .container .content {
+                    height: calc(100% - 5rem);
+                    width: calc(100vw - 4em);
+                    padding: 1em; } }
+                .slide .container .content .map .display .point .container .content h1 {
+                  display: flex;
+                  font-size: 2em;
+                  margin: .75rem auto; }
+                  @media screen and (max-width: 1280px), screen and (max-height: 980px) {
+                    .slide .container .content .map .display .point .container .content h1 {
+                      font-size: 1.5em;
+                      margin: .4rem auto; } }
+                  @media screen and (max-width: 768px) {
+                    .slide .container .content .map .display .point .container .content h1 {
+                      font-size: 1.2em;
+                      margin: .4rem auto; } }
                 .slide .container .content .map .display .point .container .content > .button {
                   border-color: #0d0e0f;
                   color: #0d0e0f; }
@@ -1354,8 +1419,26 @@ html, body {
                 .slide .container .content .map .display .point .container .content li,
                 .slide .container .content .map .display .point .container .content p,
                 .slide .container .content .map .display .point .container .content a {
+                  margin: .5em auto;
+                  color: #0d0e0f;
                   text-align: center;
                   justify-content: center;
                   font-size: 0.5em; }
+                  @media screen and (max-width: 1280px), screen and (max-height: 980px) {
+                    .slide .container .content .map .display .point .container .content li,
+                    .slide .container .content .map .display .point .container .content p,
+                    .slide .container .content .map .display .point .container .content a {
+                      margin: .125rem auto; } }
+                  .slide .container .content .map .display .point .container .content li > .button,
+                  .slide .container .content .map .display .point .container .content p > .button,
+                  .slide .container .content .map .display .point .container .content a > .button {
+                    margin: auto;
+                    border-color: #0d0e0f;
+                    color: #0d0e0f; }
+                    .slide .container .content .map .display .point .container .content li > .button:hover,
+                    .slide .container .content .map .display .point .container .content p > .button:hover,
+                    .slide .container .content .map .display .point .container .content a > .button:hover {
+                      color: white;
+                      background-color: #0d0e0f; }
 
 /*# sourceMappingURL=main.css.map */

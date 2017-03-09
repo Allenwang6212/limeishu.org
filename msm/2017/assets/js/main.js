@@ -80,11 +80,19 @@ $(document).ready(function () {
 	var width = document.body.clientWidth;
 	var display = $(".map>.display");
 	var pointNum = $(".map>.display>div").length + 3;
-	var displayWidth = pointNum * (width / 4);
+	var desktopWidth = width / 4;
+	var mobileWidth = width;
 	var desktop = width > 768;
+	var adjWidth = 0;
+	var maxPoint = 0;
 	if (desktop) {
-		display.css('width', displayWidth);
+		adjWidth = desktopWidth;
+		maxPoint = 5 - pointNum;
+	} else {
+		adjWidth = mobileWidth;
+		maxPoint = 3 - pointNum;
 	}
+	display.css('width',pointNum * adjWidth);
 	var clickEvent = -1;
 	var fixContentF = '<div class="point">' + $(".map>.display>.point").eq(0).html() + '</div>';
 	var fixContentL = '<div class="point">' + $(".map>.display>.point").eq(10).html() + '</div>';
@@ -92,23 +100,24 @@ $(document).ready(function () {
 
 	function eventReset() {
 		if (clickEvent > -1) {
-			clickEvent = -9;
-		} else if (clickEvent < -9) {
+			clickEvent = maxPoint;
+		} else if (clickEvent < maxPoint) {
 			clickEvent = -1;
 		}
 	}
-	$(".map>.display>.point>.container>.content>a").prepend("了解更多");
-	display.css('transform', 'translateX(' + ((width / 4) * clickEvent).toString() + 'px)');
+	// $(".map>.display>.point>.container>.content>a").prepend("了解更多");
+	display.css('transform', 'translateX(' + (adjWidth * clickEvent).toString() + 'px)');
 	$(".map>.right").click(function () {
 		clickEvent = clickEvent - 1;
 		eventReset();
-		display.css('transform', 'translateX(' + ((width / 4) * clickEvent).toString() + 'px)');
-		console.log('translateX(' + ((width / 3) * clickEvent).toString() + 'px)', clickEvent);
+		display.css('transform', 'translateX(' + (adjWidth * clickEvent).toString() + 'px)');
+		console.log(clickEvent, adjWidth);
 	});
 	$(".map>.left").click(function () {
 		clickEvent = clickEvent + 1;
 		eventReset();
-		display.css('transform', 'translateX(' + ((width / 4) * clickEvent).toString() + 'px)');
-		console.log('translateX(' + ((width / 3) * clickEvent).toString() + 'px)', clickEvent);
+		display.css('transform', 'translateX(' + (adjWidth * clickEvent).toString() + 'px)');
+		console.log(clickEvent, adjWidth);
 	});
+	console.log(clickEvent, adjWidth, width);
 });
