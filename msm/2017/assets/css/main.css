@@ -1227,7 +1227,7 @@ html, body {
             margin-left: calc(2.5em * 2+2em);
             padding: 0 1rem;
             display: flex;
-            font-size: 1em; }
+            font-size: 1.2em; }
         .spotlight.full .container .content #link {
           margin: auto;
           margin-top: 1em;

@@ -297,7 +297,7 @@
                         margin-left: calc(#{$title-xl} * 2+2em);
                         padding: 0 1rem;
                         display: flex;
-                        font-size: $content-xl;
+                        font-size: $content-xl * 1.2;
                     }
                 }
                 #link {

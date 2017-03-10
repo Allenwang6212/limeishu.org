@@ -11,16 +11,16 @@ $(document).ready(function () {
   };
 });
 
-$(function () {
-  //scroll down
-  $(".scrolly").bind('click', function (event) {
-    event.preventDefault(); //先取消超連結原本預設動作
-    var $anchor = $(this);
-    $('body').animate({
-      scrollTop: $($anchor.attr('href')).offset().top
-    }, 1000, 'easeInOutQuint');
-  });
-});
+// $(function () {
+//   //scroll down
+//   $(".scrolly").bind('click', function (event) {
+//     event.preventDefault(); //先取消超連結原本預設動作
+//     var $anchor = $(this);
+//     $('body').animate({
+//       scrollTop: $($anchor.attr('href')).offset().top
+//     }, 1000, 'easeInOutQuint');
+//   });
+// });
 //    traffic slide
 $('.msg').hide();
 $('.choose').click(function () {
