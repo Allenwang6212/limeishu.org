@@ -15,11 +15,11 @@ $(function(){
 			message += minutes + " 分鐘" + ( minutes==1 ? '':'' ) + " ｜ ";
 			message += seconds + " 秒" + ( seconds==1 ? '':'' ) + " <br /><br />";
 			
-			if(days!=0){
+			if(days>=0){
 				message += "2017梅樹月於3/11，邀請您一同共襄盛舉";
 			}
 			else {
-				message += "2017梅樹月於今日舉辦，邀請您一同共襄盛舉";
+				window.location = "https://msm.limeishu.org.tw";
 			}
 			
 			note.html(message);
