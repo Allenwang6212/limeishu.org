@@ -197,7 +197,8 @@ html, body {
     justify-content: center;
     -webkit-justify-content: center;
     filter: drop-shadow(0 0 20px #0d0e0f);
-    -webkit-filter: drop-shadow(0 0 20px #0d0e0f); }
+    -webkit-filter: drop-shadow(0 0 20px #0d0e0f);
+    -webkit-backdrop-filter: drop-shadow(0 0 20px #0d0e0f); }
     #banner header img {
       margin: 1em auto;
       width: 40%; }
@@ -1037,7 +1038,7 @@ html, body {
         bottom: 0;
         left: 0;
         filter: blur(15px);
-        -webkit-backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(15px);
         margin: -3em;
         background: url("images/what.jpg") 0/cover fixed; }
     @media screen and (max-width: 1200px) {
@@ -1139,7 +1140,7 @@ html, body {
       bottom: 0;
       left: 0;
       filter: blur(15px);
-      -webkit-backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(15px);
       margin: -3em;
       background: url("images/intro.jpg") 0/cover fixed; }
   @media screen and (max-width: 1200px) {
@@ -1246,9 +1247,10 @@ html, body {
         bottom: 0;
         left: 0;
         filter: blur(15px);
-        -webkit-filter: blur(20px);
+        -webkit-backdrop-filter: blur(15px);
         margin: -3em;
-        background: url("images/intro.jpg") 0/cover fixed; }
+        background: url("images/intro.jpg") 0/cover fixed;
+        background-attachment: local; }
     @media screen and (max-width: 768px) {
       .spotlight.full {
         color: #0d0e0f !important;

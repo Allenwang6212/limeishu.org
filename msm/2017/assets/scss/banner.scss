@@ -19,6 +19,7 @@
 		-webkit-justify-content: center;
 		filter: drop-shadow(0 0 20px $black);
 		-webkit-filter: drop-shadow(0 0 20px $black);
+		-webkit-backdrop-filter: drop-shadow(0 0 20px $black);
 		img {
 			margin: 1em auto;
 			width: 40%;
