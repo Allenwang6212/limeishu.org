@@ -1246,7 +1246,7 @@ html, body {
         bottom: 0;
         left: 0;
         filter: blur(15px);
-        -webkit-backdrop-filter: blur(20px);
+        -webkit-filter: blur(20px);
         margin: -3em;
         background: url("images/intro.jpg") 0/cover fixed; }
     @media screen and (max-width: 768px) {
@@ -1327,6 +1327,7 @@ html, body {
           display: flex;
           justify-content: center; }
         .slide .container .content header h1 {
+          justify-content: center;
           font-weight: 200;
           font-size: 2.5em; }
         .slide .container .content header h3 {
@@ -1459,6 +1460,7 @@ html, body {
                     width: calc(100vw - 4em);
                     padding: 1em; } }
                 .slide .container .content .map .display .point .container .content h1 {
+                  justify-content: center;
                   display: flex;
                   font-size: 2em;
                   margin: .75rem auto; }

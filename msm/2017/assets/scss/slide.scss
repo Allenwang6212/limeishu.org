@@ -31,6 +31,7 @@
                     justify-content: center;
                 }
                 h1 {
+                    justify-content: center;
                     font-weight: 200;
                     font-size: $title-xl;
                 }
@@ -175,6 +176,7 @@
                                     padding: 1em;
                                 }
                                 h1 {
+                                    justify-content: center;
                                     display: flex;
                                     font-size: $title-l;
                                     margin: .75rem auto;
